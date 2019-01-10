@@ -31,7 +31,6 @@ html{
 
 textarea,input {
 	box-shadow:none;
-
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
@@ -39,12 +38,20 @@ textarea,input {
 
 a{
 	transition: color 0.3s linear;
+	text-decoration: none;
+	&:not([class]){
+		color: #058ACD;
+		&:hover{
+			color: #056493;
+		}
+	}
 }
+
 
 body {
 	margin: 0;
 	height: 100%;
-	background: $default-site-color;
+	background: $default-site-bg;
 	-webkit-font-smoothing: antialiased;
 	font-size: $default-size-font;
 	font-family: $default-font;

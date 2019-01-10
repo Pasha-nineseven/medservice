@@ -1,4 +1,13 @@
 .page-header{
-
+	padding-top: 16px;
+	position: relative;
+	z-index: 2;
 }
 
+.page-header__logo{
+	display: inline-block;
+	width: 170px;
+	height: 137px;
+	background: url(../img/svg/top-logo.svg) no-repeat;
+	background-size: contain;
+}
