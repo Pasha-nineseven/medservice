@@ -35,7 +35,7 @@
 }
 
 .develop {
-	padding-top: 20px;
+	padding-top: 26px;
 }
 
 .develop__link{
@@ -51,19 +51,22 @@
 }
 
 .page-footer-info-cards__item{
-	margin-right: 10px;
+	margin-right: 23px;
 	&:last-child{
 		margin-right: 0;
+	}
+	img{
+		display: block;
 	}
 }
 
 .page-footer-info-cards__title{
-	margin-bottom: 10px;
+	margin-bottom: 14px;
 }
 
 
 .page-footer-info-support__title{
-	margin-bottom: 10px;
+	margin-bottom: 24px;
 }
 
 
@@ -111,4 +114,8 @@
 	&:hover{
 		background: url(../img/svg/inst-b-h.svg) no-repeat;
 	}
+}
+
+.copyright{
+	line-height: 1.1;
 }
