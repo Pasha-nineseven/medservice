@@ -77,3 +77,37 @@ textarea,input {
 :focus::-moz-placeholder          {color: transparent}
 :focus:-moz-placeholder           {color: transparent}
 :focus:-ms-input-placeholder      {color: transparent}
+
+
+
+.btn{
+	display: inline-block;
+	color: #fff;
+	background: linear-gradient(90deg, #1EBF9D 0%, #1073B9 100%);
+	border-radius: 5px;
+	padding: 12px 25px;
+	transition:all 0.3s ease;
+	position: relative;
+	&:after {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 0.3em;
+		background: linear-gradient(90deg, #1073B9 0%, #1EBF9D 100%);
+		transition: opacity 0.3s ease-out;
+		z-index: 1;
+		opacity: 0;
+	}
+	&:hover{
+		&:after{
+			opacity: 1;
+		}
+	}
+	span{
+		position: relative;
+		z-index: 2;
+	}
+}

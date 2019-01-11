@@ -142,11 +142,12 @@
     	min-width: 576px;
     	margin-bottom: 20px;
     	table-layout: fixed;
+    	font-size: 17px;
 	}
 	th{
 		font-weight: normal;
 		text-align: left;
-		padding: 20px 26px 17px 26px;
+		    padding: 11px 10px 11px 14px;
 		position: relative;
 		background: #fff;
 		border-right: 2px solid #eeeeee;
@@ -204,14 +205,44 @@
 		}
 	}
 	td{
-		padding: 17px 26px;
+		padding: 25px 10px 24px 14px;
 		border-bottom: 1px solid #DBE1E3;
+		vertical-align: top;
+		p{
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
 	}
 	tr{
 		&:first-child{
 			&:after{
 
 			}
+		}
+	}
+
+	blockquote{
+		display: block;
+		margin: 0;
+		margin-bottom: 20px;
+		position: relative;
+		font-family: 'osnova_probold';
+		line-height: 1.4;
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 114px;
+			height: 102px;
+			display: inline-block;
+			position: absolute;
+			    left: -22px;
+    		top: -13px;
+			background: url(../img/svg/quote.svg) no-repeat;
+			z-index: -1;
+		}
+		span{
+			background: rgba(196,228,221, 0.6);
 		}
 	}
 }

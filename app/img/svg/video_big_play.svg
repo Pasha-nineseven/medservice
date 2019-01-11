@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="174px" height="174px" viewBox="0 0 174 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>C7105B42-E071-46E1-9DC5-AF87835C6966</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="1.55572612%" x2="100%" y2="1.55572612%" id="linearGradient-1">
+            <stop stop-color="#1EBF9D" offset="0%"></stop>
+            <stop stop-color="#1073B9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="medservicebel_text_05_hover" transform="translate(-633.000000, -4586.000000)">
+            <g id="Видео" transform="translate(275.000000, 4424.000000)">
+                <g id="text/svg/video_big_play" transform="translate(358.000000, 162.000000)">
+                    <circle id="Oval-4" stroke="#0091EA" stroke-width="2" fill="#FFFFFF" opacity="0.800000012" cx="87" cy="87" r="86"></circle>
+                    <path d="M46.1467528,66.257914 L111.135807,49.2829744 C113.273237,48.7246843 115.45855,50.0048302 116.01684,52.1422602 C116.189965,52.805075 116.189961,53.5012456 116.016827,54.1640581 L99.041434,119.151377 C98.483116,121.2888 96.2977863,122.568917 94.1603636,122.010599 C93.4727619,121.83099 92.8454264,121.471433 92.3428984,120.968918 L44.3292371,72.9565384 C42.7671191,71.3944621 42.7670853,68.8618021 44.3291616,67.2996841 C44.8317144,66.7971179 45.4590966,66.4375277 46.1467528,66.257914 Z" id="Rectangle-7" fill="url(#linearGradient-1)" transform="translate(79.723407, 85.723407) rotate(-315.000000) translate(-79.723407, -85.723407) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

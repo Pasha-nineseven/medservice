@@ -10,6 +10,62 @@ $(document).ready(function() {
    			delay: 100,
 		});
 	};
+	//TABS
+    if ($('.resp-tabs').length>0) {
+	    $('.resp-tabs').responsiveTabs({
+		    startCollapsed: 'accordion'
+		});
+	}
+
+	//POPUP-VIDEO
+    $('.js-video').magnificPopup({
+        type: 'iframe',
+        removalDelay: 500,
+        closeBtnInside: false,
+        fixedContentPos: false,
+        callbacks: {
+            beforeOpen: function() {
+                this.st.mainClass = this.st.el.attr('data-effect');
+            },
+            open: function(){
+                $('body').addClass('hidden');
+            },
+            close: function() {
+                 $('body').removeClass('hidden');
+            }
+        },
+    });
+
+
+    //LANGUAGE
+	$("body").on("click", ".page-header-lang", function(e){
+        if (!$(e.target).hasClass('page-header-lang__item')) {
+          e.preventDefault();
+        }
+        $('.page-header-lang__list').fadeToggle(100);
+	});
+    $(document).click(function (e){
+        var div = $(".page-header-lang");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+          $(".page-header-lang__list").fadeOut(100);
+        }
+    });
+
+    //CURRENCY
+	$("body").on("click", ".page-header-currency", function(e){
+        if (!$(e.target).hasClass('page-header-currency__item')) {
+          e.preventDefault();
+        }
+        $('.page-header-currency__list').fadeToggle(100);
+	});
+    $(document).click(function (e){
+        var div = $(".page-header-currency");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+          $(".page-header-currency__list").fadeOut(100);
+        }
+    });
 
 	ymaps.ready(initializeDefaultMap);
 });
