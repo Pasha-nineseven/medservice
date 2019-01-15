@@ -90,7 +90,69 @@ $(document).ready(function() {
 		});
 	}
 
+	//POPUP-INLINE
+	$('.js-popup-inline').magnificPopup({
+		type: 'inline',
+		removalDelay: 500,
+
+		callbacks: {
+			beforeOpen: function() {
+				this.st.mainClass = this.st.el.attr('data-effect');
+			},
+		},
+
+		//midClick: true,
+	});
+
+
+	//SERVICE slider
+	if ($('.slider-doctor').length>0) {
+		var $gallery = $('.slider-doctor');
+
+	    $gallery.slick({
+			speed: 250,
+			// fade: true,
+			// cssEase: 'linear',
+			swipe: true,
+			swipeToSlide: true,
+			touchThreshold: 10,
+			arrows:true,
+			dots:false,
+			useTransform:true,
+			accessibility: false,
+			infinite: false,
+			slidesToShow: 3,
+  			slidesToScroll: 1,
+  	// 		responsive: [
+			//     {
+			//       breakpoint: 1000,
+			//       settings: {
+			//         slidesToShow: 3,
+			//         slidesToScroll: 1,
+			//       }
+			//     },
+			//     {
+			//       breakpoint: 768,
+			//       settings: {
+			//         slidesToShow: 2,
+			//         slidesToScroll: 1,
+			//       }
+			//     },
+			//     {
+			//       breakpoint: 550,
+			//       settings: {
+			//         slidesToShow: 1,
+			//         slidesToScroll: 1,
+			//         adaptiveHeight:true,
+			//       }
+			//     },
+			// ]
+	    });
+	};
+
 	ymaps.ready(initializeDefaultMap);
+
+	ymaps.ready(initializeContactMap);
 });
 
 
@@ -133,6 +195,33 @@ function initializeDefaultMap() {
     }
 }
 
+function initializeContactMap() {
+    if ($('#map-contact').length>0) {
+
+        var myMap = new ymaps.Map("map-contact", {
+            center:[53.899888,27.566757],
+            zoom: 13,
+            controls: []
+        }, {
+	        suppressMapOpenBlock: true
+	    }); 
+                
+        var myPlacemark = new ymaps.Placemark([53.899888,27.566757],{
+                // balloonContentBody: 'Адрес',
+            },{
+            iconLayout: 'default#image',
+            iconImageHref: "img/svg/label.svg", 
+            iconImageSize: [52,78],
+            iconImageOffset: [-26, -78]
+        }); 
+
+
+        myMap.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 20, top: 50 }}}));
+        myMap.behaviors.disable('scrollZoom');
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+}
 
 
 

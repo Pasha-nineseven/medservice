@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="31px" viewBox="0 0 22 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>A8A6620F-2E06-4A25-B73D-7E55DB313EFB</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="1.55572612%" x2="100%" y2="1.55572612%" id="linearGradient-1">
+            <stop stop-color="#1EBF9D" offset="0%"></stop>
+            <stop stop-color="#1073B9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="medservicebel_contacts_05_hover" transform="translate(-302.000000, -878.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Карта" transform="translate(48.000000, 517.000000)">
+                <g id="Group-3" transform="translate(229.000000, 93.000000)">
+                    <g id="Скачать-реквизты" transform="translate(25.000000, 268.000000)">
+                        <path d="M21,11 L12,1 C11.6769725,0.364681225 11,0 10,0 L4,0 C1.8616013,0 0,2.00585153 0,5 L0,26 C0,28.9941485 1.86150405,31 4,31 L18,31 C20.138496,31 22,28.9941485 22,26 L22,13 C22,11.8529782 21.8307812,11.1235109 21,11 Z M12,3 L19,11 L14,11 C13.1136551,11 12,9.72725136 12,8 L12,3 Z M18,29 L4,29 C3.14547079,29 2,27.7399834 2,26 L2,5 C2,3.26001655 3.14547079,2 4,2 L10,2 L10,8 C10.1818267,10.8200124 11.9817985,12.7999793 14,13 L20,13 L20,26 C20.000094,27.7399834 18.8546232,29 18,29 Z" id="contact/svg/doc"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
