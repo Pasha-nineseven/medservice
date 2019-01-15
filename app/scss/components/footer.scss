@@ -13,7 +13,7 @@
 .page-footer-top__item{
 	width: 33.333%;
 	text-align: center;
-	padding: 25px 0;
+	padding: 25px 0 19px;
 	&:first-child{
 		text-align: left;
 	}
@@ -31,7 +31,7 @@
 .page-footer-top__title{
 	color: rgba(255,255,255,0.6);
 	font-size: 16px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .develop {
@@ -99,23 +99,84 @@
 
 .page-footer-info-socials__item--vk{
 	background: url(../img/svg/vk-b.svg) no-repeat;
+	background-size: contain;
 	&:hover{
 		background: url(../img/svg/vk-b-h.svg) no-repeat;
+		background-size: contain;
 	}
 }
 .page-footer-info-socials__item--fb{
 	background: url(../img/svg/fb-b.svg) no-repeat;
+	background-size: contain;
 	&:hover{
 		background: url(../img/svg/fb-b-h.svg) no-repeat;
+		background-size: contain;
 	}
 }
 .page-footer-info-socials__item--inst{
 	background: url(../img/svg/inst-b.svg) no-repeat;
+	background-size: contain;
 	&:hover{
 		background: url(../img/svg/inst-b-h.svg) no-repeat;
+		background-size: contain;
 	}
 }
 
 .copyright{
 	line-height: 1.1;
+}
+
+.page-footer-top__add{
+	color: #fff;
+	font-size: 26px;
+	font-family: 'osnova_probold';
+}
+
+.page-footer-top__add--phone{
+	padding-right: 113px;
+	position: relative;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		background: url(../img/svg/whatsapp.svg) no-repeat;
+		background-size: contain;
+		position: absolute;
+		right: 42px;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-top: -1px;
+	}
+	&:after{
+		content: "";
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		background: url(../img/svg/viber.svg) no-repeat;
+		background-size: contain;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-top: -1px;
+	}
+}
+
+.page-footer-top__add--mail{
+	position: relative;
+	padding-right: 20px;
+	&:after{
+		content: "";
+	    width: 15px;
+	    height: 15px;
+	    position: absolute;
+	    right: 0;
+	    top: 50%;
+	    transform: translatey(-50%) rotate(-90deg);
+	    background: url(../img/svg/d-arrow.svg) no-repeat;
+	    background-size: 15px 15px;
+	    margin-top: 2px;
+	    opacity: 0.6;
+	}
 }

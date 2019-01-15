@@ -67,6 +67,29 @@ $(document).ready(function() {
         }
     });
 
+    //ACCORDEON
+    $("body").on("click", ".accordeon__link", function(e){
+        e.preventDefault();
+        $(this).parents('.accordeon__item').toggleClass('active');
+        $(this).next('.accordeon__info').slideToggle();
+    });
+
+     //FS
+    if ($('.fs').length>0) {
+    	$('.fs').styler();
+    }
+
+
+    //DATEPICKER
+    if ($('.input-calendar').length>0) {
+		$('.input-calendar').datepicker({
+			dateFormat : "dd-mm-yy",
+			minDate: new Date($('#hiddendelivdate').val()),
+			monthNames : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+			dayNamesMin : ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+		});
+	}
+
 	ymaps.ready(initializeDefaultMap);
 });
 
@@ -109,6 +132,9 @@ function initializeDefaultMap() {
         myMap.geoObjects.add(myPlacemark);
     }
 }
+
+
+
 
 // links pages
 // $('body').append(
