@@ -1545,6 +1545,123 @@ ymaps[class$="-copyright"] {
 	}
 }
 
+.reviews{
+	padding-right: 90px;
+	.paging{
+		padding-top: 24px;
+	}
+}
+
+.reviews__wrap{
+	margin-right: -1px;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.reviews__item{
+	padding-right: 1px;
+	width: 33.333%;
+	margin-bottom: 24px;
+	&.reviews__item--half{
+		width: 50%;
+		.reviews__img{
+			height: 270px;
+			margin-bottom: 22px;
+		}
+		.reviews__person{
+			font-size: 26px;
+			margin-bottom: 13px;
+		}
+	}
+	&:hover{
+		.reviews__inner{
+			box-shadow: 0 2px 20px 0 rgba(0,0,0,0.12);
+		}
+		.reviews__img{
+			
+			&:before{
+				transform: translate(-50%,-50%) scale(1.1);
+			}
+		}
+	}
+}
+
+.reviews__inner{
+	background: #fff;
+	height: 100%;
+	padding: 16px;
+	transition: all 0.3s ease;
+	display: block;
+	color: inherit;
+}
+
+.reviews__img{
+	height: 174px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 15px;
+	position: relative;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 61px;
+		height: 61px;
+		background: url(../img/svg/video_big_play.svg) no-repeat;
+		background-size: contain;
+		transition: all 0.3s ease;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		position: absolute;
+	}
+}
+
+.reviews__person{
+	color: #0088CC;
+	font-size: 20px;
+	font-family: 'osnova_probold';
+	margin-bottom: 5px;
+}
+
+.reviews__place{
+	color: #939393;
+	margin-bottom: 20px;
+	font-size: 14px;
+
+}
+
+.reviews__txt{
+	font-size: 14px;
+	padding-bottom: 5px;
+	padding-top: 20px;
+	border-top: 1px solid #eeeeee;
+	position: relative;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 17px;
+		background: url(../img/svg/quote-gr.svg) no-repeat;
+		background-size: contain;
+		position: absolute;
+		left: 0;
+		top: -6px;
+		z-index: 2;
+	}
+	&:after{
+		content: "";
+		display: inline-block;
+		width: 26px;
+		height: 17px;
+		background: #fff;
+		position: absolute;
+		left: 0;
+		top: -6px;
+		z-index: 1;
+	}
+}
+
 
 @import "components/footer";
 

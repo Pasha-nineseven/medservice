@@ -248,9 +248,10 @@ $('body').append(
 		#pages li { margin: 5px 0; } \
 	</style> \
 	<ol id="pages"> \
-		<li><a href="text.html">Text</a></li> \
-		<li><a href="contacts.html">Contacts</a></li> \
-		<li><a href="doctor.html">Doctor</a></li> \
-		<li><a href="index.html">Index</a></li> \
+		<li><a href="text.html">Текст</a></li> \
+		<li><a href="contacts.html">Контакты</a></li> \
+		<li><a href="doctor.html">Доктор</a></li> \
+		<li><a href="reviews.html">Отзывы</a></li> \
+		<li><a href="index.html">Главная</a></li> \
 	</ol> \
 </div>');

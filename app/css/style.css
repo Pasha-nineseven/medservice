@@ -5616,6 +5616,112 @@ button.mfp-close {
   width: 78px;
   height: 78px; }
 
+.reviews {
+  padding-right: 90px; }
+  .reviews .paging {
+    padding-top: 24px; }
+
+.reviews__wrap {
+  margin-right: -1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.reviews__item {
+  padding-right: 1px;
+  width: 33.333%;
+  margin-bottom: 24px; }
+  .reviews__item.reviews__item--half {
+    width: 50%; }
+    .reviews__item.reviews__item--half .reviews__img {
+      height: 270px;
+      margin-bottom: 22px; }
+    .reviews__item.reviews__item--half .reviews__person {
+      font-size: 26px;
+      margin-bottom: 13px; }
+  .reviews__item:hover .reviews__inner {
+    -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12); }
+  .reviews__item:hover .reviews__img:before {
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+        -ms-transform: translate(-50%, -50%) scale(1.1);
+            transform: translate(-50%, -50%) scale(1.1); }
+
+.reviews__inner {
+  background: #fff;
+  height: 100%;
+  padding: 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  color: inherit; }
+
+.reviews__img {
+  height: 174px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 15px;
+  position: relative; }
+  .reviews__img:before {
+    content: "";
+    display: inline-block;
+    width: 61px;
+    height: 61px;
+    background: url(../img/svg/video_big_play.svg) no-repeat;
+    background-size: contain;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    position: absolute; }
+
+.reviews__person {
+  color: #0088CC;
+  font-size: 20px;
+  font-family: 'osnova_probold';
+  margin-bottom: 5px; }
+
+.reviews__place {
+  color: #939393;
+  margin-bottom: 20px;
+  font-size: 14px; }
+
+.reviews__txt {
+  font-size: 14px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+  position: relative; }
+  .reviews__txt:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    background: url(../img/svg/quote-gr.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: -6px;
+    z-index: 2; }
+  .reviews__txt:after {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 17px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: -6px;
+    z-index: 1; }
+
 .page-footer-top {
   background: -webkit-gradient(linear, left top, right top, from(#1EBF9D), to(#1073B9));
   background: linear-gradient(90deg, #1EBF9D 0%, #1073B9 100%); }
@@ -5807,7 +5913,9 @@ button.mfp-close {
     right: 15px; }
   .doctor-media .btn {
     font-size: 16px;
-    padding: 10px 6px; } }
+    padding: 10px 6px; }
+  .reviews {
+    padding-right: 0; } }
 
 @media screen and (max-width: 1150px) {
   .top-nav__link {
@@ -6103,7 +6211,24 @@ button.mfp-close {
     margin-right: -15px;
     margin-bottom: -15px; }
   .page-top__wrap {
-    margin-top: 0; } }
+    margin-top: -10px; }
+  .reviews__item {
+    width: 50%; }
+  .reviews__img {
+    height: 270px;
+    margin-bottom: 22px; }
+  .reviews__person {
+    font-size: 26px;
+    margin-bottom: 13px; } }
+
+@media screen and (max-width: 650px) {
+  .reviews__person,
+  .reviews__item.reviews__item--half .reviews__person {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .reviews__img,
+  .reviews__item.reviews__item--half .reviews__img {
+    height: 170px; } }
 
 @media screen and (max-width: 600px) {
   body {
@@ -6271,3 +6396,18 @@ button.mfp-close {
   .slider-doctor__item:hover .slider-doctor__inner {
     -webkit-box-shadow: none;
             box-shadow: none; } }
+
+@media screen and (max-width: 500px) {
+  .reviews__item.reviews__item--half,
+  .reviews__item {
+    width: 100%; }
+  .reviews__img,
+  .reviews__item.reviews__item--half .reviews__img {
+    margin-bottom: 10px; }
+  .reviews__person,
+  .reviews__item.reviews__item--half .reviews__person {
+    font-size: 16px; }
+  .reviews__place {
+    margin-bottom: 10px; }
+  .reviews__txt {
+    padding-top: 11px; } }
