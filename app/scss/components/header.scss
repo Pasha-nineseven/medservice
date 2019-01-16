@@ -35,6 +35,7 @@
 .top-search{
 	margin-bottom: 28px;
 	font-size: 14px;
+	position: relative;
 }
 
 .top-search__link{
@@ -73,6 +74,9 @@
 .top-nav__link{
 	color: #fff;
 	font-family: 'osnova_probold';
+	&:hover{
+		color: #0088CC;
+	}
 }
 
 
@@ -138,25 +142,25 @@
 
 .top-socials__item--vk{
 	background: url(../img/svg/vk.svg) center no-repeat;
-	transition: background 0.2s ease;
+	//transition: background 0.2s ease;
 	&:hover{
-		background: url(../img/svg/vk-h.svg) center no-repeat;
+		background: #fff url(../img/svg/vk-h.svg) center no-repeat;
 	}
 }
 
 .top-socials__item--fb{
 	background: url(../img/svg/fb.svg) center no-repeat;
-	transition: background 0.2s ease;
+	//transition: background 0.2s ease;
 	&:hover{
-		background: url(../img/svg/fb-h.svg) center no-repeat;
+		background: #fff url(../img/svg/fb-h.svg) center no-repeat;
 	}
 }
 
 .top-socials__item--inst{
 	background: url(../img/svg/inst.svg) center no-repeat;
-	transition: background 0.2s ease;
+	//transition: background 0.2s ease;
 	&:hover{
-		background: url(../img/svg/inst-h.svg) center no-repeat;
+		background: #fff url(../img/svg/inst-h.svg) center no-repeat;
 	}
 }
 
@@ -444,5 +448,153 @@
 	&:after{
 		top: 8px;
 		width: 22px;
+	}
+}
+
+
+.top-search__toggle{
+	display: none;
+	position: absolute;
+	right: 0;
+	top: -15px;
+}
+.top-search__input{
+	border: 0;
+	background: #fff;
+	padding: 15px 20px 15px 56px;
+	border-radius: 5px;
+	    width: 413px;
+	    color:#00141B;
+}
+.top-search__submit{
+	width: 24px;
+	height: 24px;
+	background: url(../img/svg/search_icon.svg) no-repeat;
+	position: absolute;
+	left: 16px;
+    top: 11px;
+	display: inline-block;
+	border: 0;
+	text-indent: -9999em;
+	padding: 0;
+}
+
+.top-search__close{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../img/svg/search_icon_close.svg) no-repeat;
+	position: absolute;
+	    right: 6px;
+    top: 16px;
+    transition:all 0.3s ease;
+    &:hover{
+    	background: url(../img/svg/search_icon_close_h.svg) no-repeat;
+    }
+}
+
+.top-search__input::-webkit-input-placeholder {color:#00141B;transition:all 0.3s ease;}
+.top-search__input::-moz-placeholder          {color:#00141B;transition:all 0.3s ease;}
+.top-search__input:-moz-placeholder           {color:#00141B;transition:all 0.3s ease;}
+.top-search__input:-ms-input-placeholder      {color:#00141B;transition:all 0.3s ease;}
+
+
+
+.top-search__input:focus::-webkit-input-placeholder {color: transparent}
+.top-search__input:focus::-moz-placeholder          {color: transparent}
+.top-search__input:focus:-moz-placeholder           {color: transparent}
+.top-search__input:focus:-ms-input-placeholder      {color: transparent}
+
+
+
+.menu-mobile{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: #eeeeee;
+    padding-bottom: 74px;
+    padding-top: 66px;
+    z-index: 10;
+    display: none;
+    &:before{
+    	content: "";
+    	display: block;
+    	width: 100%;
+    	height: calc(100% - 74px);
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	// background: url(../img/svg/oval.svg) no-repeat;
+    	// background-size: cover;
+    	background: linear-gradient(90deg, #1EBF9D 0%, #1073B9 100%);
+    	border-radius: 50% 50% 60% 60% / 0% 0% 10% 10%;
+    	    z-index: -1;
+    }
+    .page-header__links{
+		position: absolute;
+		right: 12px;
+		top: 12px;
+    }
+    .top-socials {
+	    margin-left: 0;
+	    justify-content: center;
+	    position: absolute;
+	    bottom: 22px;
+	    width: 100%;
+	}
+
+	.top-socials__item--vk{
+		background: #fff url(../img/svg/vk-h.svg) center no-repeat;
+	}
+
+	.top-socials__item--fb{
+		background: #fff url(../img/svg/fb-h.svg) center no-repeat;
+	}
+
+	.top-socials__item--inst{
+		background: #fff url(../img/svg/inst-h.svg) center no-repeat;
+	}
+}
+
+.menu-mobile__close{
+	position: absolute;
+	left: 12px;
+	top: 12px;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: url(../img/svg/mobile-close.svg) no-repeat;
+}
+
+.menu-mobile__list{
+	margin: 0 60px 43px;
+	border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.menu-mobile__link{
+	color: #fff;
+	font-family: 'osnova_probold';
+	font-size: 18px;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	padding: 8px 0;
+	text-align: center;
+	display: block;
+}
+
+.menu-mobile__contact{
+	text-align: center;
+	.page-header__mail,
+	.page-header__phone{
+		font-size: 17px;
+	}
+	.page-header__mail{
+		display: block;
+	}
+	.page-header__phone{
+		margin-left: 16px;
+    	margin-bottom: 10px;
+    	display: inline-block;
 	}
 }

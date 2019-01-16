@@ -17,13 +17,84 @@
 	</head>
 	<body>
 		<!--LAYOUT-->
-		<div class="layout">
+		<div class="layout layout--doctor">
 			<header class="page-header">
 				<div class="container-fluid">
 					<div class="page-header__wrap">
-						<a href="#" class="menu-btn">
+						<a href="#" class="menu-btn js-menu-btn">
 							<span class="burger-icon"></span>
 						</a>
+						<div class="menu-mobile">
+							<a href="#" class="menu-mobile__close js-menu-mobile__close"></a>
+							<div class="page-header__links">
+								<div class="page-header-lang">
+									<a href="#" class="page-header-lang__view">
+										<i class="page-header-lang__icon">
+											<img src="img/svg/ru.svg" alt="">
+										</i>
+									</a>
+									<div class="page-header-lang__list">
+										<a href="#" class="page-header-lang__item">
+											<i class="page-header-lang__icon">
+												<img src="img/svg/ru.svg" alt="">
+											</i>
+											Русский
+										</a>
+										<a href="#" class="page-header-lang__item">
+											<i class="page-header-lang__icon">
+												<img src="img/svg/en.svg" alt="">
+											</i>
+											English
+										</a>
+									</div>
+								</div>
+								<div class="page-header-currency">
+									<a href="#" class="page-header-currency__view">
+										<i class="page-header-currency__icon">
+											<img src="img/svg/russian_ruble.svg" alt="">
+										</i>
+										RUB
+									</a>
+									<div class="page-header-currency__list">
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--rub"></i>
+											RUB
+										</div>
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--eur"></i>
+											EUR
+										</div>
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--usd"></i>
+											USD
+										</div>
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--byn"></i>
+											BYN
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="top-socials">
+								<a href="#" class="top-socials__item top-socials__item--vk"></a>
+								<a href="#" class="top-socials__item top-socials__item--fb"></a>
+								<a href="#" class="top-socials__item top-socials__item--inst"></a>
+							</div>
+							<div class="menu-mobile__list">
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Услуги</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Врачи</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Проживание</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Санатории</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Контакты</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Отзывы</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">О нас</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Блог</a></div>
+							</div>
+							<div class="menu-mobile__contact">
+								<a href="tel:+375291234567" class="page-header__phone">+37529 123-45-67</a>
+								<a href="mailto:info@medservicebel.com" class="page-header__mail">info@medservicebel.com</a>
+							</div>
+						</div>
 						<a href="#" class="page-header__logo"></a>
 						<div class="page-header__info">
 							<div class="page-header__top">
@@ -115,7 +186,12 @@
 						</div>
 						<div class="page-header__r">
 							<div class="top-search">
-								<a href="#" class="top-search__link">Поиск по сайту</a>
+								<a href="#" class="top-search__link js-top-search__link">Поиск по сайту</a>
+								<div class="top-search__toggle">
+									<input type="text" class="top-search__input" placeholder="Поиск по сайту">
+									<input type="submit" class="top-search__submit">
+									<a href="#" class="top-search__close js-top-search__close"></a>
+								</div>
 							</div>
 							<a href="#" class="btn">
 								<span>
@@ -131,6 +207,11 @@
 				<div class="container-fluid">
 					<div class="page-top__txt">
 						<div class="page-title">
+							<div class="doctor-media-mobile">
+								<div class="doctor-media__img">
+									<img src="img/content/no-image.jpg" alt="">
+								</div>
+							</div>
 							<h1>Зарудний Вячеслав<br> Александрович</h1>
 						</div>
 						<div class="page-top__wrap">
@@ -150,10 +231,21 @@
 			<div class="wrapper">
 				<div class="page-content workarea">
 					<div class="container-fluid">
+					<div class="page-top__wrap page-top__wrap--mobile">
+						<div class="breadcrumbs">
+							<a href="#" class="breadcrumbs__item">Главная</a>
+							<span class="breadcrumbs__item">Зарудний Вячеслав Александрович</span>
+						</div>
+						<div class="page-top-additional">
+							<div class="page-top-additional__txt">
+								Стоматология в Беларуси характеризуется высоким качеством услуг и очень приемлемыми ценами, именно поэтому количество иностранных пациентов с каждым годом только растет
+							</div>
+						</div>
+					</div>
 					<!-- CONTENT-PART -->
 					<div class="doctor-media">
 						<div class="doctor-media__img">
-							<img src="img/content/no-image.png" alt="">
+							<img src="img/content/no-image.jpg" alt="">
 						</div>
 						<a href="#" class="btn"><span>Получить консультацию</span></a>
 					</div>
@@ -212,55 +304,118 @@
 						<div class="doctor__item">
 							<div class="doctor__title">Сертификаты</div>
 							<div class="cert">
-								<div class="cert-item">
+								<a href="#" class="cert-item">
 									<div class="cert-item__img" style="background-image:  url(img/content/item1.jpg)"></div>
-								</div>
-								<div class="cert-item">
+								</a>
+								<a href="#" class="cert-item">
 									<div class="cert-item__img" style="background-image:  url(img/content/item2.jpg)"></div>
-								</div>
-								<div class="cert-item">
+								</a>
+								<a href="#" class="cert-item">
 									<div class="cert-item__img" style="background-image:  url(img/content/item2.jpg)"></div>
-								</div>
-								<div class="cert-item">
+								</a>
+								<a href="#" class="cert-item">
 									<div class="cert-item__img" style="background-image:  url(img/content/item1.jpg)"></div>
-								</div>
+								</a>
 							</div>
 						</div>
-						<div class="doctor__item">
-							<div class="doctor__title">Другие специалисты</div>
-							<div class="slider-doctor">
-								<a href="#" class="slider-doctor__item">
-									<div class="slider-doctor__inner">
-										<div class="slider-doctor__img"  style="background-image:  url(img/content/no-image.png)"></div>
+					</div>
+					<div class="doctor__title">Другие специалисты</div>
+					<div class="slider-doctor-wrap">
+						<div class="slider-doctor">
+							<div class="slider-doctor__item">
+								<div class="slider-doctor__inner">
+									<a href="#" class="slider-doctor__link">
+										<div class="slider-doctor__img"  style="background-image:  url(img/content/item1.jpg)"></div>
 										<div class="slider-doctor__info">
 											<div class="slider-doctor__title">Сергей Николаевич Иванов</div>
+											<div class="slider-doctor__about">Стоматолог-терапевт</div>
+											<div class="slider-doctor__about">Доктор медицинских наук</div>
+											<div class="slider-doctor__about">Профессор</div>
 										</div>
+									</a>
+									<div class="slider-doctor-cat">
+										<div class="slider-doctor-cat__info">
+											Высшая квалификационная категория
+										</div>
+										<a href="#" class="slider-doctor-cat__label">Стоматология</a>
 									</div>
-								</a>
-								<a href="#" class="slider-doctor__item">
-									<div class="slider-doctor__inner">
-										<div class="slider-doctor__img" style="background-image:  url(img/content/item1.jpg)"></div>
-										<div class="slider-doctor__info"></div>
+								</div>
+							</div>
+							<div class="slider-doctor__item">
+								<div class="slider-doctor__inner">
+									<a href="#" class="slider-doctor__link">
+										<div class="slider-doctor__img"  style="background-image:  url(img/content/no-image.jpg)"></div>
+										<div class="slider-doctor__info">
+											<div class="slider-doctor__title">Сергей Николаевич Иванов</div>
+											<div class="slider-doctor__about">Стоматолог-терапевт</div>
+											<div class="slider-doctor__about">Доктор медицинских наук</div>
+											<div class="slider-doctor__about">Профессор</div>
+										</div>
+									</a>
+									<div class="slider-doctor-cat">
+										<div class="slider-doctor-cat__info">
+											Высшая квалификационная категория
+										</div>
+										<a href="#" class="slider-doctor-cat__label">Стоматология</a>
 									</div>
-								</a>
-								<a href="#" class="slider-doctor__item">
-									<div class="slider-doctor__inner" style="background-image:  url(img/content/item2.jpg)">
-										<div class="slider-doctor__img"></div>
-										<div class="slider-doctor__info"></div>
+								</div>
+							</div>
+							<div class="slider-doctor__item">
+								<div class="slider-doctor__inner">
+									<a href="#" class="slider-doctor__link">
+										<div class="slider-doctor__img"  style="background-image:  url(img/content/item1.jpg)"></div>
+										<div class="slider-doctor__info">
+											<div class="slider-doctor__title">Сергей Николаевич Иванов</div>
+											<div class="slider-doctor__about">Стоматолог-терапевт</div>
+											<div class="slider-doctor__about">Доктор медицинских наук</div>
+											<div class="slider-doctor__about">Профессор</div>
+										</div>
+									</a>
+									<div class="slider-doctor-cat">
+										<div class="slider-doctor-cat__info">
+											Высшая квалификационная категория
+										</div>
+										<a href="#" class="slider-doctor-cat__label">Стоматология</a>
 									</div>
-								</a>
-								<a href="#" class="slider-doctor__item">
-									<div class="slider-doctor__inner">
-										<div class="slider-doctor__img" style="background-image:  url(img/content/item1.jpg)"></div>
-										<div class="slider-doctor__info"></div>
+								</div>
+							</div>
+							<div class="slider-doctor__item">
+								<div class="slider-doctor__inner">
+									<a href="#" class="slider-doctor__link">
+										<div class="slider-doctor__img"  style="background-image:  url(img/content/no-image.jpg)"></div>
+										<div class="slider-doctor__info">
+											<div class="slider-doctor__title">Сергей Николаевич Иванов</div>
+											<div class="slider-doctor__about">Стоматолог-терапевт</div>
+											<div class="slider-doctor__about">Доктор медицинских наук</div>
+											<div class="slider-doctor__about">Профессор</div>
+										</div>
+									</a>
+									<div class="slider-doctor-cat">
+										<div class="slider-doctor-cat__info">
+											Высшая квалификационная категория
+										</div>
+										<a href="#" class="slider-doctor-cat__label">Стоматология</a>
 									</div>
-								</a>
-								<a href="#" class="slider-doctor__item">
-									<div class="slider-doctor__inner">
-										<div class="slider-doctor__img" style="background-image:  url(img/content/item2.jpg)"></div>
-										<div class="slider-doctor__info"></div>
+								</div>
+							</div>
+							<div class="slider-doctor__item">
+								<div class="slider-doctor__inner">
+									<a href="#" class="slider-doctor__link">
+										<div class="slider-doctor__img"  style="background-image:  url(img/content/item1.jpg)"></div>
+										<div class="slider-doctor__info">
+											<div class="slider-doctor__title">Сергей Николаевич Иванов</div>
+											<div class="slider-doctor__about">Стоматолог-терапевт</div>
+											<div class="slider-doctor__about">Доктор медицинских наук</div>
+											<div class="slider-doctor__about">Профессор</div>
+										</div>
+									</a>
+									<div class="slider-doctor-cat">
+										<div class="slider-doctor-cat__info">
+											Высшая квалификационная категория
+										</div>
+										<a href="#" class="slider-doctor-cat__label">Стоматология</a>
 									</div>
-								</a>
+								</div>
 							</div>
 						</div>
 					</div>

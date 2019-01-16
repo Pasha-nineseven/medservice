@@ -17,13 +17,84 @@
 	</head>
 	<body>
 		<!--LAYOUT-->
-		<div class="layout">
+		<div class="layout layout--index">
 			<header class="page-header">
 				<div class="container-fluid">
 					<div class="page-header__wrap">
-						<a href="#" class="menu-btn">
+						<a href="#" class="menu-btn js-menu-btn">
 							<span class="burger-icon"></span>
 						</a>
+						<div class="menu-mobile">
+							<a href="#" class="menu-mobile__close js-menu-mobile__close"></a>
+							<div class="page-header__links">
+								<div class="page-header-lang">
+									<a href="#" class="page-header-lang__view">
+										<i class="page-header-lang__icon">
+											<img src="img/svg/ru.svg" alt="">
+										</i>
+									</a>
+									<div class="page-header-lang__list">
+										<a href="#" class="page-header-lang__item">
+											<i class="page-header-lang__icon">
+												<img src="img/svg/ru.svg" alt="">
+											</i>
+											Русский
+										</a>
+										<a href="#" class="page-header-lang__item">
+											<i class="page-header-lang__icon">
+												<img src="img/svg/en.svg" alt="">
+											</i>
+											English
+										</a>
+									</div>
+								</div>
+								<div class="page-header-currency">
+									<a href="#" class="page-header-currency__view">
+										<i class="page-header-currency__icon">
+											<img src="img/svg/russian_ruble.svg" alt="">
+										</i>
+										RUB
+									</a>
+									<div class="page-header-currency__list">
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--rub"></i>
+											RUB
+										</div>
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--eur"></i>
+											EUR
+										</div>
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--usd"></i>
+											USD
+										</div>
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--byn"></i>
+											BYN
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="top-socials">
+								<a href="#" class="top-socials__item top-socials__item--vk"></a>
+								<a href="#" class="top-socials__item top-socials__item--fb"></a>
+								<a href="#" class="top-socials__item top-socials__item--inst"></a>
+							</div>
+							<div class="menu-mobile__list">
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Услуги</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Врачи</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Проживание</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Санатории</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Контакты</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Отзывы</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">О нас</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Блог</a></div>
+							</div>
+							<div class="menu-mobile__contact">
+								<a href="tel:+375291234567" class="page-header__phone">+37529 123-45-67</a>
+								<a href="mailto:info@medservicebel.com" class="page-header__mail">info@medservicebel.com</a>
+							</div>
+						</div>
 						<a href="#" class="page-header__logo"></a>
 						<div class="page-header__info">
 							<div class="page-header__top">
@@ -115,7 +186,12 @@
 						</div>
 						<div class="page-header__r">
 							<div class="top-search">
-								<a href="#" class="top-search__link">Поиск по сайту</a>
+								<a href="#" class="top-search__link js-top-search__link">Поиск по сайту</a>
+								<div class="top-search__toggle">
+									<input type="text" class="top-search__input" placeholder="Поиск по сайту">
+									<input type="submit" class="top-search__submit">
+									<a href="#" class="top-search__close js-top-search__close"></a>
+								</div>
 							</div>
 							<a href="#" class="btn">
 								<span>
@@ -131,13 +207,7 @@
 				<div class="container-fluid">
 					<div class="page-top__txt">
 						<div class="page-title">
-							<h1>Санаторное лечение</h1>
-						</div>
-						<div class="page-top__wrap">
-							<div class="breadcrumbs">
-								<a href="#" class="breadcrumbs__item">Главная</a>
-								<span class="breadcrumbs__item">Санаторное лечение</span>
-							</div>
+							<h1>Главная</h1>
 						</div>
 					</div>
 				</div>
@@ -146,583 +216,7 @@
 				<div class="page-content workarea">
 					<div class="container-fluid">
 					<!-- CONTENT-PART -->
-						<p>
-							«Med Service Belarus» — оператор медицинского туризма.
-						</p>
-						<p>
-							Мы занимаемся организацией и полным сопровождением лечения и оздоровления иностранных граждан, в государственных и <a href="#">частных медицинских учреждениях</a> Республики Беларусь.
-						</p>
-						<p>
-							Список медицинских направлений по которым наши клиенты получают квалифицированное лечение включает стоматологию, онкологию, гинекологию, косметологию, офтальмологию и т.д.
-						</p>
-						<p>
-							На всех этапах: до, вовремя и после поездки, наши клиенты под нашим крылом. Вам не придётся ни о чем беспокоится, мы возьмём все организационные вопросы и связь с клиникой на себя.
-						</p>
-						<p>
-							Оплата оказанных медицинских услуг производится строго напрямую клинике, в соответствии с <a href="#">тарифами клиники</a>, без наценок и комиссий.
-						</p>
-						<p>
-							Офис компании находится в Минске, что помогает поддерживать непосредственный контакт с лучшими клиниками страны и даёт возможность оперативно выполнять все задачи.
-						</p>
-						<p>
-							Мы рады помочь Вам поправить здоровье, оставаться здоровым и наслаждаться жизнью в полной мере.
-						</p>
-						<div class="image-item">
-							<img src="img/content/img1.jpg" alt="">
-							<div class="image-item__caption">
-								Мы бесплатно поможем подобрать Вам подходящую клинику, предоставим всю информацию о врачах и вариантах лечения, подготовим персональный план лечения, рассчитаем стоимость и срок лечения.
-							</div>
-						</div>
-						<h1>Заголовок H1</h1>
-						<h2>Заголовок H2</h2>
-						<h3>Заголовок H3</h3>
-						<h4>Заголовок H4</h4>
-						<h5>Заголовок H5</h5>
-						<h6>Заголовок H6</h6>
-						<br>
-						<h3>Списки</h3>
-						<ol>
-							<li>
-								Автотрансфер. Вместительные автобусы или комфортабельные седаны.
-							</li>
-							<li>
-								Авиатрансфер. Быстро, интересно, удобно.
-							</li>
-							<li>
-								Аренда автомобиля. Седаны, внедорожники, спорткары, кабриолеты, микроавтобусы. Уточнить информацию по поводу трансфера вы можете при бронировании комплекса по телефону
-							</li>
-						</ol>
-						<p>
-							Для обеспечение максимального уровня комфорта мы разработали и предоставляем своим клиентам дополнительные пакеты услуг во время пребывания в Беларуси.
-						</p>
-						<h5>Тариф – «Эконом»</h5>
-						<ul>
-							<li>
-								Согласование графика сопровождения
-							</li>
-							<li>
-								Встреча в аэропорту/вокзале
-							</li>
-							<li>
-								Трансфер в отель/квартиру
-							</li>
-							<li>
-								Сотовый телефон с местной SIM-картой, номером менеджера и клиники
-							</li>
-							<li>
-								От 1 до 2 посещений клиники (передвижение на авто от отеля/квартиры к дверям клиники и обратно)
-							</li>
-							<li>
-								Отъезд, трансфер в аэропорт/вокзал
-							</li>
-						</ul>
-						<h5>Тариф – «Стандарт»</h5>
-						<ul>
-							<li>
-								Согласование графика сопровождения
-							</li>
-							<li>
-								Встреча в аэропорту/вокзале
-							</li>
-							<li>
-								Трансфер в отель/квартиру
-							</li>
-							<li>
-								Сотовый телефон с местной SIM-картой, номером менеджера и клиники
-							</li>
-							<li>
-								От 1 до 10 посещений клиники (трансфер на автомобиле от отеля/квартиры к дверям клиники и обратно)
-							</li>
-							<li>
-								Отъезд, трансфер в аэропорт/вокзал
-							</li>
-						</ul>
-						<h5>Дополнительные услуги, оговариваются индивидуально</h5>
-						<ul>
-							<li>
-								Профессиональный переводчик
-							</li>
-							<li>
-								Посещение торгово-развлекательных центров и магазинов
-							</li>
-							<li>
-								Покупка рекомендованных лекарств и продуктов питания
-							</li>
-							<li>
-								Организация досуга и культурно-развлекательной программы
-							</li>
-						</ul>
-						<p>
-							Команда «Med Service Belarus» готова учесть все Ваши индивидуальные пожелания.
-						</p>
-						<p>
-							Маркированный список с вложенностями:
-						</p>
-						<ul>
-							<li>
-								Меню составлено таким образом, чтобы Вы могли выбрать привычные блюда или попробовать что-то оригинальное.
-								<ol>
-									<li>
-										Классические и всеми любимые рецепты
-									</li>
-									<li>
-										Блюда из местной рыбы
-									</li>
-									<li>
-										Эксклюзивные блюда из мяса и дичи
-									</li>
-									<li>
-										Десерты и напитки, а также авторская барная карта
-									</li>
-								</ol>
-							</li>
-							<li>
-								Для желающих попробовать нечто особенное мы предлагаем познакомиться с эксклюзивными охотничьими деликатесами из дичи.
-							</li>
-						</ul>
-						<div class="table-wrap">
-							<table>
-								<tr>
-									<th>Характеристики</th>
-									<th>Комфорт и удобства</th>
-									<th>Порядок проживания</th>
-									<th>Порядок выезда</th>
-								</tr>
-								<tr>
-									<td>
-										Комфортное размещение 4 взрослых, максимальное 6 взрослых
-									</td>
-									<td>
-										Предоставляется на все спальные места
-									</td>
-									<td>
-										<p>
-											Стандартное - до 4 взрослых человек 
-										</p>
-										<p>
-											Максимальное 4 + 2 на дополнительных местах
-										</p>	
-									</td>
-									<td>
-										Заезд после 14.00,отъезд до 12.00
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Оснащение: камин, шампура и решетки, обеденный стол, дрова
-									</td>
-									<td>
-										<span class="highlighted">Курение *</span> запрещено в доме; разрешено на территории
-									</td>
-									<td>
-										Душевая кабина, умывальник, унитаз, псевдобиде, стиральная машина, фен
-									</td>
-									<td>
-										Кондиционеры, подогреваемые полы, москитные сетки, камин, wi-fi, сейф
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Двуспальные кровати, прикроватные тумбы, шкаф
-									</td>
-									<td>
-										Оборудована: холодильник, газовая плита, микроволновая печь, посудомоечная машина, чайник, посуда для приготовления, посуда
-									</td>
-									<td>
-										Постельное белье и полотенца предоставляется на все спальные места
-									</td>
-									<td>
-										Кондиционеры, подогреваемые полы, москитные сетки, камин, wi-fi, сейф
-									</td>
-								</tr>
-							</table>
-							<div class="table-caption">
-								* — необходимо согласовать при бронировании
-							</div>
-						</div>
-						<div class="video-wrap">
-							<div class="video-wrap__img">
-								<img src="img/content/img1.jpg" alt="">
-								<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="video-wrap__link js-video" data-effect="mfp-zoom-in"></a>
-							</div>
-							<div class="image-item__caption">
-								Мы бесплатно поможем подобрать Вам подходящую клинику, предоставим всю информацию о врачах и вариантах лечения, подготовим персональный план лечения, рассчитаем стоимость и срок лечения.
-							</div>
-						</div>
-						<h4>Текст в три столбца</h4>
-						<div class="row">
-							<div class="col-md-4">
-								<p>
-									Дом у ручья расположился всего в 100 метрах от пирса на берегу озера рядом с родниковым прудом.
-								</p>
-								<p>
-									Территория дома большая, благоустроенная, с вымощенными освещенными дорожками и полностью оборудованной барбекю-беседкой. Неподалеку от дома протекает ручей.
-								</p>
-								<p>
-									Дом у ручья, как и все дома комплекса, построен из экологически чистых материалов.
-								</p>
-							</div>
-							<div class="col-md-4">
-								<p>
-									Самое уютное место в доме – гостиная. Здесь вы можете расслабиться на диване у камина, посмотреть телевизор или почитать книгу, а за большим обеденным столом насладиться общением с близкими и друзьями.
-								</p>
-								<p>В спальнях дома есть кровати, прикроватные тумбы и шкафы.</p>
-								<p>Свежий воздух и комфортабельные матрасы гарантируют крепкий и здоровый сон. </p>	
-							</div>
-							<div class="col-md-4">
-								<p>
-									По периметру дома располагается просторная терраса, попасть на которую можно как с улицы, так и из гостиной.
-								</p>
-								<p>
-									Отсюда открывается прекрасный вид на озеро.Это, пожалуй, лучшее место встретить рассвет или закат за чашкой кофе или чая.
-								</p>
-								<p>
-									Также можно отправиться на рыбалку, а потом приготовить свежий улов в собственной барбекю-беседке. 
-								</p>
-							</div>
-						</div>
-						<br>
-						<div class="image-wrap image-wrap--common">
-							<div class="image-wrap__item">
-								<div class="image-wrap__img">
-									<img src="img/content/col5.jpg" alt="">
-								</div>
-							</div>
-							<div class="image-wrap__item">
-								<div class="image-wrap__img">
-									<img src="img/content/col6.jpg" alt="">
-								</div>
-							</div>
-							<div class="image-wrap__txt">
-								Самое уютное место в доме – гостиная. Здесь вы можете расслабиться на диване у камина, посмотреть телевизор или<br> почитать книгу, а за большим обеденным столом насладиться общением с близкими и друзьями
-							</div>
-						</div>
-						<div class="image-wrap image-wrap--3col">
-							<div class="image-wrap__item">
-								<div class="image-wrap__img">
-									<img src="img/content/col1.jpg" alt="">
-								</div>
-								<div class="image-wrap__txt">
-									<h6>7 лет опыта</h6>
-									Средний опыт работы сотрудников агентства в медицинской сферы
-								</div>
-							</div>
-							<div class="image-wrap__item">
-								<div class="image-wrap__img">
-									<img src="img/content/col2.jpg" alt="">
-								</div>
-								<div class="image-wrap__txt">
-									<h6>Знаем 3 языка</h6>
-									Мы свободно разговариваем на английском, немецком и русском языках
-								</div>
-							</div>
-							<div class="image-wrap__item">
-								<div class="image-wrap__img">
-									<img src="img/content/col3.jpg" alt="">
-								</div>
-								<div class="image-wrap__txt">
-									<h6>750 + врачей</h6>
-									Ведущих специалистов страны оказывают помощь нашим клиента
-								</div>
-							</div>
-						</div>
-						<div class="image-wrap image-wrap--2col">
-							<div class="image-item image-wrap__item">
-								<div class="image-wrap__img">
-									<img src="img/content/col4.jpg" alt="">
-								</div>
-								<div class="image-item__caption">
-									<h6>Юрий Леончик</h6>
-									Руководитель отдела медицинского туризма
-								</div>
-							</div>
-							<div class="image-item image-wrap__item">
-								<div class="image-wrap__img">
-									<img src="img/content/col5.jpg" alt="">
-								</div>
-								<div class="image-item__caption">
-									<h6>Алексей Дрек </h6>
-									Ведущий специалист по медицинскому туризму
-								</div>
-							</div>
-						</div>
-						<p>
-							Если Вы планируете посетить Сеул с целью медицинского туризма, то Вам необходимо получить одну из двух C3(M) или G1(M) виз в посольстве или консульстве Республики Корея. Вы можете получить помощь через информационные центры медицинского туризма, агентства медицинского туризма и координаторов медицинского туризма.
-						</p>
-						<div class="info-item info-item--left">
-							<div class="info-item__img">
-								<img src="img/content/item1.jpg" alt="">
-							</div>
-							<div class="info-item__txt">
-								Осуществляют работу связанную с консультацией медицинских ущербов, разрешением споров, в случае если поступило заявление о медицинском случае, повлекшем за собой ущерб пациенту. Выясняют факт медицинской халатности, причинную связь, осложнения после болезни, также Комиссия по урегулированию медицинских споров проводит оценку медицинского ущерба.
-							</div>
-						</div>
-						<div class="info-item info-item--right">
-							<div class="info-item__txt">
-								Все компании, которые зарегистрированы в Институте Развития Индустрии Здоровья Кореи (Korea Health Industry Development Institute) на проведение деятельности по привлечению иностранных пациентов и агентства, уполномоченные Министерством юстиции на предоставление агентских услуг, связанных с визы.
-							</div>
-							<div class="info-item__img">
-								<img src="img/content/item2.jpg" alt="">
-							</div>
-						</div>
-						<div class="page-form">
-							<form action="#" method="post">
-								<h4>Обратная связь</h4>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="input-wrap">
-											<div class="input-label">Ваше имя</div>
-											<div class="input-wrap__item input-wrap__item--necessarily">
-												<input type="text">
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="input-wrap">
-											<div class="input-label">Электронная почта</div>
-											<div class="input-wrap__item input-wrap__item--necessarily">
-												<input type="text">
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="input-wrap input-wrap--error">
-											<div class="input-label">Для нечетного количества полей</div>
-											<div class="input-wrap__item input-wrap__item--necessarily">
-												<input type="text">
-												<div class="error-msg">
-													Формат электронной почты указан неверно
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="input-wrap">
-									<div class="input-label">
-										Тектовое поле на несколько строк
-									</div>
-									<div class="input-wrap__item">
-										<textarea></textarea>
-									</div>
-								</div>
-								<div class="input-wrap">
-									<div class="checkbox-item">
-										<input type="checkbox" id="checkbox1" name="checkbox" checked>
-										<label for="checkbox1">Для множественного выбора используется чекбоксв</label>
-									</div>
-									<div class="checkbox-item">
-										<input type="checkbox" id="checkbox2" name="checkbox">
-										<label for="checkbox2">Особенно если выбор есть</label>
-									</div>
-								</div>
-								<div class="input-wrap">
-									<div class="radio-item">
-										<input type="radio" id="radio1" name="v">
-										<label for="radio1">Вариант номер 1</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="radio2" name="v" checked>
-										<label for="radio2">Вариант номер 2</label>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="input-wrap input-wrap--calendar">
-											<input type="text" placeholder="Выберите дату" class="input-calendar">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="input-wrap">
-											<select class="fs">
-												<option value="Москва и область">Москва и область</option>
-												<option value="Санкт-Петербург и область">Санкт-Петербург и область</option>
-												<option value="Алтайский край">Алтайский край</option>
-												<option value="Амурская область">Амурская область</option>
-												<option value="Архангельская область">Архангельская область</option>
-												<option value="Астраханская область">Астраханская область</option>
-												<option value="Белгородская область">Белгородская область</option>
-												<option value="Брянская область">Брянская область</option>
-												<option value="Владимирская область">Владимирская область</option>
-												<option value="Волгоградская область">Волгоградская область</option>
-												<option value="Вологодская область">Вологодская область</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<button type="submit" class="btn"><span>Отправить заявку</span></button>
-							</form>
-						</div>
-						<div class="map-wrap">
-							<div id="map-default"></div>
-						</div>
-						<div class="accordeon">
-							<div class="accordeon__item">
-								<a href="#" class="accordeon__link">
-									Как войти в Личный кабинет?
-								</a>
-								<div class="accordeon__info">
-									<p>
-										Нажмите кнопку Настройки выберите вкладку Журнал операций. На странице отобразятся все основные действия по вашему номеру, выполненные в Личном кабинете или другими способами, например, с помощью USSD-команд.Дом у ручья расположился всего в 100 метрах от пирса на берегу озера рядом с родниковым прудом.
-									</p>
-									<p>
-										Территория дома большая, благоустроенная, с вымощенными освещенными дорожками и полностью оборудованной барбекю-беседкой.
-									</p>
-									<p>
-										Неподалеку от дома протекает ручей.
-									</p>
-									<p>
-										Дом у ручья, как и все дома комплекса, построен из экологически чистых материалов. 
-									</p>
-								</div>
-							</div>
-							<div class="accordeon__item">
-								<a href="#" class="accordeon__link">
-									Как я могу узнать, что кто-то вошёл в мой Личный кабинет?я
-								</a>
-								<div class="accordeon__info">
-									<p>
-										Нажмите кнопку Настройки выберите вкладку Журнал операций. На странице отобразятся все основные действия по вашему номеру, выполненные в Личном кабинете или другими способами, например, с помощью USSD-команд.Дом у ручья расположился всего в 100 метрах от пирса на берегу озера рядом с родниковым прудом.
-									</p>
-									<p>
-										Территория дома большая, благоустроенная, с вымощенными освещенными дорожками и полностью оборудованной барбекю-беседкой.
-									</p>
-									<p>
-										Неподалеку от дома протекает ручей.
-									</p>
-									<p>
-										Дом у ручья, как и все дома комплекса, построен из экологически чистых материалов. 
-									</p>
-								</div>
-							</div>
-							<div class="accordeon__item">
-								<a href="#" class="accordeon__link">
-									Как настроить Личный кабинет, чтобы не вводить номер телефона, электронную почту и пароль каждый раз при входе?
-								</a>
-								<div class="accordeon__info">
-									<p>
-										Нажмите кнопку Настройки выберите вкладку Журнал операций. На странице отобразятся все основные действия по вашему номеру, выполненные в Личном кабинете или другими способами, например, с помощью USSD-команд.Дом у ручья расположился всего в 100 метрах от пирса на берегу озера рядом с родниковым прудом.
-									</p>
-									<p>
-										Территория дома большая, благоустроенная, с вымощенными освещенными дорожками и полностью оборудованной барбекю-беседкой.
-									</p>
-									<p>
-										Неподалеку от дома протекает ручей.
-									</p>
-									<p>
-										Дом у ручья, как и все дома комплекса, построен из экологически чистых материалов. 
-									</p>
-								</div>
-							</div>
-							<div class="accordeon__item">
-								<a href="#" class="accordeon__link">
-									Как посмотреть историю операций в Личном кабинете?
-								</a>
-								<div class="accordeon__info">
-									<p>
-										Нажмите кнопку Настройки выберите вкладку Журнал операций. На странице отобразятся все основные действия по вашему номеру, выполненные в Личном кабинете или другими способами, например, с помощью USSD-команд.Дом у ручья расположился всего в 100 метрах от пирса на берегу озера рядом с родниковым прудом.
-									</p>
-									<p>
-										Территория дома большая, благоустроенная, с вымощенными освещенными дорожками и полностью оборудованной барбекю-беседкой.
-									</p>
-									<p>
-										Неподалеку от дома протекает ручей.
-									</p>
-									<p>
-										Дом у ручья, как и все дома комплекса, построен из экологически чистых материалов. 
-									</p>
-								</div>
-							</div>
-							<div class="accordeon__item">
-								<a href="#" class="accordeon__link">
-									Как я могу узнать, что кто-то вошёл в мой Личный кабинет?
-								</a>
-								<div class="accordeon__info">
-									<p>
-										Нажмите кнопку Настройки выберите вкладку Журнал операций. На странице отобразятся все основные действия по вашему номеру, выполненные в Личном кабинете или другими способами, например, с помощью USSD-команд.Дом у ручья расположился всего в 100 метрах от пирса на берегу озера рядом с родниковым прудом.
-									</p>
-									<p>
-										Территория дома большая, благоустроенная, с вымощенными освещенными дорожками и полностью оборудованной барбекю-беседкой.
-									</p>
-									<p>
-										Неподалеку от дома протекает ручей.
-									</p>
-									<p>
-										Дом у ручья, как и все дома комплекса, построен из экологически чистых материалов. 
-									</p>
-								</div>
-							</div>
-						</div>
-						<p>
-							Если Вы планируете посетить Сеул с целью медицинского туризма, то Вам необходимо получить одну из двух C3(M) или G1(M) виз в посольстве или консульстве Республики Корея. Вы можете получить помощь через информационные центры медицинского туризма, агентства медицинского туризма и координаторов медицинского туризма.
-						</p>
-						<blockquote>
-							<span>
-								Экспресс имплантация зубов – это современная методика имплантации,<br> которая позволяет установив имплантаты в кость, в течении 5 дней<br> зафиксировать на них полноценный несъемный зубной протез. 
-							</span>
-						</blockquote>
-						<br>
-						<div class="downoad-item">
-							<a href="img/content/img1.jpg" download class="download">
-								<span class="download__icon">
-									<img src="img/svg/file_icon1.svg" alt="">
-								</span>
-								Способы оплаты
-								<span>pdf, 320 Кб</span>
-							</a>
-						</div>
-						<div class="downoad-item">
-							<a href="img/content/img1.jpg" download class="download">
-								<span class="download__icon">
-									<img src="img/svg/file_icon2.svg" alt="">
-								</span>
-								Международный банковский перевод
-								<span>pdf, 320 Кб</span>
-							</a>
-						</div>
-						<br>
-						<div class="resp-tabs">
-						    <ul>
-						        <li><a href="#tab-1">Характеристики</a></li>
-						        <li><a href="#tab-2">Режим работы</a></li>
-						        <li><a href="#tab-3">Перечень необходимых элементов</a></li>
-						    </ul>
-						    <div id="tab-1">
-						    	Если Вы планируете посетить Сеул с целью медицинского туризма, то Вам необходимо получить одну из двух C3(M) или G1(M) виз в посольстве или консульстве Республики Корея. Вы можете получить помощь через информационные центры медицинского туризма, агентства медицинского туризма и координаторов медицинского туризма.
-						    </div>
-						    <div id="tab-2">
-						    	Мы бесплатно поможем подобрать Вам подходящую клинику, предоставим всю информацию о врачах и вариантах лечения, подготовим персональный план лечения, рассчитаем стоимость и срок лечения.
-						    </div>
-						    <div id="tab-3">
-						    	На всех этапах: до, вовремя и после поездки, наши клиенты под нашим крылом. Вам не придётся ни о чем беспокоится, мы возьмём все организационные вопросы и связь с клиникой на себя.
-						    </div>
-						</div>
-						<div class="paging">
-							<a href="#" class="paging__item paging__item--prev">Назад</a>
-							<div class="paging__inner">
-								<span class="paging__item active">1</span>
-								<a href="#" class="paging__item">2</a>
-								<a href="#" class="paging__item">3</a>
-								<a href="#" class="paging__item">4</a>
-								<a href="#" class="paging__item paging__item--more">...</a>
-								<a href="#" class="paging__item">8</a>
-							</div>
-							<a href="#" class="paging__item paging__item--next">Вперед</a>
-						</div>
-						<br>
-						<br>
-						<div class="success">
-							<a href="#" class="success__close"></a>
-							<div class="success__inner">
-								<h4>Ваша заявка была успешно отправлена</h4>
-								<p>
-									Отправьте заявку — и мы свяжемся с Вами в самое<br> ближайшее время и ответим на все ваши вопросы.
-								</p>
-								<a href="#" class="btn"><span>Отправить заявку</span></a>
-							</div>
-						</div>
-						<br>
-						<br>
-						Ссылка или <a href="#" class="tooltip" title="Если нужно показать небольшое уточнение">Иконка</a> для пояснения
+					ddd
 					<!--end CONTENT-PART -->
 					</div>
 				</div>
@@ -799,6 +293,48 @@
 			</footer>
 			
 		</div><!-- END LAYOUT-->
+
+		<!-- POPUP -->
+		<div id="consultation" class="popup mfp-with-anim mfp-hide">
+			<h5>Получить консультацию</h5>
+			<div class="submit-form">
+				<form action="#" method="post">
+					<div class="input-wrap">
+						<div class="input-label">Имя</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Телефон</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Электронная почта</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Ваше сообщение</div>
+						<div class="input-wrap__item">
+							<textarea></textarea>
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="checkbox-item">
+							<input type="checkbox" id="checkbox1" name="checkbox" checked="">
+							<label for="checkbox1">
+								Я согласен с <a href="#">пользовательским соглашением</a>
+							</label>
+						</div>
+					</div>
+					<button type="submit" class="btn"><span>Получить консультацию</span></button>
+				</form>
+			</div>
+		</div>
 
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 		<script src="js/libs.min.js"></script>
