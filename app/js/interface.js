@@ -251,6 +251,7 @@ $('body').append(
 		<li><a href="text.html">Текст</a></li> \
 		<li><a href="contacts.html">Контакты</a></li> \
 		<li><a href="doctor.html">Доктор</a></li> \
+		<li><a href="doctors.html">Доктор-список</a></li> \
 		<li><a href="reviews.html">Отзывы</a></li> \
 		<li><a href="index.html">Главная</a></li> \
 	</ol> \

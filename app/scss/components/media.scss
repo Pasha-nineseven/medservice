@@ -27,6 +27,9 @@
 	.page-header__info {
 	    padding: 0 20px 0 20px;
 	}
+	.item__img {
+	    height: 250px;
+	}
 }
 
 @media screen and (max-width: 1200px){
@@ -85,6 +88,12 @@
 	    &:last-child{
 	    	margin-right: 0;
 	    }
+	}
+}
+
+@media screen and (max-width: 1100px){
+	.item__img {
+	    height: 200px;
 	}
 }
 
@@ -176,6 +185,12 @@
 	}
 	.page-footer-info__map{
 		text-align: right;
+	}
+	.items-aside{
+		margin-bottom: 20px;
+	}
+	.items-wrap {
+	    margin: 0;
 	}
 }
 
@@ -455,6 +470,9 @@
 		font-size: 26px;
 		margin-bottom: 13px;
 	}
+	.item {
+	    width: 50%;
+	}
 }
 
 @media screen and (max-width: 650px){
@@ -714,5 +732,8 @@
 	}
 	.reviews__txt {
 	    padding-top: 11px;
+	}
+	.item {
+	    width: 100%;
 	}
 }

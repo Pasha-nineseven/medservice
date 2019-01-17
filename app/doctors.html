@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		<!--LAYOUT-->
-		<div class="layout">
+		<div class="layout layout--full">
 			<header class="page-header">
 				<div class="container-fluid">
 					<div class="page-header__wrap">
@@ -207,12 +207,12 @@
 				<div class="container-fluid">
 					<div class="page-top__txt">
 						<div class="page-title">
-							<h1>Отзывы</h1>
+							<h1>Врачи</h1>
 						</div>
 						<div class="page-top__wrap">
 							<div class="breadcrumbs">
 								<a href="#" class="breadcrumbs__item">Главная</a>
-								<span class="breadcrumbs__item">Отзывы</span>
+								<span class="breadcrumbs__item">Врачи</span>
 							</div>
 							<div class="page-top-additional">
 								<div class="page-top-additional__txt">
@@ -229,7 +229,7 @@
 					<div class="page-top__wrap page-top__wrap--mobile">
 						<div class="breadcrumbs">
 							<a href="#" class="breadcrumbs__item">Главная</a>
-							<span class="breadcrumbs__item">Отзывы</span>
+							<span class="breadcrumbs__item">Врачи</span>
 						</div>
 						<div class="page-top-additional">
 							<div class="page-top-additional__txt">
@@ -238,132 +238,265 @@
 						</div>
 					</div>
 					<!-- CONTENT-PART -->
-					<div class="reviews">
-						<div class="reviews__wrap">
-							<div class="reviews__item reviews__item--half">
-								<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="reviews__inner js-video" data-effect="mfp-zoom-in">
-									<div class="reviews__img" style="background-image: url(img/content/good.jpg)"></div>
-									<div class="reviews__person">
-										Алла Иосифовна (34 года)
-									</div>
-									<div class="reviews__place">
-										Россия, Серпухов, Московская область
-									</div>
-									<div class="reviews__txt">
-										Я благодарю Бога за работу заведующего отделения сосудистой хирургии, который просто спас всю нашу семью от беды
-									</div>
-								</a>
+					<div class="doctors">
+						<div class="row items">
+							<div class="col-lg-3 items-aside">
+								<div class="items-aside__inner">
+									<form action="#" method="post">
+										<h6>Направления деятельности</h6>
+										<div class="filter">
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox1" name="checkbox" checked>
+												<label for="checkbox1">Стоматология</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox2" name="checkbox">
+												<label for="checkbox2">Пластика и косметология</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox3" name="checkbox">
+												<label for="checkbox3">Диагностика</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox4" name="checkbox">
+												<label for="checkbox4">Онкология</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox5" name="checkbox">
+												<label for="checkbox5">Хирургия</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox6" name="checkbox">
+												<label for="checkbox6">Спелеолечение</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox7" name="checkbox">
+												<label for="checkbox7">Кардиология</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox8" name="checkbox">
+												<label for="checkbox8">Флебология</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox9" name="checkbox">
+												<label for="checkbox9">Урология</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox10" name="checkbox">
+												<label for="checkbox10">Ортопедия</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox11" name="checkbox">
+												<label for="checkbox11">Гинекология</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox12" name="checkbox">
+												<label for="checkbox12">Лечение за границей</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox13" name="checkbox">
+												<label for="checkbox13">Неврология</label>
+											</div>
+											<div class="checkbox-item">
+												<input type="checkbox" id="checkbox14" name="checkbox">
+												<label for="checkbox14">Офтальмология</label>
+											</div>
+										</div>
+										<a href="#" class="btn"><span>Показать врачей</span></a>
+										<!-- <button type="submit" class="btn"><span>Показать врачей</span></button> -->
+									</form>
+								</div>
 							</div>
-							<div class="reviews__item reviews__item--half">
-								<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="reviews__inner js-video" data-effect="mfp-zoom-in">
-									<div class="reviews__img" style="background-image: url(img/content/good.jpg)"></div>
-									<div class="reviews__person">
-										Олег Михайлович (58 лет)
+							<div class="col-lg-9 items-wrap">
+								<div class="items-list">
+									<div class="item">
+										<div class="item__inner">
+											<a href="#" class="item__link">
+												<div class="item__img"  style="background-image:  url(img/content/item1.jpg)"></div>
+												<div class="item__info">
+													<div class="item__title">Сергей Николаевич Иванов</div>
+													<div class="item__about">Стоматолог-терапевт</div>
+													<div class="item__about">Доктор медицинских наук</div>
+													<div class="item__about">Профессор</div>
+												</div>
+											</a>
+											<div class="item-cat">
+												<div class="item-cat__info">
+													Высшая квалификационная категория
+												</div>
+												<a href="#" class="item__label">Стоматология</a>
+											</div>
+										</div>
 									</div>
-									<div class="reviews__place">
-										Россия, Крымск, Краснодарский Край
+									<div class="item">
+										<div class="item__inner">
+											<a href="#" class="item__link">
+												<div class="item__img"  style="background-image:  url(img/content/no-image.jpg)"></div>
+												<div class="item__info">
+													<div class="item__title">Сергей Николаевич Иванов</div>
+													<div class="item__about">Стоматолог-терапевт</div>
+													<div class="item__about">Доктор медицинских наук</div>
+													<div class="item__about">Профессор</div>
+												</div>
+											</a>
+											<div class="item-cat">
+												<div class="item-cat__info">
+													Высшая квалификационная категория
+												</div>
+												<a href="#" class="item__label">Стоматология</a>
+											</div>
+										</div>
 									</div>
-									<div class="reviews__txt">
-										Я удивлён тому, что всё было сделано чётко и без промедления.
+									<div class="item">
+										<div class="item__inner">
+											<a href="#" class="item__link">
+												<div class="item__img"  style="background-image:  url(img/content/good.jpg)"></div>
+												<div class="item__info">
+													<div class="item__title">Денис Сотников</div>
+													<div class="item__about">Стоматолог-терапевт</div>
+													<div class="item__about">Доктор медицинских наук</div>
+													<div class="item__about">Профессор</div>
+												</div>
+											</a>
+											<div class="item-cat">
+												<div class="item-cat__info">
+													Высшая квалификационная категория
+												</div>
+												<a href="#" class="item__label">Стоматология</a>
+											</div>
+										</div>
 									</div>
-								</a>
+									<div class="item">
+										<div class="item__inner">
+											<a href="#" class="item__link">
+												<div class="item__img"  style="background-image:  url(img/content/item1.jpg)"></div>
+												<div class="item__info">
+													<div class="item__title">Сергей Николаевич Иванов</div>
+													<div class="item__about">Стоматолог-терапевт</div>
+													<div class="item__about">Доктор медицинских наук</div>
+													<div class="item__about">Профессор</div>
+												</div>
+											</a>
+											<div class="item-cat">
+												<div class="item-cat__info">
+													Высшая квалификационная категория
+												</div>
+												<a href="#" class="item__label">Стоматология</a>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="item__inner">
+											<a href="#" class="item__link">
+												<div class="item__img"  style="background-image:  url(img/content/item1.jpg)"></div>
+												<div class="item__info">
+													<div class="item__title">Сергей Николаевич Иванов</div>
+													<div class="item__about">Стоматолог-терапевт</div>
+													<div class="item__about">Доктор медицинских наук</div>
+													<div class="item__about">Профессор</div>
+												</div>
+											</a>
+											<div class="item-cat">
+												<div class="item-cat__info">
+													Высшая квалификационная категория
+												</div>
+												<a href="#" class="item__label">Стоматология</a>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="item__inner">
+											<a href="#" class="item__link">
+												<div class="item__img"  style="background-image:  url(img/content/item1.jpg)"></div>
+												<div class="item__info">
+													<div class="item__title">Сергей Николаевич Иванов</div>
+													<div class="item__about">Стоматолог-терапевт</div>
+													<div class="item__about">Доктор медицинских наук</div>
+													<div class="item__about">Профессор</div>
+												</div>
+											</a>
+											<div class="item-cat">
+												<div class="item-cat__info">
+													Высшая квалификационная категория
+												</div>
+												<a href="#" class="item__label">Стоматология</a>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="item__inner">
+											<a href="#" class="item__link">
+												<div class="item__img"  style="background-image:  url(img/content/item1.jpg)"></div>
+												<div class="item__info">
+													<div class="item__title">Сергей Николаевич Иванов</div>
+													<div class="item__about">Стоматолог-терапевт</div>
+													<div class="item__about">Доктор медицинских наук</div>
+													<div class="item__about">Профессор</div>
+												</div>
+											</a>
+											<div class="item-cat">
+												<div class="item-cat__info">
+													Высшая квалификационная категория
+												</div>
+												<a href="#" class="item__label">Стоматология</a>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="item__inner">
+											<a href="#" class="item__link">
+												<div class="item__img"  style="background-image:  url(img/content/item1.jpg)"></div>
+												<div class="item__info">
+													<div class="item__title">Сергей Николаевич Иванов</div>
+													<div class="item__about">Стоматолог-терапевт</div>
+													<div class="item__about">Доктор медицинских наук</div>
+													<div class="item__about">Профессор</div>
+												</div>
+											</a>
+											<div class="item-cat">
+												<div class="item-cat__info">
+													Высшая квалификационная категория
+												</div>
+												<a href="#" class="item__label">Стоматология</a>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="item__inner">
+											<a href="#" class="item__link">
+												<div class="item__img"  style="background-image:  url(img/content/item1.jpg)"></div>
+												<div class="item__info">
+													<div class="item__title">
+														Николай Дмитриевич Ивановских
+													</div>
+													<div class="item__about">Стоматолог-терапевт</div>
+													<div class="item__about">Доктор медицинских наук</div>
+													<div class="item__about">Профессор</div>
+												</div>
+											</a>
+											<div class="item-cat">
+												<div class="item-cat__info">
+													Высшая квалификационная категория
+												</div>
+												<a href="#" class="item__label">Стоматология</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="paging">
+									<a href="#" class="paging__item paging__item--prev">Назад</a>
+									<div class="paging__inner">
+										<span class="paging__item active">1</span>
+										<a href="#" class="paging__item">2</a>
+										<a href="#" class="paging__item">3</a>
+										<a href="#" class="paging__item">4</a>
+										<a href="#" class="paging__item paging__item--more">...</a>
+										<a href="#" class="paging__item">8</a>
+									</div>
+									<a href="#" class="paging__item paging__item--next">Вперед</a>
+								</div>
 							</div>
-							<div class="reviews__item">
-								<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="reviews__inner js-video" data-effect="mfp-zoom-in">
-									<div class="reviews__img" style="background-image: url(img/content/good.jpg)"></div>
-									<div class="reviews__person">
-										Замира Гачиева
-									</div>
-									<div class="reviews__place">
-										Россия, Крымск, Краснодарский Край
-									</div>
-									<div class="reviews__txt">
-										Я благодарю Бога за работу заведующего отделения сосудистой хирургии, который просто спас всю нашу семью от беды
-									</div>
-								</a>
-							</div>
-							<div class="reviews__item">
-								<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="reviews__inner js-video" data-effect="mfp-zoom-in">
-									<div class="reviews__img" style="background-image: url(img/content/good.jpg)"></div>
-									<div class="reviews__person">
-										Олег Михайлович (58 лет)
-									</div>
-									<div class="reviews__place">
-										Россия, Крымск, Краснодарский Край
-									</div>
-									<div class="reviews__txt">
-										Я удивлён тому, что всё было сделано чётко и без промедления.
-									</div>
-								</a>
-							</div>
-							<div class="reviews__item">
-								<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="reviews__inner js-video" data-effect="mfp-zoom-in">
-									<div class="reviews__img" style="background-image: url(img/content/good.jpg)"></div>
-									<div class="reviews__person">
-										Валентин Михайлович Тревердской (58 лет)
-									</div>
-									<div class="reviews__place">
-										Россия, Крымск, Краснодарский Край
-									</div>
-									<div class="reviews__txt">
-										Я благодарю Бога за работу заведующего отделения сосудистой хирургии, который просто спас всю нашу семью от беды
-									</div>
-								</a>
-							</div>
-							<div class="reviews__item">
-								<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="reviews__inner js-video" data-effect="mfp-zoom-in">
-									<div class="reviews__img" style="background-image: url(img/content/good.jpg)"></div>
-									<div class="reviews__person">
-										Замира Гачиева
-									</div>
-									<div class="reviews__place">
-										Россия, Крымск, Краснодарский Край
-									</div>
-									<div class="reviews__txt">
-										Я благодарю Бога за работу заведующего отделения сосудистой хирургии, который просто спас всю нашу семью от беды
-									</div>
-								</a>
-							</div>
-							<div class="reviews__item">
-								<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="reviews__inner js-video" data-effect="mfp-zoom-in">
-									<div class="reviews__img" style="background-image: url(img/content/good.jpg)"></div>
-									<div class="reviews__person">
-										Олег Михайлович (58 лет)
-									</div>
-									<div class="reviews__place">
-										Россия, Крымск, Краснодарский Край
-									</div>
-									<div class="reviews__txt">
-										Я удивлён тому, что всё было сделано чётко и без промедления.
-									</div>
-								</a>
-							</div>
-							<div class="reviews__item">
-								<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="reviews__inner js-video" data-effect="mfp-zoom-in">
-									<div class="reviews__img" style="background-image: url(img/content/good.jpg)"></div>
-									<div class="reviews__person">
-										Валентин Михайлович Тревердской (58 лет)
-									</div>
-									<div class="reviews__place">
-										Россия, Крымск, Краснодарский Край
-									</div>
-									<div class="reviews__txt">
-										Я благодарю Бога за работу заведующего отделения сосудистой хирургии, который просто спас всю нашу семью от беды
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="paging">
-							<a href="#" class="paging__item paging__item--prev">Назад</a>
-							<div class="paging__inner">
-								<span class="paging__item active">1</span>
-								<a href="#" class="paging__item">2</a>
-								<a href="#" class="paging__item">3</a>
-								<a href="#" class="paging__item">4</a>
-								<a href="#" class="paging__item paging__item--more">...</a>
-								<a href="#" class="paging__item">8</a>
-							</div>
-							<a href="#" class="paging__item paging__item--next">Вперед</a>
 						</div>
 					</div>
 					<!--end CONTENT-PART -->
