@@ -163,9 +163,42 @@ $(document).ready(function() {
 	    });
 	};
 
+    //ANOTHER slider
+    if ($('.slider-another').length>0) {
+        var $gallery = $('.slider-another');
+
+        $gallery.slick({
+            speed: 250,
+            // fade: true,
+            // cssEase: 'linear',
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                  breakpoint: 800,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                  }
+                },
+            ]
+        });
+    };
+
 	ymaps.ready(initializeDefaultMap);
 
 	ymaps.ready(initializeContactMap);
+
+    ymaps.ready(initializeSanatoriumMap);
+
 });
 
 
@@ -236,7 +269,54 @@ function initializeContactMap() {
     }
 }
 
+function initializeSanatoriumMap() {
+    if ($('#sanatorium-map').length>0) {
 
+        var myMap = new ymaps.Map("sanatorium-map", {
+            center:[53.899888,27.566757],
+            zoom: 13,
+            controls: []
+        }, {
+            suppressMapOpenBlock: true,
+            yandexMapDisablePoiInteractivity: true,
+            balloonCloseButton: false,
+            maxWidth:425,
+            shadow:false,
+
+        }); 
+                
+        var myPlacemark = new ymaps.Placemark([53.899888,27.566757],{
+                balloonContentBody: [
+                    '<div class="map-wrapper">' +
+                    '<div class="map-address">Минская обл., Воложинский р-н, Раковский сельсовет, д. 24</div>' +
+                    '<div class="map-separator"></div>' +
+                    '<div class="map-distance">Расстояние: 30 км от Минска</div>' +
+                    '</div>',
+                ],
+                // maxWidth:425,
+                // shadow:false,
+                // balloonOffset: [-80, -430],
+            },{
+            iconLayout: 'default#image',
+            iconImageHref: "img/svg/label.svg", 
+            iconImageSize: [52,78],
+            iconImageOffset: [-26, -78],
+        }); 
+
+
+        myMap.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 20, top: 50 }}}));
+        myMap.behaviors.disable('scrollZoom');
+
+        myMap.geoObjects.add(myPlacemark);
+
+        if ($(window).width() < 800) {
+            myPlacemark.balloon.close();
+        }
+        else {
+            myPlacemark.balloon.open(myMap.getCenter(), {});
+        }
+    }
+}
 
 // links pages
 $('body').append(
@@ -253,6 +333,7 @@ $('body').append(
 		<li><a href="doctor.html">Доктор</a></li> \
 		<li><a href="doctors.html">Доктор-список</a></li> \
 		<li><a href="reviews.html">Отзывы</a></li> \
+        <li><a href="sanatorium.html">Санаторий</a></li> \
 		<li><a href="index.html">Главная</a></li> \
 	</ol> \
 </div>');

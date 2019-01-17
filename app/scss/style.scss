@@ -138,6 +138,7 @@
 		font-size: 56px;
 		font-family: 'osnova_proregular';
 		line-height: 1.03;
+		max-width: 830px;
 	}
 }
 
@@ -145,6 +146,7 @@
 	font-size: 14px;
 	display: flex;
 	align-items:center;
+	flex-wrap: wrap;
 }
 
 .breadcrumbs__item{
@@ -1280,7 +1282,8 @@ ymaps[class$="-copyright"] {
 	margin-bottom: 34px;
 }
 
-.doctor__title{
+.doctor__title,
+.content__title{
 	font-size: 36px;
 	font-family: 'osnova_proregular';
 	padding-bottom: 8px;
@@ -1802,6 +1805,392 @@ ymaps[class$="-copyright"] {
     transition:all 0.3s ease;
 }
 
+
+.sanatorium{
+	display: flex;
+}
+.sanatorium-price{
+	order:2;
+	width: 310px;
+	margin-bottom: 20px;
+}
+.sanatorium-info{
+	order:1;
+	padding-right: 34px;
+	flex:1;
+}
+.sanatorium-price__in{
+	background: #fff;
+	padding: 30px;
+	.btn{
+		width: 100%;
+		text-align: center;
+		padding: 7px;
+	}
+}
+
+
+.sanatorium-map{
+	//background: red;
+	margin: 0 0 40px -229px;
+	height: 500px;
+	position: relative;
+}
+
+#sanatorium-map{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+ymaps[class*="-balloon__close"] + ymaps[class*="-balloon__content"] {
+    margin-right: 0 !important;
+}
+
+ymaps[class*="-balloon__content"] {
+
+    font-size: 17px;
+    font-family: inherit;
+    padding: 23px 23px 35px 23px !important;
+    text-align: center;
+}
+
+ymaps[class*="-balloon__layout"]{
+	margin-left: -160px;
+	&:after{
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		border: 2px solid red;
+		position: absolute;
+		left: -1px;
+		top: -1px;
+	}
+}
+
+// ymaps[class*="-balloon"]{
+//     box-shadow: 0 2px 20px 0 rgba(0,0,0,0.14);
+// }
+
+.map-wrapper{
+	font-size: 17px;
+	    font-family: "Roboto", Arial, sans-serif;
+}
+
+.map-address{
+	margin-bottom: 20px;
+	position: relative;
+	padding-top: 67px;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 37px;
+		height: 51px;
+		background: url(../img/svg/placeholder-map.svg) no-repeat;
+		//background-size: contain;
+		background-size: 37px 50px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+
+	}
+}
+
+.map-separator{
+	margin: 13px auto;
+	width: 213px;
+	background-color: #DBE1E3;
+	height: 1px;
+	position: relative;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		background-color: #DBE1E3;
+		border-radius:50%;
+		position: absolute;
+		left: 50%;
+		margin-left: -4px;
+		top: -4px;
+		z-index: 2;
+	}
+	&:after{
+		content: "";
+		display: inline-block;
+		width: 22px;
+		height: 22px;
+		background-color: #fff;
+		position: absolute;
+		left: 50%;
+		margin-left: -11px;
+		top: -11px;
+		z-index: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.slider-another-wrap{
+	margin: 0 -16px;
+	padding-right: 92px;
+}
+
+
+
+
+.slider-another__link{
+	display: block;
+	color: #022835;
+}
+
+.slider-another__item{
+	//padding-right: 17px;
+	
+	position: relative;
+	height: auto!important;
+	padding-right: 1px;
+	&:hover{
+		z-index: 1;
+		.slider-another__inner{
+			
+			box-shadow: 0 2px 20px 0 rgba(0,0,0,0.12);
+		}
+		.slider-another__title{
+			color: #0088CC;
+		}
+		.slider-another-cat__label{
+			background: #0088CC;
+		}
+	}
+}
+
+.slider-another__inner{
+	transition:all 0.3s ease;
+	padding: 16px;
+	background: #fff;
+	height: 100%;
+}
+
+
+.slider-another__info{
+	font-size: 14px;
+	padding-bottom: 14px;
+    margin-bottom: 8px;
+
+	border-bottom: 1px solid #eeeeee;
+	line-height: 1.2;
+}
+
+.slider-another__img{
+	width: 100%;
+	height: 310px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 16px;
+}
+.slider-another__title{
+	font-size: 20px;
+	font-family: 'osnova_probold';
+	margin-bottom: 12px;
+	transition:all 0.3s ease;
+}
+
+.slider-another-cat{
+	font-size: 14px;
+}
+
+.slider-another__about{
+	margin-bottom: 2px;
+}
+
+.slider-another-cat__info{
+	color: #939393;
+	margin-bottom: 15px;
+}
+
+.slider-another-cat__label{
+	color: #fff;
+    background: #8FCEF5;
+    display: inline-block;
+    padding: 2px 3px;
+    line-height: 1;
+    transition:all 0.3s ease;
+}
+
+.slider-another{
+	display: none;
+	&.slick-initialized{
+		display: block;
+	}
+	.slick-list{
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+	.slick-track{
+		display: flex;
+		justify-content: flex-start;
+		min-width: 100%;
+	}
+	.slick-dots{
+		margin-bottom: 0;
+		// margin-top: 53px;
+		text-align: center;
+		list-style-type: none;
+		li{
+			margin: 0;
+			margin-right: 20px;
+			padding: 0;
+			list-style-type: none;
+			display: inline-block;
+			border: 2px solid transparent;
+			border-radius: 50%;
+			line-height: 1;
+			width: 17px;
+			height: 17px;
+			&:before{
+				display: none;
+			}
+			button{
+				display: inline-block;
+				padding: 0;
+				background: transparent;
+				border: 2px solid #fff;
+				text-indent: -9999em;
+				border-radius: 50%;
+				width: 13px;
+				height: 13px;
+				transition: background 0.3s ease;
+
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+			&.slick-active,
+			&:hover{
+				border: 2px solid #fff;	
+				button{
+					background: #fff;
+					border: 2px solid #fff;	
+				}
+				 
+			}
+		}
+	}
+	.slick-arrow{
+		display: inline-block;
+		background: transparent;
+		text-indent: -9999em;
+		padding: 0;
+		position: absolute;
+		top: 151px;
+		width: 58px;
+		height: 58px;
+		opacity: 0.7;
+		border: 0;
+		transition:all 0.3s ease;
+		z-index: 2;
+		&:hover{
+			transform: scale(1.07);
+			opacity: 1;
+		}
+	}
+
+	.slick-prev{	
+		left: -15px;
+		background: url(../img/svg/doctor_slider_arrow_left.svg);
+		background-size: cover;
+	}
+	.slick-next{
+		right: -15px;
+		background: url(../img/svg/doctor_slider_arrow_right.svg);
+		background-size: cover;
+	}
+	.slick-disabled{
+		opacity: 0.5;
+		//pointer-events:none;
+	}
+}
+
+.sanatorium__item{
+	margin-bottom: 30px;
+}
+
+.sanatorium-cost{
+	border-top: 1px solid #EEEEEE;
+	padding-top: 23px;
+	font-size: 14px;
+	position: relative;
+	//padding-left: 26px;
+	&:before{
+		content: "";
+		display: inline-block;
+	    vertical-align: middle;
+	    margin-top: -6px;
+	    margin-right: 10px;
+		width: 20px;
+		height: 20px;
+		background: url(../img/svg/select_price.svg) no-repeat;
+		background-size: cover;
+		// position: absolute;
+		// left: 0;
+		// top: 50%;
+		// transform: translateY(-50%);
+	}
+	span{
+		font-size: 30px;
+		font-family: 'osnova_probold';
+		display: inline-block;
+		margin-left: 5px;
+	}
+}
+
+
+.sanatorium-kind{
+	margin-bottom: 20px;
+	display: flex;
+}
+
+.sanatorium-kind__icon{
+	width: 32px;
+	min-width: 32px;
+	height: 32px;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: 9px;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	img{
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+		display: block;
+	}
+}
+
+.sanatorium-kind__title{
+	font-size: 20px;
+	font-family: 'osnova_probold';
+}
+
+.sanatorium-kind__txt{
+	font-size: 14px;
+}
 
 @import "components/footer";
 

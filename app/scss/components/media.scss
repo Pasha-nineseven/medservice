@@ -12,14 +12,26 @@
 
 
 @media screen and (max-width: 1450px){
-	.slider-doctor .slick-prev{
+	.slider-doctor .slick-prev,
+	.slider-another .slick-prev{
 		left: 4px;
 	}
-	.slider-doctor .slick-next{
+	.slider-doctor .slick-next,
+	.slider-another .slick-next{
 		right: 4px;
 	}
-	.slider-doctor-wrap {
+	.slider-doctor-wrap,
+	.slider-another-wrap{
 	    margin: 0;
+	}
+}
+
+@media screen and (max-width: 1380px){
+	.sanatorium-map {
+	    margin: 0 0 40px 0;
+	}
+	.slider-another-wrap{
+		padding-right: 0;
 	}
 }
 
@@ -33,10 +45,12 @@
 }
 
 @media screen and (max-width: 1200px){
-	.slider-doctor__img {
+	.slider-doctor__img,
+	.slider-another__img{
 	    height: 230px;
 	}
-	.slider-doctor .slick-arrow {
+	.slider-doctor .slick-arrow,
+	.slider-another .slick-arrow {
 	    top: 113px;
 	}
 	.layout--doctor{
@@ -211,6 +225,9 @@
 	.popup h1,
 	.page-title h1{
 		font-size: 40px;
+	}
+	.page-title h1{
+		max-width: 100%;
 	}
 	.workarea h1,
 	.popup h1{
@@ -435,7 +452,8 @@
     		align-items: center;
 		}
 	}
-	.doctor__title {
+	.doctor__title,
+	.content-title{
 	    font-size: 30px;
 	    margin-bottom: 15px;
     	padding-bottom: 5px;
@@ -657,7 +675,8 @@
 		    font-family: 'osnova_probold';
 		}
 	}
-	.doctor__title {
+	.doctor__title,
+	.content-title{
 	    font-size: 18px;
 	}
 	.doctor__item{
@@ -683,34 +702,59 @@
 	.cert-item {
 	    height: 90px;
 	}
-	.slider-doctor__img {
+	.slider-doctor__img,
+	.slider-another__img{
 	    height: 150px;
 	}
-	.slider-doctor__title {
+	.slider-doctor__title,
+	.slider-another__title{
 	    font-size: 14px;
 	    margin-bottom: 10px;
 	}
-	.slider-doctor .slick-arrow {
+	.slider-doctor .slick-arrow,
+	.slider-another .slick-arrow{
 	    top: 75px;
 	    width: 30px;
 	    height: 30px;
 	}
-	.slider-doctor__inner{
+	.slider-doctor__inner,
+	.slider-another__inner{
 		padding: 0;
 	}
 	.slider-doctor__info,
 	.slider-doctor-cat__info,
-	.slider-doctor-cat__label{
+	.slider-doctor-cat__label,
+	.slider-another__info,
+	.slider-amother-cat__info,
+	.slider-another-cat__label{
 	    font-size: 12px;
 	}
-	.slider-doctor__inner{
+	.slider-doctor__inner,
+	.slider-another__inner{
 		background: transparent;
 	}
-	.slider-doctor__info {
+	.slider-doctor__info,
+	.slider-another__info{
 	    padding-bottom: 0;
 	}
-	.slider-doctor__item:hover .slider-doctor__inner{
+	.slider-doctor__item:hover .slider-doctor__inner,
+	.slider-another__item:hover .slider-another__inner{
 		box-shadow: none;
+	}
+	.sanatorium-map{
+		height: 300px;
+	}
+	ymaps[class*="-balloon__layout"] {
+	    margin-left: 0;
+	}
+	ymaps[class*="-balloon__content"] {
+	    padding: 10px 15px!important;
+	}
+	.map-address {
+	    padding-top: 0;
+	    &:before{
+			display: none;
+	    }
 	}
 }
 

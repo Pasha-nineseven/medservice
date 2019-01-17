@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="13px" viewBox="0 0 20 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>C0D27A3C-EA28-446D-A74B-E240135C9F03</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="1.55572612%" x2="100%" y2="1.55572612%" id="linearGradient-1">
+            <stop stop-color="#1EBF9D" offset="0%"></stop>
+            <stop stop-color="#1073B9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="medservicebel_sanatorij_05_hover" transform="translate(-283.000000, -3306.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Услуги-и-преимущества" transform="translate(275.000000, 2664.000000)">
+                <g id="Размещение" transform="translate(2.000000, 632.000000)">
+                    <path d="M8,10 L24,10 C25.1045695,10 26,10.8954305 26,12 L26,21 C26,22.1045695 25.1045695,23 24,23 L8,23 C6.8954305,23 6,22.1045695 6,21 L6,12 C6,10.8954305 6.8954305,10 8,10 Z M8,12 L8,21 L24,21 L24,12 L8,12 Z M9,19 L23,19 L23,20 L9,20 L9,19 Z M19,13 L23,13 L23,15 L19,15 L19,13 Z" id="sanatorij/svg/card"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
