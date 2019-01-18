@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>test</title>
+		<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+		<link href="css/libs.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout layout--full">
+			<header class="page-header">
+				<div class="container-fluid">
+					<div class="page-header__wrap">
+						<a href="#" class="menu-btn js-menu-btn">
+							<span class="burger-icon"></span>
+						</a>
+						<div class="menu-mobile">
+							<a href="#" class="menu-mobile__close js-menu-mobile__close"></a>
+							<div class="page-header__links">
+								<div class="page-header-lang">
+									<a href="#" class="page-header-lang__view">
+										<i class="page-header-lang__icon">
+											<img src="img/svg/ru.svg" alt="">
+										</i>
+									</a>
+									<div class="page-header-lang__list">
+										<a href="#" class="page-header-lang__item">
+											<i class="page-header-lang__icon">
+												<img src="img/svg/ru.svg" alt="">
+											</i>
+											Русский
+										</a>
+										<a href="#" class="page-header-lang__item">
+											<i class="page-header-lang__icon">
+												<img src="img/svg/en.svg" alt="">
+											</i>
+											English
+										</a>
+									</div>
+								</div>
+								<div class="page-header-currency">
+									<a href="#" class="page-header-currency__view">
+										<i class="page-header-currency__icon">
+											<img src="img/svg/russian_ruble.svg" alt="">
+										</i>
+										RUB
+									</a>
+									<div class="page-header-currency__list">
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--rub"></i>
+											RUB
+										</div>
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--eur"></i>
+											EUR
+										</div>
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--usd"></i>
+											USD
+										</div>
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--byn"></i>
+											BYN
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="top-socials">
+								<a href="#" class="top-socials__item top-socials__item--vk"></a>
+								<a href="#" class="top-socials__item top-socials__item--fb"></a>
+								<a href="#" class="top-socials__item top-socials__item--inst"></a>
+							</div>
+							<div class="menu-mobile__list">
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Услуги</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Врачи</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Проживание</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Санатории</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Контакты</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Отзывы</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">О нас</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Блог</a></div>
+							</div>
+							<div class="menu-mobile__contact">
+								<a href="tel:+375291234567" class="page-header__phone">+37529 123-45-67</a>
+								<a href="mailto:info@medservicebel.com" class="page-header__mail">info@medservicebel.com</a>
+							</div>
+						</div>
+						<a href="#" class="page-header__logo"></a>
+						<div class="page-header__info">
+							<div class="page-header__top">
+								<div class="page-header__links">
+									<div class="page-header-lang">
+										<a href="#" class="page-header-lang__view">
+											<i class="page-header-lang__icon">
+												<img src="img/svg/ru.svg" alt="">
+											</i>
+										</a>
+										<div class="page-header-lang__list">
+											<a href="#" class="page-header-lang__item">
+												<i class="page-header-lang__icon">
+													<img src="img/svg/ru.svg" alt="">
+												</i>
+												Русский
+											</a>
+											<a href="#" class="page-header-lang__item">
+												<i class="page-header-lang__icon">
+													<img src="img/svg/en.svg" alt="">
+												</i>
+												English
+											</a>
+										</div>
+									</div>
+									<div class="page-header-currency">
+										<a href="#" class="page-header-currency__view">
+											<i class="page-header-currency__icon">
+												<img src="img/svg/russian_ruble.svg" alt="">
+											</i>
+											RUB
+										</a>
+										<div class="page-header-currency__list">
+											<div class="page-header-currency__item">
+												<i class="page-header-currency__icon page-header-currency__icon--rub"></i>
+												RUB
+											</div>
+											<div class="page-header-currency__item">
+												<i class="page-header-currency__icon page-header-currency__icon--eur"></i>
+												EUR
+											</div>
+											<div class="page-header-currency__item">
+												<i class="page-header-currency__icon page-header-currency__icon--usd"></i>
+												USD
+											</div>
+											<div class="page-header-currency__item">
+												<i class="page-header-currency__icon page-header-currency__icon--byn"></i>
+												BYN
+											</div>
+										</div>
+									</div>
+									<div class="top-socials">
+										<a href="#" class="top-socials__item top-socials__item--vk"></a>
+										<a href="#" class="top-socials__item top-socials__item--fb"></a>
+										<a href="#" class="top-socials__item top-socials__item--inst"></a>
+									</div>
+								</div>
+								<div class="page-header__contact">
+									<a href="tel:+375291234567" class="page-header__phone">+37529 123-45-67</a>
+									<a href="mailto:info@medservicebel.com" class="page-header__mail">info@medservicebel.com</a>
+								</div>	
+							</div>
+							<div class="top-nav">
+								<div class="top-nav__item submenu">
+									<a href="#" class="top-nav__link">Услуги</a>
+									<div class="submenu__list">
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/stom.svg" alt="">
+												</div>
+												<div class="submenu__txt">Стоматология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/fleb.svg" alt="">
+												</div>
+												<div class="submenu__txt">Флебология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/plast.svg" alt="">
+												</div>
+												<div class="submenu__txt">Пластика и косметология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/uro.svg" alt="">
+												</div>
+												<div class="submenu__txt">Урология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/diag.svg" alt="">
+												</div>
+												<div class="submenu__txt">Диагностика</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/ortop.svg" alt="">
+												</div>
+												<div class="submenu__txt">Ортопедия</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/onko.svg" alt="">
+												</div>
+												<div class="submenu__txt">Онкология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/ginek.svg" alt="">
+												</div>
+												<div class="submenu__txt">Гинекология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/hirurg.svg" alt="">
+												</div>
+												<div class="submenu__txt">Хирургия</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/lech.svg" alt="">
+												</div>
+												<div class="submenu__txt">Лечение за границей</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/speleo.svg" alt="">
+												</div>
+												<div class="submenu__txt">Спелеолечение</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/nevro.svg" alt="">
+												</div>
+												<div class="submenu__txt">Неврология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/kardio.svg" alt="">
+												</div>
+												<div class="submenu__txt">
+													Кардиология
+												</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/oftal.svg" alt="">
+												</div>
+												<div class="submenu__txt">
+													Офтальмология
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">Врачи</a>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">Проживание</a>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">Санатории</a>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">Контакты</a>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">Отзывы</a>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">О нас</a>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">Блог</a>
+								</div>
+							</div>
+						</div>
+						<div class="page-header__r">
+							<div class="top-search">
+								<a href="#" class="top-search__link js-top-search__link">Поиск по сайту</a>
+								<div class="top-search__toggle">
+									<input type="text" class="top-search__input" placeholder="Поиск по сайту">
+									<input type="submit" class="top-search__submit">
+									<a href="#" class="top-search__close js-top-search__close"></a>
+								</div>
+							</div>
+							<a href="#" class="btn">
+								<span>
+									Бесплатная консультация
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="page-top">
+				<div class="page-top__bg" style="background-image: url(img/content/bg1.jpg)"></div>
+				<div class="container-fluid">
+					<div class="page-top__txt">
+						<div class="page-title">
+							<h1>Стоматология</h1>
+						</div>
+						<div class="page-top__wrap">
+							<div class="breadcrumbs">
+								<a href="#" class="breadcrumbs__item">Главная</a>
+								<a href="#" class="breadcrumbs__item">Услуги</a>
+								<span class="breadcrumbs__item">Стоматология</span>
+							</div>
+							<div class="page-top-additional">
+								<div class="page-top-additional__txt">
+									Стоматология в Беларуси характеризуется высоким качеством услуг и очень приемлемыми ценами, именно поэтому количество иностранных пациентов с каждым годом только растет
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="page-content workarea">
+					<div class="container-fluid">
+					<div class="page-top__wrap page-top__wrap--mobile">
+						<div class="breadcrumbs">
+							<a href="#" class="breadcrumbs__item">Главная</a>
+							<a href="#" class="breadcrumbs__item">Услуги</a>
+							<span class="breadcrumbs__item">Стоматология</span>
+						</div>
+						<div class="page-top-additional">
+							<div class="page-top-additional__txt">
+								Стоматология в Беларуси характеризуется высоким качеством услуг и очень приемлемыми ценами, именно поэтому количество иностранных пациентов с каждым годом только растет
+							</div>
+						</div>
+					</div>
+					<!-- CONTENT-PART -->
+					<div class="row items">
+						<div class="col-lg-3 items-aside">
+							<div class="items-aside__inner">
+								ыы
+							</div>
+						</div>
+						<div class="col-lg-9">
+							<div class="destination-info">
+								<p>
+									Стоматология в Беларуси характеризуется <a href="#">высоким качеством услуг и очень приемлемыми ценами</a>, именно поэтому количество иностранных пациентов с каждым годом только растет. Высокое качество и доступные цены, обусловлены пристальным внимание и поддержкой стоматологической сферы со стороны государства.
+								</p>
+								<p>
+									Согласно независимым исследованиям, стоимость лечения и протезирование зубов в Беларуси в 1.5 раза ниже чем в России, в 2 раза ниже чем в восточной Европе, и в 3 раза ниже чем в западной Европе.
+								</p>
+								<p>
+									Например, пациент при сегментарной или полной имплантации зубов, может легко сэкономить нескольких тысяч долларов! Такая разница в стоимость позволяет окупить жилье, питание и дорогу, ещё и сохранить достаточно денег.
+								</p>
+								<p>
+									По срокам, в зависимости от вида стоматологического лечения, Вам достаточно взять маленький отпуск от 3 до 10 дней, и приехать к нам в Минск. Мы предварительно подготовим план лечения, насколько возможно сократив сроки, без потери качества, по минимальной цене. Все нюансы предстоящего лечения пациент знает заранее. Конечно, наши клиники лицензированы и дают официальную гарантию на все виды услуг.
+								</p>
+								<blockquote>
+									<span>
+										В Минске, Вы сможете отвлечься от повседневной жизни, раз и навсегда помочь своим зубам, и вернуться домой с красивой улыбкой!
+									</span>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<!--end CONTENT-PART -->
+					</div>
+				</div>
+			</div>
+			<footer class="page-footer">
+				<div class="page-footer-top">
+					<div class="container-fluid">
+						<div class="page-footer-top__wrap">
+							<div class="page-footer-top__item">
+								<div class="page-footer-top__title">Остались вопросы? Звоните</div>
+								<a href="tel:+375290000000" class="page-footer-top__add page-footer-top__add--phone">+37529 000-00-00</a>
+							</div>
+							<div class="page-footer-top__item">
+								<div class="page-footer-top__title">Мы можем связаться с вами сами</div>
+								<a href="#" class="page-footer-top__add">
+									Заказать звонок
+								</a>
+							</div>
+							<div class="page-footer-top__item">
+								<div class="page-footer-top__title">Напишите нам</div>
+								<a href="#" class="page-footer-top__add page-footer-top__add--mail">
+									Написать письмо
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-footer-info">
+					<div class="container-fluid">
+						<div class="row page-footer-info__wrap">
+							<div class="col-lg-3 col-md-12 copyright">
+								Организация лечения в клиниках Беларуси<br>
+								&copy; 2018-2019 «Med Servis Belarus»
+								<div class="develop">
+									<a href="https://nineseven.by/" class="develop__link" target="_blank">Создание сайта Nineseven</a>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-12 page-footer-info-cards">
+								<div class="page-footer-info-cards__title">Мы принимаем к оплате</div>
+								<div class="page-footer-info-cards__wrap">
+									<div class="page-footer-info-cards__item">
+										<img src="img/svg/visa.svg" alt="">
+									</div>
+									<div class="page-footer-info-cards__item">
+										<img src="img/svg/mastercard.svg" alt="">
+									</div>
+									<div class="page-footer-info-cards__item">
+										<img src="img/svg/wallet.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-6 page-footer-info__map">
+								<a href="#">Карта сайта</a>
+							</div>
+							<div class="col-lg-3 col-md-6 page-footer-info-support">
+								<div class="page-footer-info-support__title">
+									При поддержке
+								</div>
+								<a href="#" class="page-footer-info-support__link" target="_blank">
+									Министерство спорта и туризма Республики Беларусь
+								</a>
+							</div>
+							<div class="col-lg-2 col-md-12 page-footer-info-socials">
+								<div class="page-footer-info-socials__title">Мы в соцсетях</div>
+								<div class="page-footer-info-socials__list">
+									<a href="#" class="page-footer-info-socials__item page-footer-info-socials__item--vk"></a>
+									<a href="#" class="page-footer-info-socials__item page-footer-info-socials__item--fb"></a>
+									<a href="#" class="page-footer-info-socials__item page-footer-info-socials__item--inst"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+		</div><!-- END LAYOUT-->
+
+		<!-- POPUP -->
+		<div id="consultation" class="popup mfp-with-anim mfp-hide">
+			<h5>Получить консультацию</h5>
+			<div class="submit-form">
+				<form action="#" method="post">
+					<div class="input-wrap">
+						<div class="input-label">Имя</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Телефон</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Электронная почта</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Ваше сообщение</div>
+						<div class="input-wrap__item">
+							<textarea></textarea>
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="checkbox-item">
+							<input type="checkbox" id="checkbox1" name="checkbox" checked="">
+							<label for="checkbox1">
+								Я согласен с <a href="#">пользовательским соглашением</a>
+							</label>
+						</div>
+					</div>
+					<button type="submit" class="btn"><span>Получить консультацию</span></button>
+				</form>
+			</div>
+		</div>
+
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/interface.js"></script>
+	</body>
+</html>

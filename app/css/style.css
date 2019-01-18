@@ -6568,6 +6568,9 @@ ymaps[class*="-balloon__layout"] {
   background: url(../img/svg/star-p.svg) no-repeat;
   background-size: cover; }
 
+.destination-info {
+  padding-right: 180px; }
+
 .page-footer-top {
   background: -webkit-gradient(linear, left top, right top, from(#1EBF9D), to(#1073B9));
   background: linear-gradient(90deg, #1EBF9D 0%, #1073B9 100%); }
@@ -6800,7 +6803,9 @@ ymaps[class*="-balloon__layout"] {
 
 @media screen and (max-width: 1100px) {
   .item__img {
-    height: 200px; } }
+    height: 200px; }
+  .destination-info {
+    padding-right: 0; } }
 
 @media screen and (max-width: 1024px) {
   .page-header__mail,

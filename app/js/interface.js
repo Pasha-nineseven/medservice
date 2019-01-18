@@ -371,11 +371,11 @@ function initializeSanatoriumMap() {
 
 // links pages
 $('body').append(
-	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
-		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
+	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 180px;"> \
+		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 3px 5px; text-decoration: none; font-size: 14px" onclick="$(this).parent().hide()">Close X</a> \
 	<style> \
-		#pages { padding: 10px 20px 0 50px; font-size: 18px; } \
-		#pages a { text-decoration: none; } \
+		#pages { padding: 5px 10px 0 30px; font-size: 14px; } \
+		#pages a { text-decoration: none; font-size: 14px} \
 		#pages li { margin: 5px 0; } \
 	</style> \
 	<ol id="pages"> \
@@ -388,6 +388,7 @@ $('body').append(
         <li><a href="sanatoriums.html">Санатории</a></li> \
         <li><a href="services.html">Услуги</a></li> \
         <li><a href="shablon.html">Шаблон списков</a></li> \
+        <li><a href="str_napravlenija.html">Стр.направления</a></li> \
 		<li><a href="index.html">Главная</a></li> \
 	</ol> \
 </div>');
