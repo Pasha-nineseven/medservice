@@ -167,6 +167,23 @@
 	.layout--doctor .page-top-additional__txt {
 	    max-width: 490px;
 	}
+	.sanatorium{
+		display: block;
+		flex-wrap: wrap;
+	}
+	.sanatorium-price {
+	    order: 1;
+	    width: 100%;
+	}
+	.sanatorium-info{
+		padding-right: 0;
+	}
+	.sanatorium-price__in {
+	    display: inline-block;
+	}
+	.sanatorium-price__in .btn {
+	    width: auto;
+	}
 }
 
 @media screen and (max-width: 992px){
@@ -491,6 +508,9 @@
 	.item {
 	    width: 50%;
 	}
+	.content__title{
+		font-size: 30px;
+	}
 }
 
 @media screen and (max-width: 650px){
@@ -756,6 +776,43 @@
 			display: none;
 	    }
 	}
+	.sanatorium-top-slider__item {
+	    height: 310px;
+	}
+	.sanatorium-price__in {
+	    display: block;
+	}
+	.sanatorium-price__in .btn {
+	    width: 100%;
+	}
+	.sanatorium-price__address {
+	    margin-top: 20px;
+	}
+	.content__title{
+		font-size: 18px;
+	}
+	.sanatorium-kind__title {
+	    font-size: 16px;
+	}
+	.sanatorium-price__address strong {
+	    font-size: 16px;
+	}
+	.sanatorium-price__item strong,
+	.sanatorium-price__item .count{
+	    font-size: 16px;
+	}
+	.sanatorium-price__item:before {
+	    margin-top: -2px;
+	}
+	.sanatorium-price__address:before {
+	    top: -4px;
+	}
+	.sanatorium-top-slider-wrap {
+	    margin-bottom: 20px;
+	}
+	.sanatorium-cost span {
+	    font-size: 18px;
+	}
 }
 
 
@@ -779,5 +836,14 @@
 	}
 	.item {
 	    width: 100%;
+	}
+	.sanatorium-top-slider__item {
+	    height: 230px;
+	}
+	.sanatorium-price__in {
+	    padding: 20px;
+	}
+	.sanatorium-price__item .count {
+	    font-size: 20px;
 	}
 }

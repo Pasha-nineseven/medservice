@@ -376,15 +376,9 @@
 		left: 6px;
 		z-index: 4;
 	}
-	// input[type="radio"]:not(:checked) + label:after {
-	//   opacity: 0;
-	// }
-	// input[type="radio"]:checked + label:after {
-	//   opacity: 1;
-	// }
-	// input[type="radio"]:checked + label:before{
-	// 	border: 2px solid #BBEE2A;
-	// 	background: #BBEE2A;
-	// }
+	strong{
+		font-weight: normal;
+		font-family: 'osnova_probold';
+	}
 }
 

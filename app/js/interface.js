@@ -102,7 +102,7 @@ $(document).ready(function() {
         $(this).next('.accordeon__info').slideToggle();
     });
 
-     //FS
+    //FS
     if ($('.fs').length>0) {
     	$('.fs').styler();
     }
@@ -192,6 +192,57 @@ $(document).ready(function() {
             ]
         });
     };
+
+    //SANATORIUM-TOP slider
+    if ($('.sanatorium-top-slider').length>0) {
+        var $gallery = $('.sanatorium-top-slider');
+
+        var currentSlide;
+        var slidesCount;
+        var sliderCounter = document.createElement('div');
+        sliderCounter.classList.add('slider__counter');
+
+        var updateSliderCounter = function(slick, currentIndex) {
+            currentSlide = slick.slickCurrentSlide() + 1;
+            slidesCount = slick.slideCount;
+            $(sliderCounter).text(currentSlide + ' из ' +slidesCount)
+        };
+
+        $gallery.on('init', function(event, slick) {
+            $gallery.append(sliderCounter);
+            updateSliderCounter(slick);
+        });
+
+        $gallery.on('afterChange', function(event, slick, currentSlide) {
+            updateSliderCounter(slick, currentSlide);
+        });
+
+        $gallery.slick({
+            speed: 250,
+            // fade: true,
+            // cssEase: 'linear',
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+        });
+
+        
+
+    };
+
+    //SCROLL
+    $("body").on("click", ".js-scroll-link", function(e){
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+    });
 
 	ymaps.ready(initializeDefaultMap);
 

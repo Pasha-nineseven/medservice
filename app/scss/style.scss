@@ -1818,10 +1818,11 @@ ymaps[class$="-copyright"] {
 	order:1;
 	padding-right: 34px;
 	flex:1;
+	overflow: hidden;
 }
 .sanatorium-price__in{
 	background: #fff;
-	padding: 30px;
+	    padding: 23px 28px 30px 30px;
 	.btn{
 		width: 100%;
 		text-align: center;
@@ -1993,6 +1994,7 @@ ymaps[class*="-balloon__layout"]{
 
 	border-bottom: 1px solid #eeeeee;
 	line-height: 1.2;
+	    min-height: 115px;
 }
 
 .slider-another__img{
@@ -2006,21 +2008,24 @@ ymaps[class*="-balloon__layout"]{
 .slider-another__title{
 	font-size: 20px;
 	font-family: 'osnova_probold';
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 	transition:all 0.3s ease;
 }
 
 .slider-another-cat{
 	font-size: 14px;
+	padding-top: 7px;
 }
 
 .slider-another__about{
-	margin-bottom: 2px;
+	margin-bottom: 5px;
+	color: #939393;
 }
 
 .slider-another-cat__info{
 	color: #939393;
 	margin-bottom: 15px;
+
 }
 
 .slider-another-cat__label{
@@ -2030,6 +2035,44 @@ ymaps[class*="-balloon__layout"]{
     padding: 2px 3px;
     line-height: 1;
     transition:all 0.3s ease;
+}
+
+.slider-another-price{
+	font-size: 17px;
+	padding-left: 20px;
+	position: relative;
+	    margin-bottom: 9px;
+	&:before{
+		content: "";
+	    display: inline-block;
+	    vertical-align: middle;
+	    position: absolute;
+	    left: -2px;
+	    top: 4px;
+	    width: 16px;
+	    height: 20px;
+	    background: url(../img/svg/select_price.svg) no-repeat;
+	    background-size: contain;
+	}
+}
+
+.slider-another-distance{
+	font-size: 17px;
+	padding-left: 20px;
+	position: relative;
+	    margin-bottom: 8px;
+	&:before{
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		left: 1px;
+		top: 1px;
+		width: 14px;
+		height: 20px;
+		background: url(../img/svg/placeholder.svg) no-repeat;
+		background-size: contain;
+	}
 }
 
 .slider-another{
@@ -2191,6 +2234,141 @@ ymaps[class*="-balloon__layout"]{
 .sanatorium-kind__txt{
 	font-size: 14px;
 }
+
+.sanatorium-price__item{
+	//padding-left: 26px;
+	position: relative;
+	margin-bottom: 19px;
+	font-size: 17px;
+	strong{
+		font-size: 20px;
+	}
+	.count{
+		font-size: 30px;
+	}
+	&:before{
+		content: "";
+	    display: inline-block;
+	    vertical-align: middle;
+	    margin-top: -6px;
+	    margin-right: 3px;
+	    width: 20px;
+	    height: 20px;
+	    background: url(../img/svg/select_price.svg) no-repeat;
+	    background-size: cover;
+	}
+}
+
+.sanatorium-price__address{
+	margin-top: 40px;
+	padding-left: 27px;
+	position: relative;
+	&:before{
+		content: "";
+	    display: inline-block;
+	    vertical-align: middle;
+	    position: absolute;
+		left: 2px;
+		top: 1px;
+		width: 17px;
+		height: 24px;
+	    background: url(../img/svg/placeholder.svg) no-repeat;
+	    background-size: contain;
+	}
+	strong{
+		font-size: 20px;
+	}
+}
+
+.sanatorium-price__place{
+	font-size: 14px;
+	    margin-bottom: 12px;
+    padding-top: 9px;
+}
+
+.sanatorium-price__distance{
+	font-size: 14px;
+	a{
+		display: block;
+		color: #058ACD;
+		&:hover{
+			color: #056493;
+		}
+	}	
+}
+
+.sanatorium-top-slider__item{
+	position: relative;
+	height: 467px;
+}
+
+.sanatorium-top-slider__img{
+	position: absolute;
+	left: 0;
+	top:0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.sanatorium-top-slider{
+	display: none;
+	&.slick-initialized{
+		display: block;
+	}
+	.slick-arrow{
+		display: inline-block;
+		background: transparent;
+		text-indent: -9999em;
+		padding: 0;
+		position: absolute;
+		bottom:16px;
+		width: 58px;
+		height: 58px;
+		opacity: 0.7;
+		border: 0;
+		transition:all 0.3s ease;
+		z-index: 2;
+		&:hover{
+			transform: scale(1.07);
+			opacity: 1;
+		}
+	}
+
+	.slick-prev{	
+		left: 16px;
+		background: url(../img/svg/doctor_slider_arrow_left.svg);
+		background-size: cover;
+	}
+	.slick-next{
+		right: 16px;
+		background: url(../img/svg/doctor_slider_arrow_right.svg);
+		background-size: cover;
+	}
+	.slick-disabled{
+		opacity: 0.5;
+		//pointer-events:none;
+	}
+}
+
+.sanatorium-top-slider-wrap{
+	max-width: 100%;
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 1;
+}
+
+.slider__counter{
+    font-size: 17px;
+    color: #fff;
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+    text-align: center;
+}
+
 
 @import "components/footer";
 

@@ -4418,6 +4418,10 @@ textarea, input {
     top: 6px;
     left: 6px;
     z-index: 4; }
+  .workarea strong,
+  .popup strong {
+    font-weight: normal;
+    font-family: 'osnova_probold'; }
 
 .layout {
   display: table;
@@ -5958,11 +5962,12 @@ button.mfp-close {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
-          flex: 1; }
+          flex: 1;
+  overflow: hidden; }
 
 .sanatorium-price__in {
   background: #fff;
-  padding: 30px; }
+  padding: 23px 28px 30px 30px; }
   .sanatorium-price__in .btn {
     width: 100%;
     text-align: center;
@@ -6088,7 +6093,8 @@ ymaps[class*="-balloon__layout"] {
   padding-bottom: 14px;
   margin-bottom: 8px;
   border-bottom: 1px solid #eeeeee;
-  line-height: 1.2; }
+  line-height: 1.2;
+  min-height: 115px; }
 
 .slider-another__img {
   width: 100%;
@@ -6101,15 +6107,17 @@ ymaps[class*="-balloon__layout"] {
 .slider-another__title {
   font-size: 20px;
   font-family: 'osnova_probold';
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
 .slider-another-cat {
-  font-size: 14px; }
+  font-size: 14px;
+  padding-top: 7px; }
 
 .slider-another__about {
-  margin-bottom: 2px; }
+  margin-bottom: 5px;
+  color: #939393; }
 
 .slider-another-cat__info {
   color: #939393;
@@ -6123,6 +6131,40 @@ ymaps[class*="-balloon__layout"] {
   line-height: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+
+.slider-another-price {
+  font-size: 17px;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 9px; }
+  .slider-another-price:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: -2px;
+    top: 4px;
+    width: 16px;
+    height: 20px;
+    background: url(../img/svg/select_price.svg) no-repeat;
+    background-size: contain; }
+
+.slider-another-distance {
+  font-size: 17px;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px; }
+  .slider-another-distance:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 14px;
+    height: 20px;
+    background: url(../img/svg/placeholder.svg) no-repeat;
+    background-size: contain; }
 
 .slider-another {
   display: none; }
@@ -6271,6 +6313,118 @@ ymaps[class*="-balloon__layout"] {
 
 .sanatorium-kind__txt {
   font-size: 14px; }
+
+.sanatorium-price__item {
+  position: relative;
+  margin-bottom: 19px;
+  font-size: 17px; }
+  .sanatorium-price__item strong {
+    font-size: 20px; }
+  .sanatorium-price__item .count {
+    font-size: 30px; }
+  .sanatorium-price__item:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -6px;
+    margin-right: 3px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/svg/select_price.svg) no-repeat;
+    background-size: cover; }
+
+.sanatorium-price__address {
+  margin-top: 40px;
+  padding-left: 27px;
+  position: relative; }
+  .sanatorium-price__address:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 2px;
+    top: 1px;
+    width: 17px;
+    height: 24px;
+    background: url(../img/svg/placeholder.svg) no-repeat;
+    background-size: contain; }
+  .sanatorium-price__address strong {
+    font-size: 20px; }
+
+.sanatorium-price__place {
+  font-size: 14px;
+  margin-bottom: 12px;
+  padding-top: 9px; }
+
+.sanatorium-price__distance {
+  font-size: 14px; }
+  .sanatorium-price__distance a {
+    display: block;
+    color: #058ACD; }
+    .sanatorium-price__distance a:hover {
+      color: #056493; }
+
+.sanatorium-top-slider__item {
+  position: relative;
+  height: 467px; }
+
+.sanatorium-top-slider__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%; }
+
+.sanatorium-top-slider {
+  display: none; }
+  .sanatorium-top-slider.slick-initialized {
+    display: block; }
+  .sanatorium-top-slider .slick-arrow {
+    display: inline-block;
+    background: transparent;
+    text-indent: -9999em;
+    padding: 0;
+    position: absolute;
+    bottom: 16px;
+    width: 58px;
+    height: 58px;
+    opacity: 0.7;
+    border: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 2; }
+    .sanatorium-top-slider .slick-arrow:hover {
+      -webkit-transform: scale(1.07);
+          -ms-transform: scale(1.07);
+              transform: scale(1.07);
+      opacity: 1; }
+  .sanatorium-top-slider .slick-prev {
+    left: 16px;
+    background: url(../img/svg/doctor_slider_arrow_left.svg);
+    background-size: cover; }
+  .sanatorium-top-slider .slick-next {
+    right: 16px;
+    background: url(../img/svg/doctor_slider_arrow_right.svg);
+    background-size: cover; }
+  .sanatorium-top-slider .slick-disabled {
+    opacity: 0.5; }
+
+.sanatorium-top-slider-wrap {
+  max-width: 100%;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1; }
+
+.slider__counter {
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+  text-align: center; }
 
 .page-footer-top {
   background: -webkit-gradient(linear, left top, right top, from(#1EBF9D), to(#1073B9));
@@ -6546,7 +6700,24 @@ ymaps[class*="-balloon__layout"] {
   .page-top__wrap {
     margin-top: 10px; }
   .layout--doctor .page-top-additional__txt {
-    max-width: 490px; } }
+    max-width: 490px; }
+  .sanatorium {
+    display: block;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .sanatorium-price {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%; }
+  .sanatorium-info {
+    padding-right: 0; }
+  .sanatorium-price__in {
+    display: inline-block; }
+  .sanatorium-price__in .btn {
+    width: auto; } }
 
 @media screen and (max-width: 992px) {
   .copyright {
@@ -6795,7 +6966,9 @@ ymaps[class*="-balloon__layout"] {
     font-size: 26px;
     margin-bottom: 13px; }
   .item {
-    width: 50%; } }
+    width: 50%; }
+  .content__title {
+    font-size: 30px; } }
 
 @media screen and (max-width: 650px) {
   .reviews__person,
@@ -6992,7 +7165,32 @@ ymaps[class*="-balloon__layout"] {
   .map-address {
     padding-top: 0; }
     .map-address:before {
-      display: none; } }
+      display: none; }
+  .sanatorium-top-slider__item {
+    height: 310px; }
+  .sanatorium-price__in {
+    display: block; }
+  .sanatorium-price__in .btn {
+    width: 100%; }
+  .sanatorium-price__address {
+    margin-top: 20px; }
+  .content__title {
+    font-size: 18px; }
+  .sanatorium-kind__title {
+    font-size: 16px; }
+  .sanatorium-price__address strong {
+    font-size: 16px; }
+  .sanatorium-price__item strong,
+  .sanatorium-price__item .count {
+    font-size: 16px; }
+  .sanatorium-price__item:before {
+    margin-top: -2px; }
+  .sanatorium-price__address:before {
+    top: -4px; }
+  .sanatorium-top-slider-wrap {
+    margin-bottom: 20px; }
+  .sanatorium-cost span {
+    font-size: 18px; } }
 
 @media screen and (max-width: 500px) {
   .reviews__item.reviews__item--half,
@@ -7009,4 +7207,10 @@ ymaps[class*="-balloon__layout"] {
   .reviews__txt {
     padding-top: 11px; }
   .item {
-    width: 100%; } }
+    width: 100%; }
+  .sanatorium-top-slider__item {
+    height: 230px; }
+  .sanatorium-price__in {
+    padding: 20px; }
+  .sanatorium-price__item .count {
+    font-size: 20px; } }
