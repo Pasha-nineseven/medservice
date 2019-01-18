@@ -387,6 +387,7 @@ $('body').append(
         <li><a href="sanatorium.html">Санаторий</a></li> \
         <li><a href="sanatoriums.html">Санатории</a></li> \
         <li><a href="services.html">Услуги</a></li> \
+        <li><a href="shablon.html">Шаблон списков</a></li> \
 		<li><a href="index.html">Главная</a></li> \
 	</ol> \
 </div>');

@@ -1994,7 +1994,7 @@ ymaps[class*="-balloon__layout"]{
 
 	border-bottom: 1px solid #eeeeee;
 	line-height: 1.2;
-	    min-height: 115px;
+	    //min-height: 115px;
 }
 
 .slider-another__img{
@@ -2484,6 +2484,22 @@ ymaps[class*="-balloon__layout"]{
     		transition: all 0.3s ease;
 		}
 	}
+}
+.rating{
+	display: flex;
+	align-items:center;
+}
+
+.rating__item{
+	width: 16px;
+	height: 16px;
+	background: url(../img/svg/star.svg) no-repeat;
+	background-size: cover;
+}
+
+.rating__item--positive{
+	background: url(../img/svg/star-p.svg) no-repeat;
+	background-size: cover;
 }
 
 @import "components/footer";
