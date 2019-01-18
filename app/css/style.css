@@ -6426,6 +6426,129 @@ ymaps[class*="-balloon__layout"] {
   width: 100%;
   text-align: center; }
 
+.services {
+  overflow: hidden; }
+
+.services-item {
+  height: 200px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff; }
+  .services-item:hover .services-item__img:before {
+    background-color: #022835; }
+  .services-item:hover .services-item__title span:after {
+    opacity: 1; }
+
+.services-item--lg {
+  height: 430px; }
+  .services-item--lg .services-item__inner {
+    padding: 37px 40px; }
+  .services-item--lg .services-item__title {
+    font-size: 36px;
+    font-family: 'osnova_proregular'; }
+  .services-item--lg .services-item__icon {
+    margin-bottom: 10px; }
+
+.services-item--md .services-item__title {
+  font-size: 26px;
+  font-family: 'osnova_probold'; }
+
+.services-item__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.services-item__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .services-item__img:before {
+    content: "";
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000000));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+
+.services-item__icon {
+  position: relative;
+  z-index: 1;
+  width: 53px;
+  min-width: 53px;
+  height: 53px;
+  background: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #0091EA;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .services-item__icon img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%; }
+
+.services-item__title {
+  z-index: 1;
+  font-size: 20px;
+  font-family: 'osnova_probold'; }
+  .services-item__title span {
+    position: relative; }
+    .services-item__title span:after {
+      content: "";
+      display: inline-block;
+      width: 50px;
+      height: 16px;
+      background: url(../img/svg/service-arrow.svg) no-repeat;
+      position: absolute;
+      left: -webkit-calc(100% + 24px);
+      left: calc(100% + 24px);
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      opacity: 0.4;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+
 .page-footer-top {
   background: -webkit-gradient(linear, left top, right top, from(#1EBF9D), to(#1073B9));
   background: linear-gradient(90deg, #1EBF9D 0%, #1073B9 100%); }
@@ -6750,7 +6873,11 @@ ymaps[class*="-balloon__layout"] {
   .items-aside {
     margin-bottom: 20px; }
   .items-wrap {
-    margin: 0; } }
+    margin: 0; }
+  .services-item {
+    height: 300px; }
+  .services-item--md {
+    height: 430px; } }
 
 @media screen and (max-width: 850px) {
   .page-footer-top__add {
@@ -6968,7 +7095,14 @@ ymaps[class*="-balloon__layout"] {
   .item {
     width: 50%; }
   .content__title {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .services-item--md {
+    height: 300px; }
+  .services-item .services-item__title {
+    font-size: 26px;
+    font-family: 'osnova_probold'; }
+  .services-item--lg .services-item__icon {
+    margin-bottom: 16px; } }
 
 @media screen and (max-width: 650px) {
   .reviews__person,

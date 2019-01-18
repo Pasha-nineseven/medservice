@@ -223,6 +223,12 @@
 	.items-wrap {
 	    margin: 0;
 	}
+	.services-item {
+	    height: 300px;
+	}
+	.services-item--md{
+		height: 430px;
+	}
 }
 
 @media screen and (max-width: 850px){
@@ -510,6 +516,16 @@
 	}
 	.content__title{
 		font-size: 30px;
+	}
+	.services-item--md {
+	    height: 300px;
+	}
+	.services-item .services-item__title {
+	    font-size: 26px;
+	    font-family: 'osnova_probold';
+	}
+	.services-item--lg .services-item__icon {
+	    margin-bottom: 16px;
 	}
 }
 

@@ -2370,6 +2370,122 @@ ymaps[class*="-balloon__layout"]{
 }
 
 
+.services{
+	overflow: hidden;
+}
+
+.services-item {
+	height: 200px;
+	margin-bottom: 30px;
+	display: flex;
+	color: #fff;
+	&:hover{
+		.services-item__img:before{
+			background-color: #022835;
+		}
+		.services-item__title span:after{
+			opacity: 1;
+		}
+	}
+}
+
+.services-item--lg{
+	height: 430px;
+	.services-item__inner{
+		padding: 37px 40px;
+	}
+	.services-item__title{
+		font-size: 36px;
+		font-family: 'osnova_proregular';
+	}
+	.services-item__icon{
+		margin-bottom: 10px;
+	}
+}
+
+.services-item--md{
+	.services-item__title{
+		font-size: 26px;
+		font-family: 'osnova_probold';
+	}
+}
+
+.services-item__inner{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding: 24px;
+	    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.services-item__img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	&:before{
+		content: "";
+		background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.3;
+		transition:all 0.3s linear;
+	}
+}
+
+.services-item__icon{
+	position: relative;
+	z-index: 1;
+	width: 53px;
+	min-width: 53px;
+	height: 53px;
+	background: #fff;
+	border-radius: 50%;
+	margin-bottom: 16px;
+	display: flex;
+	justify-content:center;
+	border: 1px solid #0091EA;
+	overflow: hidden;
+	align-items:center;
+	img{
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+	}
+}
+
+.services-item__title{
+	
+	z-index: 1;
+	font-size: 20px;
+	font-family: 'osnova_probold';
+	span{
+		position: relative;
+		&:after{
+			content: "";
+			display: inline-block;
+			width: 50px;
+			height: 16px;
+			background: url(../img/svg/service-arrow.svg) no-repeat;
+			position: absolute;
+			left: calc(100% + 24px);
+			top: 50%;
+    		transform: translateY(-50%);
+    		opacity: 0.4;
+    		transition: all 0.3s ease;
+		}
+	}
+}
+
 @import "components/footer";
 
 @import "components/media";
