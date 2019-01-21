@@ -2506,6 +2506,136 @@ ymaps[class*="-balloon__layout"]{
 	padding-right: 180px;
 }
 
+
+.aside-filter{
+	font-size: 17px;
+	padding-right: 40px;
+}
+.aside-filter__item{
+	margin-bottom: 16px;
+	display: block;
+	color: #022835;
+	padding-left: 20px;
+	position: relative;
+	&:before{
+		content: "";
+		height: 9px;
+		width: 9px;
+		border: 1px solid #939393;
+		position: absolute;
+		    left: 4px;
+    	top: 7px;
+		border-radius: 50%;
+	}
+	&:hover{
+		color: #058ACD;
+	}
+	&:last-child{
+		margin-bottom: 0;
+	}
+	&.active{
+		span{
+			    background: rgba(196, 228, 221, 0.6);
+		}
+		&:before{
+			background: #000;
+		}
+	}
+}
+
+.items-aside--filter{
+	.items-aside__inner{
+		padding: 17px 12px;
+	}
+}
+
+.direction{
+	padding-top: 30px;
+}
+
+.direction__item{
+	display: block;
+	background: #fff;
+	box-shadow: 0 2px 20px 0 rgba(0,0,0,0.12);
+	margin-bottom: 24px;
+	color: #022835;
+}
+.direction__inner{
+	display: flex;
+}
+
+.direction__img{
+	width: 310px;
+	min-width: 310px;
+	height: 354px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.direction__info{
+	padding: 31px 35px;
+	background-position: center;
+	font-size: 14px;
+	flex: 1;
+	.content__title{
+	 	font-size: 26px;
+	 	font-family: 'osnova_probold';
+	 	    padding-bottom: 15px;
+    	margin-bottom: 19px;
+	}
+	p{
+		margin-bottom: 16px;
+		line-height: 1.1;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.direction__icons {
+    width: 184px;
+    min-width: 184px;
+    text-align: right;
+    padding: 28px 27px 20px 0;
+    font-size: 12px;
+    color: #939393;
+}
+
+.icon-item__img{
+	//margin-bottom: 5px;
+}
+
+.icon-item{
+	margin-bottom: 26px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.direction__time{
+	font-size: 20px;
+    background-color: #D2F2EB;
+    display: inline-block;
+    padding: 0 6px 0 22px;
+    margin-left: 5px;
+    position: relative;
+    margin-bottom: 29px;
+    line-height: 1;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background: url(../img/svg/clock.svg) no-repeat;
+		position: absolute;
+		left: -5px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+
 @import "components/footer";
 
 @import "components/media";
