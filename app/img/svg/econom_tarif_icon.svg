@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="119px" height="119px" viewBox="0 0 119 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>00983231-118C-4559-89A7-E159F49EC301</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="1.55572612%" x2="100%" y2="1.55572612%" id="linearGradient-1">
+            <stop stop-color="#1EBF9D" offset="0%"></stop>
+            <stop stop-color="#1073B9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="medservicebel_about_04_hover" transform="translate(-200.000000, -3157.000000)">
+            <g id="Статистика" transform="translate(38.000000, 1552.000000)">
+                <g id="Group-3" transform="translate(9.000000, 1605.000000)">
+                    <g id="Тариф">
+                        <g id="econom_tarif_icon" transform="translate(153.000000, 0.000000)">
+                            <circle id="Oval-7-Copy" stroke="#0091EA" stroke-width="1.55727015" fill="#FFFFFF" cx="59.5" cy="59.5" r="58.7213649"></circle>
+                            <g id="crown-copy" transform="translate(28.000000, 33.000000)">
+                                <polygon id="Star" fill="url(#linearGradient-1)" opacity="0.200000003" points="31.4518934 42.2881599 14.8809889 51 18.0457501 32.5480267 4.6396067 19.4802666 23.1664412 16.7881599 31.4518934 0 39.7373457 16.7881599 58.2641801 19.4802666 44.8580368 32.5480267 48.0227979 51"></polygon>
+                                <polygon id="Star-Copy" stroke="#000000" stroke-width="3" points="31.4518934 42.2881599 14.8809889 51 18.0457501 32.5480267 4.6396067 19.4802666 23.1664412 16.7881599 31.4518934 0 39.7373457 16.7881599 58.2641801 19.4802666 44.8580368 32.5480267 48.0227979 51"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

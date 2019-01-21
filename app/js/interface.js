@@ -244,6 +244,29 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
     });
 
+
+    //UPLOAD FILE
+    $("#file-upload").change(function() {
+        var ele = document.getElementById($(this).attr('id'));
+        var result = ele.files;
+        for(var x = 0;x< result.length;x++){
+         var fle = result[x];
+            $("#file-upload-output").append("<div class='file-upload-output__item'>" + fle.name + "<a href='#' class='file-upload-output__close'>" + "</a>" + "</div>");        
+        }
+    });
+    $("body").on("click", ".file-upload-output__close", function(e){
+        e.preventDefault();
+        $(this).parents(".file-upload-output__item").last().remove();
+    });
+
+
+    //ABOUT-PAGE-TITLE
+    if ($('.page-top-about').length>0) {
+        var bottomHeight = $('.page-top-about__txt').innerHeight();
+        //console.log(bottomHeight);
+        $('.page-top-about').css('margin-bottom', -bottomHeight );
+    }
+
 	ymaps.ready(initializeDefaultMap);
 
 	ymaps.ready(initializeContactMap);
@@ -389,6 +412,7 @@ $('body').append(
         <li><a href="services.html">Услуги</a></li> \
         <li><a href="shablon.html">Шаблон списков</a></li> \
         <li><a href="str_napravlenija.html">Стр.направления</a></li> \
+        <li><a href="about.html">О нас</a></li> \
 		<li><a href="index.html">Главная</a></li> \
 	</ol> \
 </div>');
