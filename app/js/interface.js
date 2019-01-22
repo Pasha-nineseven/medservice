@@ -49,7 +49,7 @@ $(document).ready(function() {
     $('.js-video').magnificPopup({
         type: 'iframe',
         removalDelay: 500,
-        closeBtnInside: false,
+        closeBtnInside: true,
         fixedContentPos: false,
         callbacks: {
             beforeOpen: function() {

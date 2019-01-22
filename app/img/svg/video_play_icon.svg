@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="20px" viewBox="0 0 19 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>A0AC2F6B-8A56-4236-B76A-521B2B25F59B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="1.55572612%" x2="100%" y2="1.55572612%" id="linearGradient-1">
+            <stop stop-color="#1EBF9D" offset="0%"></stop>
+            <stop stop-color="#1073B9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="medservicebel_about_04_hover" transform="translate(-298.000000, -660.000000)" fill="url(#linearGradient-1)">
+            <g id="Header">
+                <g id="Фон-под-заголовком">
+                    <g id="Play-button" transform="translate(275.000000, 647.000000)">
+                        <path d="M20.5194992,17.5034138 L35.4531867,13.6027809 C36.5219017,13.3236358 37.6145582,13.9637088 37.8937033,15.0324238 C37.9802658,15.3638312 37.9802636,15.7119165 37.8936967,16.0433227 L33.9929596,30.9766116 C33.7138006,32.0453229 32.6211358,32.6853816 31.5524244,32.4062226 C31.2086236,32.3164181 30.8949558,32.1366392 30.6436918,31.8853819 L19.6107414,20.852726 C18.8296823,20.0716878 18.8296654,18.8053579 19.6107036,18.0242989 C19.86198,17.7730158 20.1756711,17.5932206 20.5194992,17.5034138 Z" id="video_play_icon" transform="translate(28.268526, 23.268526) rotate(-315.000000) translate(-28.268526, -23.268526) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

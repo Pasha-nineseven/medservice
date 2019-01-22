@@ -69,6 +69,7 @@
 }
 
 .layout--about{
+	overflow: hidden;
 	.page-content > .container-fluid {
 	    padding-left: 15px;
 	    max-width: 100%;
@@ -2730,12 +2731,12 @@ ymaps[class*="-balloon__layout"]{
 }
 
 .about-more{
-	font-size: 26px;
+	font-size: 20px;
 	max-width: 655px;
 }
 
 .packages{
-	padding-top: 100px;
+	padding-top: 115px;
 }
 .packages-wrap{
 	display: flex;
@@ -2903,7 +2904,8 @@ ymaps[class*="-balloon__layout"]{
 	padding: 290px 0 64px;
 	position: relative;
 	margin: 0 -15px;
-	//background: url();
+	background: url(../img/content/secondscreen_bg.png) center bottom no-repeat;
+	    background-size: cover;
 }
 
 .about-info__bg{
@@ -2930,23 +2932,68 @@ ymaps[class*="-balloon__layout"]{
 
 
 .stat{
-	padding-top: 20px;
+	padding-top: 39px;
+	overflow: hidden;
 }
-
 .stat__wrap{
+
 	display: flex;
-	margin-right: -87px;
+	margin-right: -98px;
 }
 
 .stat__item{
 	width: 33.333%;
-	padding-right: 87px;
+	padding-right: 98px;
+}
+
+.stat__number{
+	height: 200px;
+    margin-bottom: 37px;
+    position: relative;
+
+    &:after{
+    	content: "";
+    	position: absolute;
+    	left: 0;
+    	bottom: 0;
+    	height: 8px;
+    	width: 100%;
+    	z-index: -1;
+    	background-color: #FFFFFF;
+    }
+    img{
+    	display: block;
+    	max-width: 100%;
+    }
+}
+
+.stat__txt{
+	//padding-left: 12px;
+}
+
+.stat__inner{
+	height: 100%;
+	position: relative;
+	padding-bottom: 29px;
+	&:after{
+		content: "";
+		display: block;
+		width: 100%;
+		height: 4px;
+		background: linear-gradient(90deg, #1EBF9D 0%, #1073B9 100%);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
 }
 
 .head{
 	background: #fff;
-	padding-top: 104px;
+	padding-top: 98px;
 	margin: 0 -15px;
+	.about-title{
+		margin-bottom: 38px;
+	}
 }
 
 .head__wrap{
@@ -2958,18 +3005,55 @@ ymaps[class*="-balloon__layout"]{
 .head__item{
 	width: 50%;
 	padding-right: 35px;
-	margin-bottom: -50px;
+	margin-bottom: -57px;
 	&:nth-child(1){
+		//padding-left: 75px;
+		.head__inner{
+			margin-left: 75px;
+		}
 		.head__info{
 			left: -50px;
-			text-align: left;
+			text-align: right;
+		}
+		.head__title{
+			&:after{
+				right: 0;
+			}
 		}
 	}
 	&:nth-child(2){
+		//padding-right: 75px;
+		.head__inner{
+			margin-right: 75px;
+		}
 		.head__info{
 			right: -50px;
-			text-align: right;
+			text-align: left;
 		}
+		.head__title{
+			&:after{
+				left: 0;
+			}
+		}
+	}
+}
+
+.head__title{
+	font-size: 30px;
+	font-family: 'osnova_probold';
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	position: relative;
+	&:after{
+		content: "";
+		display: block;
+		height: 2px;
+		width: 116px;
+		background: #fff;
+		opacity: 0.2;
+		position: absolute;
+		bottom: 0;
+		//left: 0;
 	}
 }
 
@@ -2983,17 +3067,72 @@ ymaps[class*="-balloon__layout"]{
 
 .head__inner{
 	position: relative;
+	box-shadow: 0px 18px 40px -15px rgba(0, 0, 0, 0.5);
 }
 .head__info{
 	position: absolute;
 	background: linear-gradient(90deg, #1EBF9D 0%, #1073B9 100%);
 	width: 426px;
-	padding: 30px;
+	padding: 28px 30px 15px 30px;
 	color: #fff;
-	bottom: 20px;
+	bottom: 24px;
 }
 
+.scroll-down{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #fff url(../img/svg/scroll_down.svg) center no-repeat;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 90px;
+	transition: transform 0.3s ease;
+	&:hover{
+		transform: translateX(-50%) scale(1.1);
+	}
+}
 
+.company-video-btn{
+	position: absolute;
+	left: 244px;
+	bottom: 100px;
+	display: inline-block;
+	border: 2px solid #0091EA;
+	border-radius: 24px;
+	background: #fff;
+	color: #0088CC;
+	padding: 9px 25px;
+	transition:all 0.3s ease;
+	&:hover{
+		background: #0091EA;
+		color: #fff;
+		.company-video-btn__icon{
+			background: url(../img/svg/video_play_icon-h.svg) no-repeat;
+		}
+	}
+}
+
+.company-video-btn__icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    width: 19px;
+    height: 20px;
+    background: url(../img/svg/video_play_icon.svg) no-repeat;
+    margin-right: 5px;
+    transition:background 0.3s ease;
+
+}
+
+.mfp-iframe-scaler{
+	button.mfp-close{
+		text-align: center;
+		width: 22px!important;
+    	right: 0!important;
+	}
+}
 
 .animate{
 	visibility: hidden;

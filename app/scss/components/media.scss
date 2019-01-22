@@ -39,6 +39,19 @@
 	.direction__info {
 	    padding: 17px 20px;
 	}
+	.page-top-about {
+	    width: calc(50% - 15px);
+	    right: 15px;
+	}
+	.page-top-about__title {
+	    font-size: 80px;
+	}
+	.stat__wrap {
+	    margin-right: -40px;
+	}
+	.stat__item {
+	    padding-right: 40px;
+	}
 }
 
 @media screen and (max-width: 1280px){
@@ -47,6 +60,22 @@
 	}
 	.item__img {
 	    height: 250px;
+	}
+	.page-top .container-fluid {
+	    padding-left: 206px;
+	}
+	.company-video-btn{
+		left: 206px;
+	}
+	
+	.about-info__item {
+	    padding-left: 20px;
+	}
+	.about-info__txt {
+	    max-width: 90%;
+	}
+	.about-title {
+	    padding-left: 190px;
 	}
 }
 
@@ -103,6 +132,26 @@
 	.aside-filter__item:before {
 	    top: 4px;
 	}
+	.page-top-about__wrap{
+		padding: 30px;
+	}
+	.page-top-about__title {
+	    font-size: 55px;
+	}
+	.page-top-about__add {
+	    font-size: 30px;
+	}
+	.page-top-about__txt {
+	    padding: 30px;
+	    font-size: 18px;
+	}
+	.layout--about .page-top {
+	    min-height: 600px;
+	}
+	.page-top-about__wrap:after{
+		left: 30px;
+	}
+
 }
 
 @media screen and (max-width: 1150px){
@@ -221,6 +270,102 @@
 	.sanatorium-price__in .btn {
 	    width: auto;
 	}
+	.page-top-about-wrap {
+	    position: static;
+	    padding-top: 30px;
+	}
+	.page-top-about {
+	    position: static;
+	    width: 100%;
+	    margin-bottom: 20px!important;
+	}
+	.page-top-about__title {
+	    font-size: 50px;
+	    margin-bottom: 20px;
+	    br{
+	    	display: none;
+	    }
+	}
+	.page-top-about__add {
+	    font-size: 20px;
+	}
+	.company-video-btn {
+	    position: static;
+	    margin-bottom: 10px;
+	}
+	.about-info {
+	    padding: 40px 0;
+	}
+	.scroll-down{
+		bottom: 10px;
+	}
+	.stat__wrap {
+	    margin-right: 0;
+	    flex-wrap: wrap;
+	}
+	.stat__item {
+	    padding-right: 0;
+	    width: 100%;
+	    margin-bottom: 20px;
+	    text-align: center;
+	}
+	.stat__number img {
+	    display: inline-block;
+	}
+	.stat__number {
+	    height: auto;
+	    margin-bottom: 20px;
+	    position: relative;
+	    text-align: center;
+	}
+	.head__img {
+	    height: 500px;
+	}
+	.head {
+	    padding-top: 30px;
+	}
+	.packages__top {
+	    font-size: 20px;
+	}
+	.packages-tariff-item {
+	    margin-bottom: 15px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+	.about-title {
+	    padding-left: 0;
+	}
+	.head__item:nth-child(1) .head__inner {
+	    margin-left: 0;
+	}
+	.head__item:nth-child(2) .head__inner {
+	    margin-right: 0;
+	}
+	.head__title {
+	    font-size: 20px;
+	}
+	.head__info {
+	    font-size: 17px;
+	}
+	.stat{
+		.container-fluid{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.packages{
+		.container-fluid{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.about-info__item {
+	    padding-left: 0;
+	}
+	.packages {
+	    padding-top: 30px;
+	}
 }
 
 @media screen and (max-width: 992px){
@@ -266,6 +411,18 @@
 	.services-item--md{
 		height: 430px;
 	}
+	.packages-wrap{
+		margin-right: -20px;
+	}
+	.packages__item{
+		padding-right: 20px;
+	}
+	.packages__info{
+		padding: 20px;
+	}
+	.head__info {
+	    width: 100%;
+	}
 }
 
 @media screen and (max-width: 850px){
@@ -274,6 +431,12 @@
 	}
 	.page-footer-top__add--mail:after{
 		margin-top: 1px;
+	}
+	.head__wrap {
+	    margin-right: -20px;
+	}
+	.head__item {
+	    padding-right: 20px;
 	}
 }
 
@@ -563,6 +726,30 @@
 	}
 	.services-item--lg .services-item__icon {
 	    margin-bottom: 16px;
+	}
+	.about-title {
+	    padding-left: 0;
+	}
+	.packages-wrap {
+	    margin-right: 0;
+	    flex-wrap: wrap;
+	}
+	.packages__item {
+	    padding-right: 0;
+	    width: 100%;
+	    margin-bottom: 70px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+	.head__wrap {
+	    margin-right: 0;
+	    flex-wrap: wrap;
+	}
+	.head__item{
+		width: 100%;
+		padding-right: 0;
+		margin-bottom: 20px;
 	}
 }
 
@@ -884,6 +1071,31 @@
 	.direction__time {
 	    font-size: 16px;
 	    margin-bottom: 15px;
+	}
+	.stat__number{
+		height: 100px;
+		img{
+			max-height: 100%;
+		}
+	}
+	.about-info__txt {
+	    max-width: 100%;
+	}
+	.about-info__wrap {
+	    flex-wrap: wrap;
+	}
+	.about-info__item {
+	    padding-left: 0;
+	    width: 100%;
+	}
+	.head__img {
+	    height: 380px;
+	}
+	.packages {
+	    padding-top: 30px;
+	}
+	.scroll-down{
+		display: none;
 	}
 }
 
