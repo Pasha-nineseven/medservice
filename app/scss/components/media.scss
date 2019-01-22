@@ -13,10 +13,12 @@
 
 @media screen and (max-width: 1450px){
 	.slider-doctor .slick-prev,
+	.slider-doctor-index .slick-prev,
 	.slider-another .slick-prev{
 		left: 4px;
 	}
 	.slider-doctor .slick-next,
+	.slider-doctor-index .slick-next,
 	.slider-another .slick-next{
 		right: 4px;
 	}
@@ -85,6 +87,7 @@
 	    height: 230px;
 	}
 	.slider-doctor .slick-arrow,
+	.slider-doctor-index .slick-arrow,
 	.slider-another .slick-arrow {
 	    top: 113px;
 	}
@@ -972,6 +975,7 @@
 	    margin-bottom: 10px;
 	}
 	.slider-doctor .slick-arrow,
+	.slider-doctor-index .slick-arrow,
 	.slider-another .slick-arrow{
 	    top: 75px;
 	    width: 30px;

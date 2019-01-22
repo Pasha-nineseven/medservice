@@ -133,7 +133,7 @@ $(document).ready(function() {
 	});
 
 
-	//SERVICE slider
+	//slider-doctor
 	if ($('.slider-doctor').length>0) {
 		var $gallery = $('.slider-doctor');
 
@@ -266,6 +266,44 @@ $(document).ready(function() {
         //console.log(bottomHeight);
         $('.page-top-about').css('margin-bottom', -bottomHeight );
     }
+
+
+    //slider-doctor-index
+    if ($('.slider-doctor-index').length>0) {
+        var $gallery = $('.slider-doctor-index');
+
+        $gallery.slick({
+            speed: 250,
+            // fade: true,
+            // cssEase: 'linear',
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                  breakpoint: 992,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                  }
+                },
+            ]
+        });
+    };
 
 	ymaps.ready(initializeDefaultMap);
 
