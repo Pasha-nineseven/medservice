@@ -4464,7 +4464,7 @@ textarea, input {
   padding-top: 0;
   padding-bottom: 0; }
 
-.layout--index .btn {
+.layout--index .page-content .btn {
   font-size: 17px;
   padding: 6px 17px; }
 
