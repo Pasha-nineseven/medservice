@@ -88,6 +88,7 @@
 	.page-content{
 		padding-top: 0;
 	}
+
 }
 
 .layout--index{
@@ -106,6 +107,36 @@
 			font-size: 17px;
 			padding: 6px 17px;
 		}
+	}
+	.page-top__bg:before{
+		display: none;
+	}
+	.page-header__logo {
+	    background: url(../img/svg/top-logo-index.svg) no-repeat;
+	    background-size: contain;
+	}
+	.top-search__link,
+	.page-header__mail,
+	.page-header__phone,
+	.page-header-currency__view{
+		color: #022835;
+	}
+	.top-nav__link {
+	    color: #022835;
+	}
+	.top-nav__link:hover {
+	    color: #0088CC;
+	}
+	.top-socials__item--vk{
+		background: #fff url(../img/svg/vk-h.svg) center no-repeat;
+	}
+
+	.top-socials__item--fb{
+		background: #fff url(../img/svg/fb-h.svg) center no-repeat;
+	}
+
+	.top-socials__item--inst{
+		background: #fff url(../img/svg/inst-h.svg) center no-repeat;
 	}
 }
 
