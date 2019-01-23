@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="223px" height="187px" viewBox="0 0 223 187" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>FBDFED37-E040-46F5-8A97-4F87E88F1CE6</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M785.190378,204.276493 L764.791474,204.276493 L764.791474,139 L840.267419,139 L840.267419,171.638247 C841.083375,178.165896 841.491353,184.693545 841.491353,191.221195 C841.491353,231.611025 825.988186,274.040745 790.086115,287.912 L755,259.353534 C774.582948,246.706214 785.190378,228.3472 785.190378,204.276493 Z M885.552986,204.276493 L865.154082,204.276493 L865.154082,139 L940.630027,139 L940.630027,171.638247 C941.445984,178.165896 941.853962,184.693545 941.853962,191.221195 C941.853962,231.611025 926.350795,274.040745 890.448723,287.912 L855.362608,259.353534 C874.945556,246.706214 885.552986,228.3472 885.552986,204.276493 Z" id="path-1"></path>
+        <filter x="-16.6%" y="-19.5%" width="133.2%" height="141.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0947973279 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="medservicebel_index_15_hover" transform="translate(-1020.000000, -3656.000000)">
+            <g id="5-й-экран" transform="translate(0.000000, 3267.000000)">
+                <g id="Отзыв" transform="translate(282.000000, 268.000000)">
+                    <g id="index/svg/otziv_quote">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

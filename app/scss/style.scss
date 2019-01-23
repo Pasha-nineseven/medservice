@@ -3203,17 +3203,11 @@ ymaps[class*="-balloon__layout"]{
 	}
 }
 
-.activities{
-	background: #fff;
-	margin: 0 -15px;
-	padding: 100px 0;
-	h2{
-		line-height: 1;
-	}
-}
+
 
 .our{
 	padding: 69px 0 49px;
+	overflow: hidden;
 	h2{
 		margin-bottom: 20px;
 	}
@@ -3595,7 +3589,269 @@ ymaps[class*="-balloon__layout"]{
 	}
 }
 
+.activities{
+	background: #fff;
+	margin: 0 -15px;
+	padding: 100px 0 84px;
+	h2{
+		line-height: 1;
+		margin-bottom: 18px;
+	}
+}
 
+.activities-list{
+	padding-left: 452px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.activities-item{
+	display: flex;
+	width: 50%;
+	align-items: center;
+	color: #0088CC;
+	margin-bottom: 24px;
+	font-family: 'osnova_probold';
+	&:hover{
+		color: #022835;
+	}
+}
+
+.activities__icon{
+    position: relative;
+    z-index: 1;
+    width: 53px;
+    min-width: 53px;
+    height: 53px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 11px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #0091EA;
+    overflow: hidden;
+    align-items: center;
+    img{
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+    }
+}
+
+.help{
+	overflow: hidden;
+	.btn-wrap{
+		padding-top: 30px;
+	}
+}
+
+.help__inner{
+	padding: 70px 0;
+	padding-right: 40%;
+	    position: relative;
+    z-index: 1
+}
+
+.help__bg{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-size: contain;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+.index-reviews{
+	background: #F4F4F4; 
+	padding-top: 100px;
+	margin-left: -15px;
+	margin-right: -15px;
+	overflow: hidden; 
+}
+
+.index-reviews-slider__img{
+	height: 800px;
+	width: 799px;
+	border: 50px solid #FFFFFF;
+	opacity: 0.8;
+	border-radius: 50%;
+	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.index-reviews-slider__txt{
+	margin-bottom: 31px;
+	position: relative;
+	z-index: 1;
+	
+}
+.index-reviews-slider__person{
+	margin-bottom: 16px;
+	font-size: 17px;
+	position: relative;
+	z-index: 1;
+	text-align: right;
+}
+.index-reviews-slider__place{
+	margin-bottom: 10px;
+	font-size: 17px;
+	position: relative;
+	z-index: 1;
+	text-align: right;
+}
+.index-reviews-slider__info{
+	    max-width: 508px;
+	    padding-right: 70px;
+    position: absolute;
+    right: 0;
+    top: 200px;
+	&:after{
+		content: "";
+		display: inline-block;
+		background: url(../img/svg/otziv_quote.svg) no-repeat;
+		position: absolute;
+		    right: -8px;
+    	top: -33px;
+		width:  223px;
+		height: 187px;
+		background-size: cover;
+		//z-index: -1;
+	}
+}
+
+
+
+.index-reviews-slider{
+	//position: relative;
+	margin-bottom: -70px;
+	display: none;
+	&.slick-initialized{
+		display: block;
+	}
+	.btn-wrap{
+		text-align: right;
+		padding-top: 67px;
+		position: relative;
+		z-index: 1;
+	}
+
+	.btn{
+		padding: 6px 27px;
+	}
+}
+
+.index-reviews-slider__item{
+	//padding-right: 70px;
+}
+
+
+.index-reviews-slider-nav{
+	display: none;
+    position: absolute;
+    right: 5px;
+    top: 48px;
+    padding-top: 87px;
+    padding-bottom: 75px;
+    width: 75px;
+	&.slick-initialized{
+		display: block;
+	}
+	.slick-arrow{
+		display: inline-block;
+		background: transparent;
+		text-indent: -9999em;
+		padding: 0;
+		position: absolute;
+		left: 9px;
+		width: 58px;
+		height: 58px;
+		opacity: 0.7;
+		border: 0;
+		transition:all 0.3s ease;
+		z-index: 2;
+		transform: rotate(-90deg);
+		&:hover{
+			transform: rotate(-90deg) scale(1.07);
+			opacity: 1;
+		}
+	}
+
+	.slick-next{	
+		bottom: 0;
+		background: url(../img/svg/doctor_slider_arrow_left.svg);
+		background-size: cover;
+
+	}
+	.slick-prev{
+		top: 0;
+		background: url(../img/svg/doctor_slider_arrow_right.svg);
+		background-size: cover;
+	}
+	.slick-disabled{
+		opacity: 0.5;
+		//pointer-events:none;
+	}
+	.slick-current{
+		//font-size: 56px;
+		span{
+			transform: scale(3);
+			font-family: 'osnova_proregular';
+		}
+		
+	}
+	.slick-slide{
+		position: relative;
+		&:after{
+			content: "";
+			height: 1px;
+			width: 0;
+			background-color: #056493;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			transition: all 0s;
+		}
+		&:last-child{
+			&.slick-current{
+				&:after{
+					bottom: auto;
+					top: 0;
+				}
+			}
+		}
+		&.slick-current{
+			&:after{
+				width: 196px;
+				transition: all 0.6s ease 0.3s;
+			}
+		}
+	}
+	.slick-list{
+		padding-left: 121px;
+   	 	margin-left: -121px;
+	}
+}
+
+.index-reviews-slider-nav__item{
+	font-family: 'osnova_probold';
+	text-align: center;
+	padding: 24px 0;
+	cursor: pointer;
+	span{
+		display: inline-block;
+		transition: all 0.3s ease;
+	}
+	
+}
+
+.index-reviews-slider-wrap{
+	position: relative;
+}
 
 @import "components/footer";
 

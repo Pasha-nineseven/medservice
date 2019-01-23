@@ -291,6 +291,39 @@ $(document).ready(function() {
         });
     };
 
+    //index-reviews-slider
+    if ($('.index-reviews-slider').length>0) {
+        var $gallery1 = $('.index-reviews-slider');
+
+        $gallery1.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:false,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            fade: true,
+            asNavFor: '.index-reviews-slider-nav',
+        });
+
+        var $gallery2 = $('.index-reviews-slider-nav');
+
+        $gallery2.slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            infinite: false,
+            focusOnSelect: true,
+            vertical: true,
+            verticalSwiping: false,
+            asNavFor: '.index-reviews-slider',
+        });
+    };
+
 	ymaps.ready(initializeDefaultMap);
 
 	ymaps.ready(initializeContactMap);
