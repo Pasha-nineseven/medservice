@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>test</title>
+		<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+		<link href="css/libs.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout">
+			<header class="page-header">
+				<div class="container-fluid">
+					<div class="page-header__wrap">
+						<a href="#" class="menu-btn js-menu-btn">
+							<span class="burger-icon"></span>
+						</a>
+						<div class="menu-mobile">
+							<a href="#" class="menu-mobile__close js-menu-mobile__close"></a>
+							<div class="page-header__links">
+								<div class="page-header-lang">
+									<a href="#" class="page-header-lang__view">
+										<i class="page-header-lang__icon">
+											<img src="img/svg/ru.svg" alt="">
+										</i>
+									</a>
+									<div class="page-header-lang__list">
+										<a href="#" class="page-header-lang__item">
+											<i class="page-header-lang__icon">
+												<img src="img/svg/ru.svg" alt="">
+											</i>
+											Русский
+										</a>
+										<a href="#" class="page-header-lang__item">
+											<i class="page-header-lang__icon">
+												<img src="img/svg/en.svg" alt="">
+											</i>
+											English
+										</a>
+									</div>
+								</div>
+								<div class="page-header-currency">
+									<a href="#" class="page-header-currency__view">
+										<i class="page-header-currency__icon">
+											<img src="img/svg/russian_ruble.svg" alt="">
+										</i>
+										RUB
+									</a>
+									<div class="page-header-currency__list">
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--rub"></i>
+											RUB
+										</div>
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--eur"></i>
+											EUR
+										</div>
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--usd"></i>
+											USD
+										</div>
+										<div class="page-header-currency__item">
+											<i class="page-header-currency__icon page-header-currency__icon--byn"></i>
+											BYN
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="top-socials">
+								<a href="#" class="top-socials__item top-socials__item--vk"></a>
+								<a href="#" class="top-socials__item top-socials__item--fb"></a>
+								<a href="#" class="top-socials__item top-socials__item--inst"></a>
+							</div>
+							<div class="menu-mobile__list">
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Услуги</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Врачи</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Проживание</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Санатории</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Контакты</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Отзывы</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">О нас</a></div>
+								<div class="menu-mobile__item"><a href="#" class="menu-mobile__link">Блог</a></div>
+							</div>
+							<div class="menu-mobile__contact">
+								<a href="tel:+375291234567" class="page-header__phone">+37529 123-45-67</a>
+								<a href="mailto:info@medservicebel.com" class="page-header__mail">info@medservicebel.com</a>
+							</div>
+						</div>
+						<a href="#" class="page-header__logo"></a>
+						<div class="page-header__info">
+							<div class="page-header__top">
+								<div class="page-header__links">
+									<div class="page-header-lang">
+										<a href="#" class="page-header-lang__view">
+											<i class="page-header-lang__icon">
+												<img src="img/svg/ru.svg" alt="">
+											</i>
+										</a>
+										<div class="page-header-lang__list">
+											<a href="#" class="page-header-lang__item">
+												<i class="page-header-lang__icon">
+													<img src="img/svg/ru.svg" alt="">
+												</i>
+												Русский
+											</a>
+											<a href="#" class="page-header-lang__item">
+												<i class="page-header-lang__icon">
+													<img src="img/svg/en.svg" alt="">
+												</i>
+												English
+											</a>
+										</div>
+									</div>
+									<div class="page-header-currency">
+										<a href="#" class="page-header-currency__view">
+											<i class="page-header-currency__icon">
+												<img src="img/svg/russian_ruble.svg" alt="">
+											</i>
+											RUB
+										</a>
+										<div class="page-header-currency__list">
+											<div class="page-header-currency__item">
+												<i class="page-header-currency__icon page-header-currency__icon--rub"></i>
+												RUB
+											</div>
+											<div class="page-header-currency__item">
+												<i class="page-header-currency__icon page-header-currency__icon--eur"></i>
+												EUR
+											</div>
+											<div class="page-header-currency__item">
+												<i class="page-header-currency__icon page-header-currency__icon--usd"></i>
+												USD
+											</div>
+											<div class="page-header-currency__item">
+												<i class="page-header-currency__icon page-header-currency__icon--byn"></i>
+												BYN
+											</div>
+										</div>
+									</div>
+									<div class="top-socials">
+										<a href="#" class="top-socials__item top-socials__item--vk"></a>
+										<a href="#" class="top-socials__item top-socials__item--fb"></a>
+										<a href="#" class="top-socials__item top-socials__item--inst"></a>
+									</div>
+								</div>
+								<div class="page-header__contact">
+									<a href="tel:+375291234567" class="page-header__phone">+37529 123-45-67</a>
+									<a href="mailto:info@medservicebel.com" class="page-header__mail">info@medservicebel.com</a>
+								</div>	
+							</div>
+							<div class="top-nav">
+								<div class="top-nav__item submenu">
+									<a href="#" class="top-nav__link">Услуги</a>
+									<div class="submenu__list">
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/stom.svg" alt="">
+												</div>
+												<div class="submenu__txt">Стоматология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/fleb.svg" alt="">
+												</div>
+												<div class="submenu__txt">Флебология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/plast.svg" alt="">
+												</div>
+												<div class="submenu__txt">Пластика и косметология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/uro.svg" alt="">
+												</div>
+												<div class="submenu__txt">Урология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/diag.svg" alt="">
+												</div>
+												<div class="submenu__txt">Диагностика</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/ortop.svg" alt="">
+												</div>
+												<div class="submenu__txt">Ортопедия</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/onko.svg" alt="">
+												</div>
+												<div class="submenu__txt">Онкология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/ginek.svg" alt="">
+												</div>
+												<div class="submenu__txt">Гинекология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/hirurg.svg" alt="">
+												</div>
+												<div class="submenu__txt">Хирургия</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/lech.svg" alt="">
+												</div>
+												<div class="submenu__txt">Лечение за границей</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/speleo.svg" alt="">
+												</div>
+												<div class="submenu__txt">Спелеолечение</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/nevro.svg" alt="">
+												</div>
+												<div class="submenu__txt">Неврология</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/kardio.svg" alt="">
+												</div>
+												<div class="submenu__txt">
+													Кардиология
+												</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__icon">
+													<img src="img/svg/oftal.svg" alt="">
+												</div>
+												<div class="submenu__txt">
+													Офтальмология
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">Врачи</a>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">Проживание</a>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">Санатории</a>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">Контакты</a>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">Отзывы</a>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">О нас</a>
+								</div>
+								<div class="top-nav__item">
+									<a href="#" class="top-nav__link">Блог</a>
+								</div>
+							</div>
+						</div>
+						<div class="page-header__r">
+							<div class="top-search">
+								<a href="#" class="top-search__link js-top-search__link">Поиск по сайту</a>
+								<div class="top-search__toggle">
+									<input type="text" class="top-search__input" placeholder="Поиск по сайту">
+									<input type="submit" class="top-search__submit">
+									<a href="#" class="top-search__close js-top-search__close"></a>
+								</div>
+							</div>
+							<a href="#" class="btn">
+								<span>
+									Бесплатная консультация
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="page-top">
+				<div class="page-top__bg" style="background-image: url(img/content/bg1.jpg)"></div>
+				<div class="container-fluid">
+					<div class="page-top__txt">
+						<div class="page-title">
+							<h1>Экспресс имплантация зубов</h1>
+						</div>
+						<div class="page-top__wrap">
+							<div class="breadcrumbs">
+								<a href="#" class="breadcrumbs__item">Главная</a>
+								<a href="#" class="breadcrumbs__item">Услуги</a>
+								<a href="#" class="breadcrumbs__item">Стоматология</a>
+								<span class="breadcrumbs__item">Экспресс имплантация зубов</span>
+							</div>
+							<div class="page-top-additional">
+								<div class="page-top-additional__txt">
+									Имплантация зубов – это безболезненная процедура, целью которой является установка титанового имплантата в место отсутствующего зуба, для дальнейшей фиксации на нём несъемного зубного протеза.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="page-content workarea">
+					<div class="container-fluid">
+						<div class="page-top__wrap page-top__wrap--mobile">
+							<div class="breadcrumbs">
+								<a href="#" class="breadcrumbs__item">Главная</a>
+								<a href="#" class="breadcrumbs__item">Услуги</a>
+								<a href="#" class="breadcrumbs__item">Стоматология</a>
+								<span class="breadcrumbs__item">Экспресс имплантация зубов</span>
+							</div>
+							<div class="page-top-additional">
+								<div class="page-top-additional__txt">
+									Имплантация зубов – это безболезненная процедура, целью которой является установка титанового имплантата в место отсутствующего зуба, для дальнейшей фиксации на нём несъемного зубного протеза.
+								</div>
+							</div>
+						</div>
+						<!-- CONTENT-PART -->
+						<div class="sanatorium">
+							<div class="sanatorium-price">
+								<div class="sanatorium-price__in">
+									<div class="service-aside">
+										<div class="service-aside-item service-aside-item--long">
+											<div class="service-aside-item__top">
+												Длительность проведения процедуры
+											</div>
+											от <strong>3</strong> дней
+										</div>
+										<div class="service-aside-item service-aside-item--price">
+											<div class="service-aside-item__top">
+												Стоимость услуги
+											</div>
+											от <strong class="count">1000 $</strong>
+										</div>
+									</div>
+									<a href="#" class="btn"><span>Получить консультацию</span></a>
+								</div>
+							</div>
+							<div class="sanatorium-info">
+								<div class="sanatorium-top-slider-wrap">
+									<div class="sanatorium-top-slider">
+										<div class="sanatorium-top-slider__item">
+											<div class="sanatorium-top-slider__img" style="background-image: url(img/content/bg1.jpg)"></div>
+										</div>
+										<div class="sanatorium-top-slider__item">
+											<div class="sanatorium-top-slider__img" style="background-image: url(img/content/good.jpg)"></div>
+										</div>
+										<div class="sanatorium-top-slider__item">
+											<div class="sanatorium-top-slider__img" style="background-image: url(img/content/bg1.jpg)"></div>
+										</div>
+										<div class="sanatorium-top-slider__item">
+											<div class="sanatorium-top-slider__img" style="background-image: url(img/content/good.jpg)"></div>
+										</div>
+									</div>
+								</div>
+								<div class="sanatorium__item">
+									<div class="content__title">Описание услуги</div>
+									<p>
+										История современной имплантологии начинается в далеком 1965 году, когда шведский ученый Бранемарк, установил первые в мире титановые дентальные имплантаты. <span class="highlighted">Пациент прожил с этим протезам 41 год, до конца своей жизни.</span>
+									</p>
+									<div class="content-image">
+										<img src="img/content/img2.jpg" alt="">
+									</div>
+									<p>
+										Конечно, с тех пор дентальная имплантация сильно продвинулась вперед, появилось имплантаты и методики, которые позволили сократить стандартный срок лечения с 6 месяцев, до нескольких дней.
+									</p>
+									<blockquote>
+										<span class="highlighted">
+											Экспресс имплантация зубов – это современная методика имплантации, которая позволяет установив имплантаты в кость, в течении 5 дней зафиксировать на них полноценный несъемный зубной протез. 
+										</span>
+									</blockquote>
+									<p>
+										Данная методика начала применятся с 1998 года, доказала свою надёжность, и активно практикуется во всем мире, в том числе и США. 
+									</p>
+									<div class="service-title">Первый этап – подготовительный</div>
+									<p>
+										Все начинается с санации полости рта: лечения кариеса, чистки и т.д. Далее, пациент присылает нам панорамный снимок или 3D томографию. Наши врачи изучают снимок и составляют план лечения и стоимость.
+									</p>
+									<div class="content-image">
+										<img src="img/content/img2.jpg" alt="">
+									</div>
+									<div class="service-title">Второй этап — в клинике</div>
+									<div class="list-strong">
+										<ol>
+											<li>
+												<strong>Первый день</strong>
+												Проводится первичный осмотр с имплантологом и ортопедом. Выполняется установка имплантатов, под местной анестезией (1-3 часа). 
+											</li>
+											<li>
+												<strong>Второй день</strong>
+												Ортопед снимает слепки для изготовления протеза
+											</li>
+											<li>
+												<strong>Третий день</strong>
+												Происходит примерка и коррекция каркаса протеза
+											</li>
+											<li>
+												<strong>Четвертый день</strong>
+												Утверждение готового протеза
+											</li>
+											<li>
+												<strong>Пятый день</strong>
+												Фиксация протеза на имплантатах
+											</li>
+											<li>
+												<strong>Шестой день</strong>
+												Контрольный осмотр, финальная коррекция и оформление официальной гарантии. Счастливый пациент отправляется домой
+											</li>
+										</ol>
+									</div>
+									<p>
+										Как видите, всё довольно понятно и просто. Спасибо, слаженной профессиональной команде наших специалистов, которые постоянно делают такие замечательные операции, с процентом успеха 98%.
+									</p>
+									<p>
+										Если Вас интересует экспресс-имплантация в Минске или остались вопросы, жмите на кнопку бесплатной консультации или пишите нам на почту info@medservicebel.com.
+									</p>
+									<p>
+										Мы поможем Вам на всех этапах и всё пройдет отлично. Будьте здоровы!
+									</p>
+									<div class="service-title">Плюсы экспресс имплантации зубов</div>
+									<div class="benefits">
+										<div class="benefits__item">
+											<div class="benefits__icon">
+												<img src="img/svg/timer.svg" alt="">
+											</div>
+											<div class="benefits__txt">
+												Весь процесс лечения «под ключ» занимает 5 дней
+											</div>
+										</div>
+										<div class="benefits__item">
+											<div class="benefits__icon">
+												<img src="img/svg/piggy-bank.svg" alt="">
+											</div>
+											<div class="benefits__txt">
+												Намного дешевле, чем стандартная имплантация
+											</div>
+										</div>
+										<div class="benefits__item">
+											<div class="benefits__icon">
+												<img src="img/svg/dental-prosthesis.svg" alt="">
+											</div>
+											<div class="benefits__txt">
+												Костная пластика не требуется в 80% случаев
+											</div>
+										</div>
+										<div class="benefits__item">
+											<div class="benefits__icon">
+												<img src="img/svg/clipboard-with-check-marks.svg" alt="">
+											</div>
+											<div class="benefits__txt">
+												Пациент привыкает к протезу в течении нескольких дней или недель
+											</div>
+										</div>
+										<div class="benefits__item">
+											<div class="benefits__icon">
+												<img src="img/svg/pair-of-molars.svg" alt="">
+											</div>
+											<div class="benefits__txt">
+												Внешне протез выглядит как настоящие зубы
+											</div>
+										</div>
+										<div class="benefits__item">
+											<div class="benefits__icon">
+												<img src="img/svg/apple.svg" alt="">
+											</div>
+											<div class="benefits__txt">
+												Нет дискомфорта при разговоре или питании
+											</div>
+										</div>
+									</div>
+									<div class="service-title">Предложение по лечению</div>
+								</div>
+								<div class="service-offer">
+									<div class="service-offer__item">
+										<div class="service-offer__txt">
+											Установка одного имплантата 
+										</div>
+										<div class="service-offer__price">
+											<span class="highlighted">
+												от 1000 $
+											</span>
+										</div>
+									</div>
+									<div class="service-offer__item">
+										<div class="service-offer__txt">
+											Установка шести имплантатов  
+										</div>
+										<div class="service-offer__price">
+											<span class="highlighted">
+												от 2000 $
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--end CONTENT-PART -->
+					</div>
+				</div>
+			</div>
+			<footer class="page-footer">
+				<div class="page-footer-top">
+					<div class="container-fluid">
+						<div class="page-footer-top__wrap">
+							<div class="page-footer-top__item">
+								<div class="page-footer-top__title">Остались вопросы? Звоните</div>
+								<a href="tel:+375290000000" class="page-footer-top__add page-footer-top__add--phone">+37529 000-00-00</a>
+							</div>
+							<div class="page-footer-top__item">
+								<div class="page-footer-top__title">Мы можем связаться с вами сами</div>
+								<a href="#" class="page-footer-top__add">
+									Заказать звонок
+								</a>
+							</div>
+							<div class="page-footer-top__item">
+								<div class="page-footer-top__title">Напишите нам</div>
+								<a href="#" class="page-footer-top__add page-footer-top__add--mail">
+									Написать письмо
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-footer-info">
+					<div class="container-fluid">
+						<div class="row page-footer-info__wrap">
+							<div class="col-lg-3 col-md-12 copyright">
+								Организация лечения в клиниках Беларуси<br>
+								&copy; 2018-2019 «Med Servis Belarus»
+								<div class="develop">
+									<a href="https://nineseven.by/" class="develop__link" target="_blank">Создание сайта Nineseven</a>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-12 page-footer-info-cards">
+								<div class="page-footer-info-cards__title">Мы принимаем к оплате</div>
+								<div class="page-footer-info-cards__wrap">
+									<div class="page-footer-info-cards__item">
+										<img src="img/svg/visa.svg" alt="">
+									</div>
+									<div class="page-footer-info-cards__item">
+										<img src="img/svg/mastercard.svg" alt="">
+									</div>
+									<div class="page-footer-info-cards__item">
+										<img src="img/svg/wallet.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-6 page-footer-info__map">
+								<a href="#">Карта сайта</a>
+							</div>
+							<div class="col-lg-3 col-md-6 page-footer-info-support">
+								<div class="page-footer-info-support__title">
+									При поддержке
+								</div>
+								<a href="#" class="page-footer-info-support__link" target="_blank">
+									Министерство спорта и туризма Республики Беларусь
+								</a>
+							</div>
+							<div class="col-lg-2 col-md-12 page-footer-info-socials">
+								<div class="page-footer-info-socials__title">Мы в соцсетях</div>
+								<div class="page-footer-info-socials__list">
+									<a href="#" class="page-footer-info-socials__item page-footer-info-socials__item--vk"></a>
+									<a href="#" class="page-footer-info-socials__item page-footer-info-socials__item--fb"></a>
+									<a href="#" class="page-footer-info-socials__item page-footer-info-socials__item--inst"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+		</div><!-- END LAYOUT-->
+
+		<!-- POPUP -->
+		<div id="consultation" class="popup mfp-with-anim mfp-hide">
+			<h5>Получить консультацию</h5>
+			<div class="submit-form">
+				<form action="#" method="post">
+					<div class="input-wrap">
+						<div class="input-label">Имя</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Телефон</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Электронная почта</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Ваше сообщение</div>
+						<div class="input-wrap__item">
+							<textarea></textarea>
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div id="file-upload-output" class="file-upload-output"></div>
+						<div class="file-upload">
+							<input type="file" id="file-upload" name="file-upload"  multiple="multiple"/>
+							<label for="file-upload" class="custom-file-upload">
+							    Прикрепить файл
+							</label>
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="checkbox-item">
+							<input type="checkbox" id="checkbox1" name="checkbox" checked="">
+							<label for="checkbox1">
+								Я согласен с <a href="#">пользовательским соглашением</a>
+							</label>
+						</div>
+					</div>
+					<button type="submit" class="btn"><span>Получить консультацию</span></button>
+				</form>
+			</div>
+		</div>
+
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/interface.js"></script>
+	</body>
+</html>

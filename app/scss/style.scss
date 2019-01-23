@@ -1346,6 +1346,24 @@ ymaps[class$="-copyright"] {
 	}
 }
 
+.service-title{
+	font-size: 26px;
+	font-family: 'osnova_probold';
+	padding-bottom: 8px;
+	position: relative;
+	margin-bottom: 24px;
+	&:after{
+		content: "";
+		height: 2px;
+		width: 116px;
+		background: linear-gradient(90deg, #1EBF9D 0%, #1073B9 100%);
+		display: inline-block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
 .cert{
 	max-width: 655px;
 	margin-right: -35px;
@@ -1863,7 +1881,9 @@ ymaps[class$="-copyright"] {
 	order:1;
 	padding-right: 34px;
 	flex:1;
-	overflow: hidden;
+	    min-width: 0;
+    min-height: 0;
+	//overflow: hidden;
 }
 .sanatorium-price__in{
 	background: #fff;
@@ -3459,6 +3479,122 @@ ymaps[class*="-balloon__layout"]{
 		transform: translateY(-50%);
 	}
 }
+
+.content-image{
+	margin-bottom: 20px;
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+
+.list-strong{
+	ol{
+		li{
+			&:before{
+				font-family: 'osnova_probold';
+			}
+			strong{
+				display: block;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+.benefits{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.benefits__item{
+	max-width: 348px;
+	min-width: 348px;
+	margin-bottom: 36px;
+}
+
+.benefits__icon{
+	width: 108px;
+	min-width: 108px;
+	height: 108px;
+	margin-bottom: 13px;
+	border-radius: 50%;
+	border: 1.43px solid #0091EA;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img{
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+	}
+}
+.service-offer{
+	border-top: 1px solid #939393;
+	max-width: 540px;
+}
+
+.service-offer__item{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #939393;
+	padding: 22px 0;
+
+}
+
+.service-aside-item{
+	margin-bottom: 24px;
+	font-size: 14px;
+	strong{
+		font-size: 30px;
+	}
+}
+
+.service-aside-item--price{
+	padding-left: 30px;
+	position: relative;
+	&:before{
+		content: "";
+	    display: inline-block;
+	    vertical-align: middle;
+	    width: 20px;
+	    height: 20px;
+	    background: url(../img/svg/select_price.svg) no-repeat;
+	    background-size: cover;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	}
+}
+
+.service-aside-item--long{
+	padding-left: 30px;
+	position: relative;
+	&:before{
+		content: "";
+	    display: inline-block;
+	    vertical-align: middle;
+	    width: 20px;
+	    height: 20px;
+	    background: url(../img/svg/clock2.svg) no-repeat;
+	    background-size: cover;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	}
+}
+
+.service-aside{
+	padding-top: 11px;
+	padding-bottom: 13px;
+	.btn{
+		font-size: 17px;
+	}
+}
+
 
 
 @import "components/footer";

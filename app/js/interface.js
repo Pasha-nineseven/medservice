@@ -1,8 +1,5 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
-	// $("body").on("click", ".test", function(e){
-	// 	e.preventDefault();
-	// })
 
 	//TOP-SEARCH
     $("body").on("click", ".js-top-search__link", function(e){
@@ -27,8 +24,6 @@ $(document).ready(function() {
 	$("body").on("click", ".js-menu-mobile__close", function(e){
 		$('body').removeClass('hidden');
         $(".menu-mobile").fadeOut();
-  //       setTimeout(function(){
-		// }, 400);
 	});
 
 	//TOOLTIP
@@ -139,8 +134,6 @@ $(document).ready(function() {
 
 	    $gallery.slick({
 			speed: 250,
-			// fade: true,
-			// cssEase: 'linear',
 			swipe: true,
 			swipeToSlide: true,
 			touchThreshold: 10,
@@ -169,8 +162,6 @@ $(document).ready(function() {
 
         $gallery.slick({
             speed: 250,
-            // fade: true,
-            // cssEase: 'linear',
             swipe: true,
             swipeToSlide: true,
             touchThreshold: 10,
@@ -219,8 +210,6 @@ $(document).ready(function() {
 
         $gallery.slick({
             speed: 250,
-            // fade: true,
-            // cssEase: 'linear',
             swipe: true,
             swipeToSlide: true,
             touchThreshold: 10,
@@ -263,7 +252,6 @@ $(document).ready(function() {
     //ABOUT-PAGE-TITLE
     if ($('.page-top-about').length>0) {
         var bottomHeight = $('.page-top-about__txt').innerHeight();
-        //console.log(bottomHeight);
         $('.page-top-about').css('margin-bottom', -bottomHeight );
     }
 
@@ -274,8 +262,6 @@ $(document).ready(function() {
 
         $gallery.slick({
             speed: 250,
-            // fade: true,
-            // cssEase: 'linear',
             swipe: true,
             swipeToSlide: true,
             touchThreshold: 10,
@@ -365,7 +351,6 @@ function initializeContactMap() {
 	    }); 
                 
         var myPlacemark = new ymaps.Placemark([53.899888,27.566757],{
-                // balloonContentBody: 'Адрес',
             },{
             iconLayout: 'default#image',
             iconImageHref: "img/svg/label.svg", 
@@ -405,9 +390,6 @@ function initializeSanatoriumMap() {
                     '<div class="map-distance">Расстояние: 30 км от Минска</div>' +
                     '</div>',
                 ],
-                // maxWidth:425,
-                // shadow:false,
-                // balloonOffset: [-80, -430],
             },{
             iconLayout: 'default#image',
             iconImageHref: "img/svg/label.svg", 
@@ -448,6 +430,7 @@ $('body').append(
         <li><a href="sanatorium.html">Санаторий</a></li> \
         <li><a href="sanatoriums.html">Санатории</a></li> \
         <li><a href="services.html">Услуги</a></li> \
+        <li><a href="service.html">Услуга</a></li> \
         <li><a href="shablon.html">Шаблон списков</a></li> \
         <li><a href="str_napravlenija.html">Стр.направления</a></li> \
         <li><a href="about.html">О нас</a></li> \

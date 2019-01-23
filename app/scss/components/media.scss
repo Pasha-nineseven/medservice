@@ -720,6 +720,9 @@
 	.content__title{
 		font-size: 30px;
 	}
+	.service-title{
+		font-size: 22px;
+	}
 	.services-item--md {
 	    height: 300px;
 	}
@@ -1035,6 +1038,9 @@
 	.content__title{
 		font-size: 18px;
 	}
+	.service-title{
+		font-size: 18px;
+	}
 	.sanatorium-kind__title {
 	    font-size: 16px;
 	}
@@ -1100,6 +1106,11 @@
 	}
 	.scroll-down{
 		display: none;
+	}
+	.benefits__item {
+	    max-width: 100%;
+	    min-width: 100%;
+	    margin-bottom: 20px;
 	}
 }
 
