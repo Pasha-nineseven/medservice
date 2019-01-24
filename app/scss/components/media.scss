@@ -139,6 +139,9 @@
 	.reviews{
 		padding-right: 0;
 	}
+	.blog{
+		padding-right: 0;
+	}
 	.icon-item {
 	    margin-bottom: 10px;
 	    margin-right: 20px;
@@ -781,6 +784,17 @@
 		font-size: 26px;
 		margin-bottom: 13px;
 	}
+	.blog__item {
+	    width: 50%;
+	}
+    .blog__img{
+		height: 270px;
+		margin-bottom: 22px;
+	}
+	.blog__title{
+		font-size: 26px;
+		margin-bottom: 13px;
+	}
 	.item {
 	    width: 50%;
 	}
@@ -858,6 +872,16 @@
 	}
 	.reviews__img,
 	.reviews__item.reviews__item--half .reviews__img {
+	    height: 170px;
+	}
+
+	.blog__title,
+	.blog__item.reviews__item--half .blog__title{
+	    font-size: 20px;
+	    margin-bottom: 10px;
+	}
+	.blog__img,
+	.blog__item.blog__item--half .blog__img {
 	    height: 170px;
 	}
 }
@@ -1252,6 +1276,24 @@
 		margin-bottom: 10px;
 	}
 	.reviews__txt {
+	    padding-top: 11px;
+	}
+
+	.blog__item.blog__item--half,
+	.blog__item{
+		width: 100%;
+	}
+	.blog__img,
+	.blog__item.blog__item--half .reviews__img {
+	    margin-bottom: 10px;
+	}
+	.blog__title, .blog__item.blog__item--half .blog__title {
+	    font-size: 16px;
+	}
+	.blog__place{
+		margin-bottom: 10px;
+	}
+	.blog__txt {
 	    padding-top: 11px;
 	}
 	.item {

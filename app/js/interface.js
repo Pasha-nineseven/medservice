@@ -558,6 +558,7 @@ $('body').append(
         <li><a href="shablon.html">Шаблон списков</a></li> \
         <li><a href="str_napravlenija.html">Стр.направления</a></li> \
         <li><a href="about.html">О нас</a></li> \
+        <li><a href="blog.html">Блог</a></li> \
 		<li><a href="index.html">Главная</a></li> \
 	</ol> \
 </div>');
