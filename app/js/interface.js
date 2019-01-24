@@ -233,6 +233,14 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
     });
 
+    //SCROLL-ANCHOR
+    $("body").on("click", ".js-scroll-anchor", function(e){
+        e.preventDefault();
+        $('.aside-filter__item').removeClass('active');
+        $(this).addClass('active');
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+    });
+
 
     //UPLOAD FILE
     $("#file-upload").change(function() {
@@ -328,6 +336,19 @@ $(document).ready(function() {
     //index-reviews-slider
     if ($('.main-benefits-slider').length>0) {
         var $gallery1 = $('.main-benefits-slider');
+        var $gallery2 = $('.main-benefits-slider-nav');
+
+         $gallery1.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            var next = nextSlide; 
+            $('.main-benefits__pager a').removeClass('active');
+            $('.main-benefits__pager .slide-' + next + ' a').addClass('active');
+        });
+        $gallery2.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            var next = nextSlide; 
+            $('.main-benefits__pager a').removeClass('active');
+            $('.main-benefits__pager .slide-' + next + ' a').addClass('active');
+        });
+
 
         $gallery1.slick({
             speed: 250,
@@ -343,7 +364,7 @@ $(document).ready(function() {
             asNavFor: '.main-benefits-slider-nav',
         });
 
-        var $gallery2 = $('.main-benefits-slider-nav');
+        
 
         $gallery2.slick({
             slidesToShow: 1,
@@ -356,6 +377,18 @@ $(document).ready(function() {
             verticalSwiping: false,
             asNavFor: '.main-benefits-slider',
         });
+
+        $('.main-benefits__pager ul li').each( function( i ) {
+            $('.main-benefits__pager .slide-' + i + ' a').click(function(e){
+                e.preventDefault();
+                $('.main-benefits__pager a').removeClass('active');
+                $(this).addClass('active');
+                $gallery1.slick('slickGoTo', i);
+                $gallery2.slick('slickGoTo', i);
+            })
+        })
+
+
     };
 
 
@@ -414,6 +447,12 @@ $(document).ready(function() {
             nextArrow: $(".main-next"),
         });
     };
+
+    if ($('.js-sticky-el').length>0) {
+        $(".js-sticky-el").stick_in_parent({
+            //offset_top: 100,
+        });
+    }
 
 	ymaps.ready(initializeDefaultMap);
 

@@ -34,6 +34,7 @@ gulp.task('scripts', function(){
         'app/libs/slick/slick.min.js',
         'app/libs/tooltip/tooltipster.bundle.min.js',
         'app/libs/respTabs/jquery.responsiveTabs.js',
+        'app/libs/sticky/sticky.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
