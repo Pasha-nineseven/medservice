@@ -324,6 +324,97 @@ $(document).ready(function() {
         });
     };
 
+
+    //index-reviews-slider
+    if ($('.main-benefits-slider').length>0) {
+        var $gallery1 = $('.main-benefits-slider');
+
+        $gallery1.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:false,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            fade: true,
+            asNavFor: '.main-benefits-slider-nav',
+        });
+
+        var $gallery2 = $('.main-benefits-slider-nav');
+
+        $gallery2.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            infinite: false,
+            focusOnSelect: true,
+            vertical: true,
+            verticalSwiping: false,
+            asNavFor: '.main-benefits-slider',
+        });
+    };
+
+
+
+    //PAGE-TOP-SLIDER
+    if ($('.page-top-slider').length>0) {
+        var $gallery = $('.page-top-slider');
+
+        $gallery.on('init', function(event, slick, currentSlide){
+            var slideCurrent = slick.currentSlide+1;
+            //console.log(slideCurrent);
+
+            $('.main-prev').find('span').text('01');
+            $('.main-next').find('span').text('02');
+
+            $('#counter').addClass('activeSlide-' + slideCurrent);
+        });
+        $gallery.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            var slideCurrent = slick.currentSlide+1;
+            $('#counter').removeClass();
+            $('#counter').addClass('activeSlide-' + slideCurrent);
+            //$(this).find('.slick-slide[data-slick-index="'+nextSlide+'"]').addClass('customClass ');
+            //$(this).find('.slick-slide[data-slick-index="'+currentSlide+'"]').removeClass('customClass');
+        });
+        $gallery.on("afterChange", function(event, slick, currentSlide){
+            var slideCurrent = slick.currentSlide+1;
+            $('#counter').removeClass();
+            $('#counter').addClass('activeSlide-' + slideCurrent);
+
+
+            $('.main-prev').find('span').text('0' + (currentSlide));
+            $('.main-next').find('span').text('0' + (currentSlide+2));
+            if (slick.$slides.length == currentSlide + slick.options.slidesToScroll) {
+                $('.main-next').find('span').text('0' + (currentSlide+1));
+            }
+            if (currentSlide==0) {
+                $('.main-prev').find('span').text('0' + (currentSlide+1));
+            }
+
+            //console.log(slick.currentSlide >= slick.slideCount - slick.options.slidesToShow);
+        });
+
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:true,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            fade: true,
+            prevArrow: $(".main-prev"),
+            nextArrow: $(".main-next"),
+        });
+    };
+
 	ymaps.ready(initializeDefaultMap);
 
 	ymaps.ready(initializeContactMap);
