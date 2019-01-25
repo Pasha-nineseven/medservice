@@ -128,6 +128,21 @@ $(document).ready(function() {
 	});
 
 
+    //IMAGE-GALLERY
+    $(".cert-item").fancybox({
+        speed : 330,
+        transitionEffect: "slide", 
+        animationEffect: "zoom-in-out", 
+        //toolbar  : false,
+        infobar: false,
+        buttons: [
+            "close"
+        ],
+        image : {
+            protect : true,
+        }
+    });
+
 	//slider-doctor
 	if ($('.slider-doctor').length>0) {
 		var $gallery = $('.slider-doctor');
@@ -395,12 +410,18 @@ $(document).ready(function() {
 
     //PAGE-TOP-SLIDER
     if ($('.page-top-slider').length>0) {
+        var time = 5;
+        var $bar,
+            $gallery,
+            isPause,
+            tick,
+            percentTime;
+
+
         var $gallery = $('.page-top-slider');
 
         $gallery.on('init', function(event, slick, currentSlide){
             var slideCurrent = slick.currentSlide+1;
-            //console.log(slideCurrent);
-
             $('.main-prev').find('span').text('01');
             $('.main-next').find('span').text('02');
 
@@ -410,8 +431,6 @@ $(document).ready(function() {
             var slideCurrent = slick.currentSlide+1;
             $('#counter').removeClass();
             $('#counter').addClass('activeSlide-' + slideCurrent);
-            //$(this).find('.slick-slide[data-slick-index="'+nextSlide+'"]').addClass('customClass ');
-            //$(this).find('.slick-slide[data-slick-index="'+currentSlide+'"]').removeClass('customClass');
         });
         $gallery.on("afterChange", function(event, slick, currentSlide){
             var slideCurrent = slick.currentSlide+1;
@@ -427,13 +446,11 @@ $(document).ready(function() {
             if (currentSlide==0) {
                 $('.main-prev').find('span').text('0' + (currentSlide+1));
             }
-
             //console.log(slick.currentSlide >= slick.slideCount - slick.options.slidesToShow);
         });
 
 
         $gallery.slick({
-            speed: 250,
             swipe: true,
             swipeToSlide: true,
             touchThreshold: 10,
@@ -441,11 +458,48 @@ $(document).ready(function() {
             dots:true,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             fade: true,
             prevArrow: $(".main-prev"),
             nextArrow: $(".main-next"),
+            //autoplay: true,
+           // autoplaySpeed: 4000,
+            pauseOnDotsHover: true,
+            // pauseOnHover: true,
         });
+
+        $bar = $('.progress');
+
+        function startProgressbar() {
+            resetProgressbar();
+            percentTime = 0;
+            isPause = false;
+            tick = setInterval(interval, 10);
+        }
+          
+        function interval() {
+            if(isPause === false) {
+              percentTime += 1 / (time+0.1);
+              $bar.css({
+                width: percentTime+"%"
+              });
+              if(percentTime >= 100)
+                {
+                  $gallery.slick('slickNext');
+                  startProgressbar();
+                }
+            }
+        }
+          
+          
+        function resetProgressbar() {
+            $bar.css({
+             width: 0+'%' 
+            });
+            clearTimeout(tick);
+        }
+          
+        startProgressbar();
     };
 
     if ($('.js-sticky-el').length>0) {

@@ -294,8 +294,35 @@
 								<div class="top-nav__item">
 									<a href="#" class="top-nav__link">Отзывы</a>
 								</div>
-								<div class="top-nav__item">
+								<div class="top-nav__item submenu">
 									<a href="#" class="top-nav__link">О нас</a>
+									<div class="submenu__list submenu__list--single">
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__txt">Item 1</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__txt">Item 2</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__txt">Item 3</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__txt">Item 4</div>
+											</a>
+										</div>
+										<div class="submenu__item">
+											<a href="#" class="submenu__link">
+												<div class="submenu__txt">Item 5</div>
+											</a>
+										</div>
+									</div>
 								</div>
 								<div class="top-nav__item">
 									<a href="#" class="top-nav__link">Блог</a>
@@ -311,7 +338,7 @@
 									<a href="#" class="top-search__close js-top-search__close"></a>
 								</div>
 							</div>
-							<a href="#" class="btn">
+							<a href="#consultation" class="btn js-popup-inline" data-effect="mfp-zoom-in">
 								<span>
 									Бесплатная консультация
 								</span>
@@ -937,13 +964,13 @@
 							</div>
 							<div class="page-footer-top__item">
 								<div class="page-footer-top__title">Мы можем связаться с вами сами</div>
-								<a href="#" class="page-footer-top__add">
+								<a href="#call" class="page-footer-top__add js-popup-inline" data-effect="mfp-zoom-in">
 									Заказать звонок
 								</a>
 							</div>
 							<div class="page-footer-top__item">
 								<div class="page-footer-top__title">Напишите нам</div>
-								<a href="#" class="page-footer-top__add page-footer-top__add--mail">
+								<a href="#letter" class="page-footer-top__add page-footer-top__add--mail js-popup-inline" data-effect="mfp-zoom-in">
 									Написать письмо
 								</a>
 							</div>
@@ -1047,6 +1074,72 @@
 						</div>
 					</div>
 					<button type="submit" class="btn"><span>Получить консультацию</span></button>
+				</form>
+			</div>
+		</div>
+
+		<div id="call" class="popup mfp-with-anim mfp-hide">
+			<h5>Заказать звонок</h5>
+			<div class="submit-form">
+				<form action="#" method="post">
+					<div class="input-wrap">
+						<div class="input-label">Имя</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Телефон</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Электронная почта</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Ваше сообщение</div>
+						<div class="input-wrap__item">
+							<textarea></textarea>
+						</div>
+					</div>
+					<button type="submit" class="btn"><span>Заказать звонок</span></button>
+				</form>
+			</div>
+		</div>
+
+		<div id="letter" class="popup mfp-with-anim mfp-hide">
+			<h5>Написать письмо</h5>
+			<div class="submit-form">
+				<form action="#" method="post">
+					<div class="input-wrap">
+						<div class="input-label">Имя</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Телефон</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Электронная почта</div>
+						<div class="input-wrap__item input-wrap__item--necessarily">
+							<input type="text">
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-label">Ваше сообщение</div>
+						<div class="input-wrap__item">
+							<textarea></textarea>
+						</div>
+					</div>
+					<button type="submit" class="btn"><span>Написать письмо</span></button>
 				</form>
 			</div>
 		</div>

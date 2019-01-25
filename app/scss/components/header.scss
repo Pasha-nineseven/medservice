@@ -653,6 +653,16 @@
 	}
 }
 
+.submenu__list--single{
+	columns: auto;
+	padding: 20px;
+	.submenu__item{
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
 .submenu__item{
 	// display: flex;
 	
