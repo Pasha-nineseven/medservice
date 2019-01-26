@@ -58,6 +58,7 @@ body {
 	font-size: $default-size-font;
 	font-family: $default-font;
 	color: $base-color;
+	overflow-x: hidden;
 	&.hidden{
 		overflow: hidden;
 		// position: fixed;

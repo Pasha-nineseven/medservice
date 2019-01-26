@@ -174,16 +174,18 @@
 }
 
 .page-header-lang__icon{
-  width: 23px;
-  height: 23px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 2px;
-  img{
-  	max-width: 100%;
-	height: auto;
-	max-height: 100%;
-  }
+	width: 23px;
+	height: 23px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 2px;
+	
+	img{
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+	}
+	
 }
 .page-header-lang__list{
     position: absolute;
@@ -217,6 +219,10 @@
     margin-top: -1px;
     cursor: pointer;
     display: inline-block;
+    transition: all 0.3s ease;
+    &:hover{
+		opacity: 0.6;
+	}
 }
 .page-header-lang__view .page-header-lang__icon{
   margin-right: 0;
@@ -358,6 +364,10 @@
     cursor: pointer;
         display: flex;
     margin-left: 23px;
+    transition:all 0.3s ease;
+    &:hover{
+    	opacity: 0.6;
+    }
 }
 
 

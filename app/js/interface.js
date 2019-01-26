@@ -142,6 +142,19 @@ $(document).ready(function() {
             protect : true,
         }
     });
+    $(".js-gallery").fancybox({
+        speed : 330,
+        transitionEffect: "slide", 
+        animationEffect: "zoom-in-out", 
+        //toolbar  : false,
+        infobar: false,
+        buttons: [
+            "close"
+        ],
+        image : {
+            protect : true,
+        }
+    });
 
 	//slider-doctor
 	if ($('.slider-doctor').length>0) {

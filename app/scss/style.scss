@@ -190,7 +190,7 @@
 	display: table-cell;
 	height: 100%;
 	padding: 33px 0 70px;
-	overflow-x: hidden; 
+	//overflow-x: hidden; 
 	>.container-fluid{
 		padding-left: 244px;
 	}
@@ -785,10 +785,10 @@ ymaps[class$="-copyright"] {
 }
 
 .accordeon__item{
-	padding: 11px 17px;
+	
 	position: relative;
 	background: #fff;
-	margin-bottom: 16px;
+	margin-bottom: 9px;
 	
 	&.active{
 		.accordeon__link{
@@ -797,6 +797,10 @@ ymaps[class$="-copyright"] {
 				transform:rotate(180deg);
 				//background: url(../img/svg/faq_select_arrow-h.svg) center no-repeat;		
 				//background-size: cover;
+			}
+			&:before{
+				background: #eeeeee;
+				height: 2px; 
 			}
 		}
 	}
@@ -807,9 +811,9 @@ ymaps[class$="-copyright"] {
 
 .accordeon__info{
 	display: none;
-        padding: 33px 40px 17px 0px;
+    padding: 14px 40px 14px 16px;
     position: relative;
-    font-size: 17px;
+    //font-size: 17px;
     p{
     	margin-bottom: 16px;
     	&:last-child{
@@ -820,7 +824,8 @@ ymaps[class$="-copyright"] {
 
 .accordeon__link{
 	display: block;
-	padding-right: 30px;
+	padding: 13px 30px 16px 17px;
+	//padding-right: 30px;
 	color: #022835;
 	 font-family: 'osnova_probold';
 	 position: relative;
@@ -831,26 +836,25 @@ ymaps[class$="-copyright"] {
 		background: url(../img/svg/faq_select_arrow.svg) center no-repeat;	
 		background-size: cover;
 		position: absolute;
-		right: -6px;
-    	top: 11px;
+		right: 8px;
+    	top: 24px;
 		transition:all 0.3s ease;
 	}
-	// &:hover{
-	// 	color: #0088CC;
-	// 	&:after{
-	// 		background: url(../img/svg/faq_select_arrow-h.svg) center no-repeat;		
-	// 		background-size: cover;
-	// 	}
-	// }
+	&:hover{
+		&:before{
+			height: 3px;
+		}
+	}
 	&:before{
 		content: "";
 	    display: block;
-	    width: calc(100% + 34px);
+	    width: 100%;
 	    height: 1px;
-	    background: linear-gradient(90deg, #1EBF9D 0%, #1073B9 100%);
+	    background: #0088CC;
 	    position: absolute;
-	    left: -17px;
-	    bottom: -11px;
+	    left: 0;
+	    bottom: 0;
+	    transition: all 0.3s ease;
 	}
 }
 
@@ -1532,7 +1536,7 @@ button.mfp-arrow{
 	//padding-right: 17px;
 	
 	position: relative;
-	height: auto!important;
+	//height: auto!important;
 	padding-right: 1px;
 	&:hover{
 		z-index: 1;
@@ -2159,9 +2163,9 @@ ymaps[class*="-balloon__layout"]{
 
 .slider-another__item{
 	//padding-right: 17px;
-	
+	height: 100%;
 	position: relative;
-	height: auto!important;
+	//height: auto!important;
 	padding-right: 1px;
 	&:hover{
 		z-index: 1;
@@ -2342,13 +2346,13 @@ ymaps[class*="-balloon__layout"]{
 		top: 151px;
 		width: 58px;
 		height: 58px;
-		opacity: 0.7;
+		//opacity: 0.7;
 		border: 0;
 		transition:all 0.3s ease;
 		z-index: 2;
 		&:hover{
 			transform: scale(1.07);
-			opacity: 1;
+			//opacity: 1;
 		}
 	}
 
@@ -2363,7 +2367,7 @@ ymaps[class*="-balloon__layout"]{
 		background-size: cover;
 	}
 	.slick-disabled{
-		opacity: 0.5;
+		//opacity: 0.5;
 		//pointer-events:none;
 	}
 }
@@ -2374,7 +2378,7 @@ ymaps[class*="-balloon__layout"]{
 
 .sanatorium-cost{
 	border-top: 1px solid #EEEEEE;
-	padding-top: 23px;
+	padding-top: 11px;
 	font-size: 14px;
 	position: relative;
 	//padding-left: 26px;
@@ -2383,7 +2387,7 @@ ymaps[class*="-balloon__layout"]{
 		display: inline-block;
 	    vertical-align: middle;
 	    margin-top: -6px;
-	    margin-right: 10px;
+	    margin-right: 2px;
 		width: 20px;
 		height: 20px;
 		background: url(../img/svg/select_price.svg) no-repeat;
@@ -4785,7 +4789,15 @@ ymaps[class*="-balloon__layout"]{
     transition:all 0.3s ease;
 }
 
-
+.slick-slide{
+	height: auto!important;
+	>div{
+		height: 100%;
+		>div{
+			height: 100%
+		}
+	}
+}
 
 @import "components/footer";
 

@@ -3317,7 +3317,8 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 20px;
   font-family: "Roboto", Arial, sans-serif;
-  color: #022835; }
+  color: #022835;
+  overflow-x: hidden; }
   body.hidden {
     overflow: hidden; }
 
@@ -3605,7 +3606,11 @@ textarea, input {
   padding-left: 13px;
   margin-top: -1px;
   cursor: pointer;
-  display: inline-block; }
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .page-header-lang:hover {
+    opacity: 0.6; }
 
 .page-header-lang__view .page-header-lang__icon {
   margin-right: 0; }
@@ -3726,7 +3731,11 @@ textarea, input {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 23px; }
+  margin-left: 23px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .page-header-currency:hover {
+    opacity: 0.6; }
 
 .page-header-currency:after {
   content: "";
@@ -5076,22 +5085,23 @@ ymaps[class$="-copyright"] {
   margin-bottom: 20px; }
 
 .accordeon__item {
-  padding: 11px 17px;
   position: relative;
   background: #fff;
-  margin-bottom: 16px; }
+  margin-bottom: 9px; }
   .accordeon__item.active .accordeon__link:after {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg); }
+  .accordeon__item.active .accordeon__link:before {
+    background: #eeeeee;
+    height: 2px; }
   .accordeon__item:last-child {
     margin-bottom: 0; }
 
 .accordeon__info {
   display: none;
-  padding: 33px 40px 17px 0px;
-  position: relative;
-  font-size: 17px; }
+  padding: 14px 40px 14px 16px;
+  position: relative; }
   .accordeon__info p {
     margin-bottom: 16px; }
     .accordeon__info p:last-child {
@@ -5099,7 +5109,7 @@ ymaps[class$="-copyright"] {
 
 .accordeon__link {
   display: block;
-  padding-right: 30px;
+  padding: 13px 30px 16px 17px;
   color: #022835;
   font-family: 'osnova_probold';
   position: relative; }
@@ -5110,21 +5120,23 @@ ymaps[class$="-copyright"] {
     background: url(../img/svg/faq_select_arrow.svg) center no-repeat;
     background-size: cover;
     position: absolute;
-    right: -6px;
-    top: 11px;
+    right: 8px;
+    top: 24px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
+  .accordeon__link:hover:before {
+    height: 3px; }
   .accordeon__link:before {
     content: "";
     display: block;
-    width: -webkit-calc(100% + 34px);
-    width: calc(100% + 34px);
+    width: 100%;
     height: 1px;
-    background: -webkit-gradient(linear, left top, right top, from(#1EBF9D), to(#1073B9));
-    background: linear-gradient(90deg, #1EBF9D 0%, #1073B9 100%);
+    background: #0088CC;
     position: absolute;
-    left: -17px;
-    bottom: -11px; }
+    left: 0;
+    bottom: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
 
 .page-form {
   background: #fff;
@@ -5651,7 +5663,6 @@ button.mfp-close {
 
 .slider-doctor__item {
   position: relative;
-  height: auto !important;
   padding-right: 1px; }
   .slider-doctor__item:hover {
     z-index: 1; }
@@ -6188,8 +6199,8 @@ ymaps[class*="-balloon__layout"] {
   color: #022835; }
 
 .slider-another__item {
+  height: 100%;
   position: relative;
-  height: auto !important;
   padding-right: 1px; }
   .slider-another__item:hover {
     z-index: 1; }
@@ -6348,7 +6359,6 @@ ymaps[class*="-balloon__layout"] {
     top: 151px;
     width: 58px;
     height: 58px;
-    opacity: 0.7;
     border: 0;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -6356,8 +6366,7 @@ ymaps[class*="-balloon__layout"] {
     .slider-another .slick-arrow:hover {
       -webkit-transform: scale(1.07);
           -ms-transform: scale(1.07);
-              transform: scale(1.07);
-      opacity: 1; }
+              transform: scale(1.07); }
   .slider-another .slick-prev {
     left: -15px;
     background: url(../img/svg/doctor_slider_arrow_left.svg);
@@ -6366,15 +6375,13 @@ ymaps[class*="-balloon__layout"] {
     right: -15px;
     background: url(../img/svg/doctor_slider_arrow_right.svg);
     background-size: cover; }
-  .slider-another .slick-disabled {
-    opacity: 0.5; }
 
 .sanatorium__item {
   margin-bottom: 30px; }
 
 .sanatorium-cost {
   border-top: 1px solid #EEEEEE;
-  padding-top: 23px;
+  padding-top: 11px;
   font-size: 14px;
   position: relative; }
   .sanatorium-cost:before {
@@ -6382,7 +6389,7 @@ ymaps[class*="-balloon__layout"] {
     display: inline-block;
     vertical-align: middle;
     margin-top: -6px;
-    margin-right: 10px;
+    margin-right: 2px;
     width: 20px;
     height: 20px;
     background: url(../img/svg/select_price.svg) no-repeat;
@@ -8445,6 +8452,13 @@ ymaps[class*="-balloon__layout"] {
   padding: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+
+.slick-slide {
+  height: auto !important; }
+  .slick-slide > div {
+    height: 100%; }
+    .slick-slide > div > div {
+      height: 100%; }
 
 .page-footer {
   overflow: hidden; }
