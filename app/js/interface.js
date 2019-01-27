@@ -51,10 +51,10 @@ $(document).ready(function() {
                 this.st.mainClass = this.st.el.attr('data-effect');
             },
             open: function(){
-                $('body').addClass('hidden');
+                $('body').addClass('noscroll');
             },
             close: function() {
-                 $('body').removeClass('hidden');
+                 $('body').removeClass('noscroll');
             }
         },
     });
@@ -117,11 +117,17 @@ $(document).ready(function() {
 	$('.js-popup-inline').magnificPopup({
 		type: 'inline',
 		removalDelay: 500,
-
+        fixedContentPos: false,
 		callbacks: {
 			beforeOpen: function() {
 				this.st.mainClass = this.st.el.attr('data-effect');
 			},
+            open: function(){
+                $('body').addClass('noscroll');
+            },
+            close: function() {
+                 $('body').removeClass('noscroll');
+            }
 		},
 
 		//midClick: true,

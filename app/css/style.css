@@ -8,9 +8,8 @@
 @font-face {
   font-family: 'osnova_probold';
   src: url("../fonts/osnova-pro/osnova-pro-bold/osnova-pro-bold.eot");
-  src: url("../fonts/osnova-pro/osnova-pro-bold/osnova-pro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/osnova-pro/osnova-pro-bold/osnova-pro-bold.woff2") format("woff2"), url("../fonts/osnova-pro/osnova-pro-bold/osnova-pro-bold.woff") format("woff"), url("../fonts/osnova-pro/osnova-pro-bold/osnova-pro-bold.ttf") format("truetype"), url("../fonts/osnova-pro/osnova-pro-bold/osnova-pro-bold.svg#osnova_probold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  src: url("../fonts/osnova-pro/osnova-pro-bold/osnova-pro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/osnova-pro/osnova-pro-bold/osnova-pro-bold.woff2") format("woff2"), url("../fonts/osnova-pro/osnova-pro-bold/osnova-pro-bold.woff") format("woff"), url("../fonts/osnova-pro/osnova-pro-bold/osnova-pro-bold.ttf") format("truetype"), url("../fonts/osnova-pro/osnova-pr\a     font-style: normal;o-bold/osnova-pro-bold.svg#osnova_probold") format("svg");
+  font-weight: normal; }
 
 /*FONT-FAMILY*/
 /*FONT-SIZE*/
@@ -3319,6 +3318,8 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   color: #022835;
   overflow-x: hidden; }
+  body.noscroll {
+    overflow-y: hidden !important; }
   body.hidden {
     overflow: hidden; }
 
@@ -3609,7 +3610,7 @@ textarea, input {
   display: inline-block;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  .page-header-lang:hover {
+  .page-header-lang:hover .page-header-lang__view {
     opacity: 0.6; }
 
 .page-header-lang__view .page-header-lang__icon {
@@ -3630,7 +3631,9 @@ textarea, input {
 .page-header-lang__view {
   color: #fff;
   text-decoration: none;
-  display: inline-block; }
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .page-header-lang__view:hover {
   color: #BFC1C2; }
@@ -3734,7 +3737,7 @@ textarea, input {
   margin-left: 23px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  .page-header-currency:hover {
+  .page-header-currency:hover .page-header-currency__view {
     opacity: 0.6; }
 
 .page-header-currency:after {
@@ -3758,7 +3761,9 @@ textarea, input {
   border: 1px solid rgba(255, 255, 255, 0.5);
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  padding: 2px 7px 2px 6px; }
+  padding: 2px 7px 2px 6px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .page-header-currency__item {
   display: block;
@@ -3898,7 +3903,9 @@ textarea, input {
   padding-bottom: 74px;
   padding-top: 66px;
   z-index: 10;
-  display: none; }
+  display: none;
+  max-height: 100vh;
+  overflow: auto; }
   .menu-mobile:before {
     content: "";
     display: block;
@@ -9603,7 +9610,48 @@ ymaps[class*="-balloon__layout"] {
     padding-right: 0; }
   .help__bg {
     right: 0;
-    background-size: cover; } }
+    background-size: cover; }
+  .page-header__logo {
+    width: 49px;
+    height: 42px;
+    background: url(../img/svg/logo_mobile.svg) no-repeat;
+    background-size: cover; }
+  .top-search {
+    margin-bottom: 0;
+    display: inline-block; }
+  .page-header__r .btn {
+    display: none; }
+  .top-search__link {
+    font-size: 0;
+    width: 24px;
+    height: 26px;
+    padding: 0;
+    vertical-align: middle; }
+    .top-search__link:before {
+      background: url(../img/svg/search_icon.svg) no-repeat; }
+  .page-header__r {
+    min-width: inherit;
+    padding-top: 0; }
+  .page-header {
+    padding-top: 2px;
+    color: #022835;
+    -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+    padding-bottom: 2px; }
+  .burger-icon {
+    background: #022835; }
+    .burger-icon:before, .burger-icon:after {
+      background: #022835; }
+  .menu-mobile__close {
+    left: 17px;
+    top: 14px; }
+  .top-search__toggle {
+    right: 0px;
+    top: -11px; }
+  .page-top {
+    margin-top: 0;
+    padding-top: 100px; } }
 
 @media screen and (max-width: 500px) {
   .reviews__item.reviews__item--half,

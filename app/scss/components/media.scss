@@ -1257,6 +1257,59 @@
 	    right: 0;
 	    background-size: cover;
 	}
+	.page-header__logo {
+	    width: 49px;
+	    height: 42px;
+	    background:url(../img/svg/logo_mobile.svg) no-repeat;
+	    background-size: cover; 
+	}
+	.top-search{
+		margin-bottom: 0;
+    	display: inline-block;
+	}
+	.page-header__r .btn{
+		display: none;
+	}
+	.top-search__link{
+		font-size: 0;
+	    width: 24px;
+	    height: 26px;
+	    padding: 0;
+	        vertical-align: middle;
+	    &:before{
+	    	background: url(../img/svg/search_icon.svg) no-repeat;
+	    }
+	}
+	.page-header__r {
+	    min-width: inherit;
+	    padding-top: 0;
+	}
+	.page-header {
+	    padding-top: 2px;
+	    color: #022835;
+	    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.12);
+	    background: #fff;
+	    padding-bottom: 2px;
+	}
+	.burger-icon{
+		background: #022835;
+		&:before,
+		&:after{
+			background: #022835;
+		}
+	}
+	.menu-mobile__close {
+	    left: 17px;
+	    top: 14px;
+	}
+	.top-search__toggle {
+	    right: 0px;
+	    top: -11px;
+	}
+	.page-top {
+	    margin-top: 0;
+	    padding-top: 100px;
+	}
 }
 
 

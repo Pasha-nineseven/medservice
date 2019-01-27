@@ -3319,8 +3319,8 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   color: #022835;
   overflow-x: hidden; }
-  body.hidden {
-    overflow: hidden; }
+  body.noscroll {
+    overflow-y: hidden !important; }
 
 textarea, input {
   -webkit-box-shadow: none;

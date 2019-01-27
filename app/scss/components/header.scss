@@ -221,7 +221,9 @@
     display: inline-block;
     transition: all 0.3s ease;
     &:hover{
-		opacity: 0.6;
+    	.page-header-lang__view{
+			opacity: 0.6;
+    	}
 	}
 }
 .page-header-lang__view .page-header-lang__icon{
@@ -243,6 +245,7 @@
   color: #fff;
   text-decoration: none;
   display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .page-header-lang__view:hover{
@@ -366,7 +369,9 @@
     margin-left: 23px;
     transition:all 0.3s ease;
     &:hover{
-    	opacity: 0.6;
+    	.page-header-currency__view{
+    		opacity: 0.6;
+    	}
     }
 }
 
@@ -391,6 +396,7 @@
     border: 1px solid rgba(255,255,255,0.5);
     border-radius: 4px;
     padding: 2px 7px 2px 6px;
+    transition:all 0.3s ease;
 }
 
 .page-header-currency__item{
@@ -532,6 +538,8 @@
     padding-top: 66px;
     z-index: 10;
     display: none;
+    max-height: 100vh;
+    overflow: auto;
     &:before{
     	content: "";
     	display: block;
