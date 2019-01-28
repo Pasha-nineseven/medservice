@@ -1,6 +1,19 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
 
+
+    var shrinkHeader = 80;
+    var scroll = getCurrentScroll();
+    if ( scroll >= shrinkHeader ) {
+       $('.page-header').addClass('fixed');
+    }
+    else {
+        $('.page-header').removeClass('fixed');
+    }
+    function getCurrentScroll() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+    }
+
 	//TOP-SEARCH
     $("body").on("click", ".js-top-search__link", function(e){
         $(".top-search__toggle").animate({
@@ -25,6 +38,12 @@ $(document).ready(function() {
 		$('body').removeClass('hidden');
         $(".menu-mobile").fadeOut();
 	});
+
+    //MENU-MOBILE-SUBMENU
+    $("body").on("click", ".js-mobile-submenu__toggle", function(e){
+        $(this).toggleClass('active');
+        $(this).next('.mobile-submenu__list').slideToggle();
+    });
 
 	//TOOLTIP
 	if ($('.tooltip').length>0) {
@@ -363,6 +382,16 @@ $(document).ready(function() {
             vertical: true,
             verticalSwiping: false,
             asNavFor: '.index-reviews-slider',
+            responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    vertical: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                },
+            ]
         });
     };
 
@@ -410,6 +439,14 @@ $(document).ready(function() {
             vertical: true,
             verticalSwiping: false,
             asNavFor: '.main-benefits-slider',
+            responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    vertical: false,
+                  }
+                },
+            ]
         });
 
         $('.main-benefits__pager ul li').each( function( i ) {
@@ -450,6 +487,8 @@ $(document).ready(function() {
             var slideCurrent = slick.currentSlide+1;
             $('#counter').removeClass();
             $('#counter').addClass('activeSlide-' + slideCurrent);
+            //resetProgressbar();
+            // startProgressbar();
         });
         $gallery.on("afterChange", function(event, slick, currentSlide){
             var slideCurrent = slick.currentSlide+1;
@@ -465,7 +504,9 @@ $(document).ready(function() {
             if (currentSlide==0) {
                 $('.main-prev').find('span').text('0' + (currentSlide+1));
             }
-            //console.log(slick.currentSlide >= slick.slideCount - slick.options.slidesToShow);
+
+            // resetProgressbar();
+            // startProgressbar();
         });
 
 
@@ -513,7 +554,7 @@ $(document).ready(function() {
           
         function resetProgressbar() {
             $bar.css({
-             width: 0+'%' 
+                width: 0+'%' 
             });
             clearTimeout(tick);
         }
@@ -535,6 +576,22 @@ $(document).ready(function() {
 
 });
 
+
+$(function(){
+    var shrinkHeader = 80;
+    $(window).scroll(function() {
+        var scroll = getCurrentScroll();
+        if ( scroll >= shrinkHeader ) {
+           $('.page-header').addClass('fixed');
+        }
+        else {
+            $('.page-header').removeClass('fixed');
+        }
+    });
+    function getCurrentScroll() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+    }
+});
 
 
 
