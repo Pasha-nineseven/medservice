@@ -3136,7 +3136,7 @@ ymaps[class*="-balloon__layout"]{
 
 
 .stat{
-	padding-top: 39px;
+	padding-top: 22px;
 	overflow: hidden;
 }
 .stat__wrap{
@@ -3151,11 +3151,21 @@ ymaps[class*="-balloon__layout"]{
 }
 
 .stat__number{
-	height: 200px;
-    margin-bottom: 37px;
-    position: relative;
+    font-size: 220px;
+    line-height: 165px;
+    img{
+    	display: block;
+    	max-width: 100%;
+    }
+}
 
-    &:after{
+.stat__number__txt{
+    font-size: 80px;
+    line-height: 80px;
+    position: relative;
+    margin-top: -28px;
+    margin-bottom: 22px;
+  	&:after{
     	content: "";
     	position: absolute;
     	left: 0;
@@ -3165,14 +3175,18 @@ ymaps[class*="-balloon__layout"]{
     	z-index: -1;
     	background-color: #FFFFFF;
     }
-    img{
-    	display: block;
-    	max-width: 100%;
-    }
 }
 
 .stat__txt{
 	//padding-left: 12px;
+}
+
+.stat__number__inner{
+	background: linear-gradient(270deg, rgb(33, 112, 184) 0%, rgb(4, 190, 157) 100%);;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  	font-family: 'osnova_probold';
+  	display: inline-block;
 }
 
 .stat__inner{

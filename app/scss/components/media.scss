@@ -162,6 +162,10 @@
 	.escort {
 	    min-height: 785px;
 	}
+	.stat__number {
+	    font-size: 180px;
+	    line-height: 140px;
+	}
 }
 
 @media screen and (max-width: 1200px){
@@ -1571,13 +1575,18 @@
 	    margin-bottom: 15px;
 	}
 	.stat__number{
-		height: 100px;
+		    font-size: 65px;
+    line-height: 55px;
 		img{
 			max-height: 100%;
 		}
 	}
 	.about-info__txt {
 	    max-width: 100%;
+	}
+	.stat__number__txt {
+	    font-size: 35px;
+	    line-height: 30px;
 	}
 	.about-info__wrap {
 	    flex-wrap: wrap;
