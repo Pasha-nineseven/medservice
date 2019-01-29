@@ -482,6 +482,13 @@ $(document).ready(function() {
             $('.main-next').find('span').text('02');
 
             $('#counter').addClass('activeSlide-' + slideCurrent);
+
+            if (!($('.page-top-slider .slick-slide').length > 1)) {
+
+                // remove arrows
+                $('.main-prev').hide();
+                $('.main-next').hide();
+            }
         });
         $gallery.on('beforeChange', function(event, slick, currentSlide, nextSlide){
             var slideCurrent = slick.currentSlide+1;
