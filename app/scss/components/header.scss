@@ -7,10 +7,10 @@
 	z-index: 3;
 	color: #fff;
 	&.fixed{
-	transition: all 0.3s ease;
-	box-shadow: 0 2px 20px 0 rgba(0,0,0,0.12);
-	background: #fff;
-	padding: 16px 0;
+		transition: all 0.3s ease;
+		box-shadow: 0 2px 20px 0 rgba(0,0,0,0.12);
+		background: #fff;
+		padding: 16px 0;
 		.page-header__logo{
 			width: 56px;
 		    height: 48px;
@@ -33,7 +33,10 @@
 		.top-nav__link{
 			color: #022835;
 			font-size: 17px;
-			    font-family: "Roboto", Arial, sans-serif;
+			font-family: "Roboto", Arial, sans-serif;
+			&:hover{
+				color: #0088CC;
+			}
 		}
 		.top-nav {
 		    padding-top: 2px;
@@ -94,6 +97,10 @@
 		top: 50%;
 		transform: translateY(-50%); 
 	}
+
+	&:hover{
+		color: #939393;
+	}
 }
 
 
@@ -136,6 +143,9 @@
 .page-header__mail{
 	color: #fff;
 	margin-left: 55px;
+	&:hover{
+		color: #939393;
+	}
 }
 
 .page-header__phone{
@@ -161,6 +171,9 @@
 		position: absolute;
 		right: 26px;
 		top: 0;
+	}
+	&:hover{
+		color: #939393;
 	}
 }
 
@@ -833,5 +846,13 @@
 		max-height: 100%;
 		
 		display: block;
+	}
+}
+
+.top-nav__item{
+	&.active{
+		>.top-nav__link{
+			color: #0088CC;
+		}
 	}
 }

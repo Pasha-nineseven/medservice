@@ -1426,8 +1426,13 @@ button.mfp-arrow{
     padding: 0;
     color: #fff;
     background: url(../img/svg/close-p.svg) no-repeat;
+    background-size: cover;
     display: inline-block;
     text-indent: -9999em;
+    &:hover{
+    	background: url(../img/svg/close-h.svg) no-repeat;
+    	background-size: cover;
+    }
 }
 
 .doctor{
@@ -2881,6 +2886,9 @@ ymaps[class*="-balloon__layout"]{
     	top: 50%;
     	transform: translateY(-50%);
     }
+    &:hover{
+    	color: #056493;
+    }
 }
 
 .file-upload-output__item{
@@ -3799,6 +3807,9 @@ ymaps[class*="-balloon__layout"]{
 	font-family: 'osnova_probold';
 	&:hover{
 		color: #022835;
+		.activities__icon{
+			border:2px solid #0091EA;
+		}
 	}
 }
 
@@ -3816,6 +3827,7 @@ ymaps[class*="-balloon__layout"]{
     border: 1px solid #0091EA;
     overflow: hidden;
     align-items: center;
+    transition: all 0.3s ease;
     img{
 		max-width: 100%;
 		height: auto;

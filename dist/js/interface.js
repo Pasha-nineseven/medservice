@@ -571,7 +571,18 @@ $(document).ready(function() {
 
     if ($('.js-sticky-el').length>0) {
         $(".js-sticky-el").stick_in_parent({
-            //offset_top: 100,
+            offset_top: 84,
+        });
+    }
+
+    if ($('.direction').length>0) {
+        $(".direction__item").mouseover(function(e){
+            e.preventDefault();
+            var target = $(this).data('target');
+            $('.aside-filter__item').removeClass('active');
+            $(".aside-filter").find(".aside-filter__item[data-target='" + target + "']").addClass('active');
+            //$('.aside-filter__item').data("target", target).addClass('active');
+
         });
     }
 
