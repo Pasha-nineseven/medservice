@@ -324,12 +324,17 @@
     &:last-child{
     	margin-bottom: 0;
     }
+    &.active{
+    	color: #0088CC;
+    }
 }
 .page-header-lang__item:hover{
   	color: #0088CC;
 }
 
-
+span.page-header-lang__item{
+	    cursor: default;
+}
 
 
 
@@ -378,7 +383,8 @@
 		    background-size: contain;
 	}
 	.page-header-currency__item{
-		&:hover{
+		&:hover,
+		&.active{
 			.page-header-currency__icon--rub{
 				background: url(../img/svg/russian_ruble_blue.svg) no-repeat;
 				    background-size: contain;
@@ -467,12 +473,17 @@
     &:last-child{
     	margin-bottom: 0;
     }
+    &.active{
+    	color: #0088CC;
+    }
 }
 .page-header-currency__item:hover{
   	color: #0088CC;
 }
 
-
+span.page-header-currency__item{
+	cursor: default;
+}
 
 .menu-btn{
 	display: none;

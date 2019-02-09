@@ -640,6 +640,9 @@
     		background-color: #022835;
 		}
 	}
+	.page-header-currency__list {
+	    left: 5px;
+	}
 }
 
 @media screen and (max-width: 850px){
@@ -821,8 +824,11 @@
 	.image-wrap__item {
 	    padding-right: 10px;
 	}
-	.accordeon__link:after {
-	    top: 5px;
+	.sanatorium__item{
+
+		.accordeon__link:after {
+		    top: 20px;
+		}
 	}
 	.paging__item {
 	    padding: 3px;
@@ -1206,6 +1212,15 @@
 	.index-reviews-slider-nav__item{
 		font-family: 'osnova_proregular';
 	}
+	.page-top__bg--mobile{
+		display: block;
+	}
+	.page-top__bg--desktop{
+		display: none;
+	}
+	.items-aside--filter{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 650px){
@@ -1330,7 +1345,7 @@
 	}
 	.btn {
 	    font-size: 19px;
-	    padding: 2px 12px;
+	    padding: 10px 12px;
 	}
 	.success{
 		font-size: 14px;
@@ -1575,8 +1590,8 @@
 	    margin-bottom: 15px;
 	}
 	.stat__number{
-		    font-size: 65px;
-    line-height: 55px;
+		font-size: 65px;
+    	line-height: 55px;
 		img{
 			max-height: 100%;
 		}
@@ -1746,6 +1761,31 @@
 	.layout--index .page-header__logo {
 	    background: url(../img/svg/logo_mobile.svg) no-repeat;
 	    background-size: contain;
+	}
+	.sanatorium__item{
+		.accordeon__info{
+			padding: 20px;
+		}
+	}
+	.slider-another-price {
+	    font-size: 14px;
+	}
+	.slider-another-distance{
+		font-size: 14px;
+	}
+	.services-item .services-item__title {
+	    font-size: 22px;
+	    padding-right: 25px;
+	}
+	.services-item__title span:after {
+	    width: 38px;
+	    height: 14px;
+	    background: url(../img/svg/service-arrow.svg) no-repeat;
+	    background-size: contain;
+	        position: static;
+		    vertical-align: middle;
+		    margin-left: 10px;
+		    margin-top: 8px;
 	}
 }
 
