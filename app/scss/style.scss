@@ -2587,6 +2587,7 @@ ymaps[class*="-balloon__layout"]{
 	margin-bottom: 40px;
 	position: relative;
 	z-index: 1;
+	overflow: hidden; 
 }
 
 .slider__counter{
@@ -3125,8 +3126,8 @@ ymaps[class*="-balloon__layout"]{
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: url(../img/content/secondscreen_bg.png) center bottom no-repeat;
-	
+	background: url(../img/svg/secondscreen_bg.svg) center bottom no-repeat;
+	    background-size: contain;
 	&:before{
 		content: "";
 		background: linear-gradient(90deg, #1EBF9D 0%, #1073B9 100%);
@@ -5067,6 +5068,112 @@ ymaps[class*="-balloon__layout"]{
 
 .page-top__bg--mobile{
 	display: none;
+}
+
+.fancybox-navigation .fancybox-button {
+    top: calc(50% - 29px);
+}
+
+
+.about-info__bg--mobile{
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: none;
+}
+
+.mobile-filter{
+	display: none;
+	&.active{
+		.mobile-filter__title{
+			display: none;
+		}
+		.mobile-filter__close{
+			display: inline-block;
+		}
+		.mobile-filter__reset{
+			display: inline-block;
+		}
+	}
+}
+
+.mobile-filter__top{
+	display: block;
+   position: relative;
+    color: #022835;
+    font-family: 'osnova_probold';
+    background: #fff;
+    min-height: 44px;
+    &:before{
+    	content: "";
+	    display: block;
+	    width: 100%;
+	    height: 1px;
+	    background: #0088CC;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    transition: all 0.3s ease;
+    }
+}
+
+.mobile-filter__title{
+	display: block;
+	color: #022835;
+	font-size: 14px;
+	position: relative;
+	padding: 13px 30px 13px 17px;
+	&:after{
+		content: "";
+		width: 15px;
+		height: 9px;
+		background: url(../img/svg/faq_select_arrow.svg) center no-repeat;
+		background-size: cover;
+		position: absolute;
+		right: 8px;
+		top: 50%;
+		margin-top: -4px;
+		transition: all 0.3s ease;
+    }
+}
+
+.mobile-filter__close{
+	display: none;
+	width: 25px;
+	height: 25px;
+	background: url(../img/svg/close-filter.svg) no-repeat;
+	background-size: contain;
+	position: absolute;
+	left: 15px;
+	top: 9px;
+	font-family: "Roboto", Arial, sans-serif;
+}
+
+.mobile-filter__reset{
+	color: #0088CC;
+	font-size: 14px;
+	display: inline-block;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	display: none;
+	position: absolute;
+	right: 15px;
+	top: 14px;
+}
+
+.mobile-filter__content{
+	background: #fff;
+	padding: 15px;
+	display: none; 
+	.btn{
+		margin-top: 20px;
+	}
 }
 
 @import "components/footer";

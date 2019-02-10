@@ -16,11 +16,13 @@ $(document).ready(function() {
 
 	//TOP-SEARCH
     $("body").on("click", ".js-top-search__link", function(e){
+        e.preventDefault();
         $(".top-search__toggle").animate({
 	        width: 'toggle',
 	    });
 	});
     $("body").on("click", ".js-top-search__close", function(e){
+        e.preventDefault();
         $(".top-search__toggle").animate({
 	        width: 'toggle',
 	    });
@@ -29,18 +31,21 @@ $(document).ready(function() {
 
 	//MENU-MOBILE
     $("body").on("click", ".js-menu-btn", function(e){
+        e.preventDefault();
         $(".menu-mobile").fadeIn();
         setTimeout(function(){
 			$('body').addClass('hidden');
 		}, 400);
 	});
 	$("body").on("click", ".js-menu-mobile__close", function(e){
+        e.preventDefault();
 		$('body').removeClass('hidden');
         $(".menu-mobile").fadeOut();
 	});
 
     //MENU-MOBILE-SUBMENU
     $("body").on("click", ".js-mobile-submenu__toggle", function(e){
+        e.preventDefault();
         $(this).toggleClass('active');
         $(this).next('.mobile-submenu__list').slideToggle();
     });
@@ -160,6 +165,7 @@ $(document).ready(function() {
         animationEffect: "zoom-in-out", 
         //toolbar  : false,
         infobar: false,
+        idleTime: false,
         buttons: [
             "close"
         ],
@@ -173,6 +179,7 @@ $(document).ready(function() {
         animationEffect: "zoom-in-out", 
         //toolbar  : false,
         infobar: false,
+        idleTime: false,
         buttons: [
             "close"
         ],
@@ -230,6 +237,13 @@ $(document).ready(function() {
                   breakpoint: 800,
                   settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 1,
+                  },
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                   },
                 },
@@ -585,6 +599,19 @@ $(document).ready(function() {
 
         });
     }
+
+
+    //MOBILE-FILTER
+    $("body").on("click", ".js-mobile-filter__title", function(e){
+        e.preventDefault();
+        $('.mobile-filter').addClass('active');
+        $('.mobile-filter__content').slideDown();
+    });
+    $("body").on("click", ".js-mobile-filter__close", function(e){
+        e.preventDefault();
+        $('.mobile-filter').removeClass('active');
+        $('.mobile-filter__content').slideUp();
+    });
 
 	ymaps.ready(initializeDefaultMap);
 

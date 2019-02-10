@@ -507,7 +507,8 @@
 				</div>
 			</header>
 			<div class="page-top">
-				<div class="page-top__bg" style="background-image: url(img/content/bg1.jpg)"></div>
+				<div class="page-top__bg page-top__bg--desktop" style="background-image: url(img/content/bg1.jpg)"></div>
+				<div class="page-top__bg page-top__bg--mobile" style="background-image: url(img/content/img1.jpg)"></div>
 				<div class="container-fluid">
 					<div class="page-top__txt">
 						<div class="page-title">
@@ -544,6 +545,32 @@
 					<!-- CONTENT-PART -->
 					<div class="row items">
 						<div class="col-lg-3 items-aside">
+							<div class="mobile-filter">
+								<form action="#" method="post">
+									<div class="mobile-filter__top">
+										<a href="#" class="mobile-filter__title js-mobile-filter__title">Фильтры</a>
+										<a href="#" class="mobile-filter__close js-mobile-filter__close"></a>
+										<input type="reset" value="Очистить" class="mobile-filter__reset">
+									</div>
+									<div class="mobile-filter__content">
+										<h6>Город</h6>
+										<div class="checkbox-item">
+											<input type="checkbox" id="checkbox1-mob" name="checkbox-mob">
+											<label for="checkbox1-mob">Минск</label>
+										</div>
+										<div class="checkbox-item">
+											<input type="checkbox" id="checkbox2-mob" name="checkbox-mob">
+											<label for="checkbox2-mob">Солигорск</label>
+										</div>
+										<div class="checkbox-item">
+											<input type="checkbox" id="checkbox3-mob" name="checkbox-mob">
+											<label for="checkbox3-mob">Боровляны</label>
+										</div>
+										<a href="#" class="btn"><span>Показать санатории</span></a>
+										<!-- <button type="submit" class="btn"><span>Показать врачей</span></button> -->
+									</div>
+								</form>
+							</div>
 							<div class="items-aside__inner js-sticky-el">
 								<form action="#" method="post">
 									<h6>Город</h6>

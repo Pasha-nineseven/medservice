@@ -649,6 +649,13 @@ span.page-header-currency__item{
 		background: #fff url(../img/svg/inst-h.svg) center no-repeat;
 	}
 }
+.menu-mobile__item{
+	&.active{
+		.menu-mobile__link{
+			color: #0088CC;
+		}
+	}
+}
 
 .menu-mobile__item--submenu{
 	position: relative;
@@ -846,6 +853,9 @@ span.page-header-currency__item{
     color: #fff;
     font-size: 14px;
     font-family: 'osnova_probold';
+    &.active{
+		color: #0088CC;
+	}
 }
 .mobile-submenu__icon{
 	width: 34px;
