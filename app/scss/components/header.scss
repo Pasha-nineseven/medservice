@@ -6,11 +6,15 @@
     position: fixed;
 	z-index: 3;
 	color: #fff;
+	&.hidden{
+		padding-right: 16px!important;
+	}
 	&.fixed{
-		transition: all 0.3s ease;
+		transition: box-shadow 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
 		box-shadow: 0 2px 20px 0 rgba(0,0,0,0.12);
 		background: #fff;
 		padding: 16px 0;
+		
 		.page-header__logo{
 			width: 56px;
 		    height: 48px;
@@ -200,7 +204,7 @@
 	background: url(../img/svg/vk.svg) center no-repeat;
 	//transition: background 0.2s ease;
 	&:hover{
-		background: #fff url(../img/svg/vk-h.svg) center no-repeat;
+		background: url(../img/svg/vk-h.svg) center no-repeat;
 	}
 }
 
@@ -208,7 +212,7 @@
 	background: url(../img/svg/fb.svg) center no-repeat;
 	//transition: background 0.2s ease;
 	&:hover{
-		background: #fff url(../img/svg/fb-h.svg) center no-repeat;
+		background: url(../img/svg/fb-h.svg) center no-repeat;
 	}
 }
 
@@ -216,7 +220,7 @@
 	background: url(../img/svg/inst.svg) center no-repeat;
 	//transition: background 0.2s ease;
 	&:hover{
-		background: #fff url(../img/svg/inst-h.svg) center no-repeat;
+		background: url(../img/svg/inst-h.svg) center no-repeat;
 	}
 }
 
@@ -547,7 +551,7 @@ span.page-header-currency__item{
 	background: #fff;
 	padding: 15px 20px 15px 56px;
 	border-radius: 5px;
-	    width: 413px;
+	    width: 600px;
 	    color:#00141B;
 }
 .top-search__submit{
@@ -652,7 +656,7 @@ span.page-header-currency__item{
 .menu-mobile__item{
 	&.active{
 		.menu-mobile__link{
-			color: #0088CC;
+			color: rgba(255,255,255, 0.5);
 		}
 	}
 }

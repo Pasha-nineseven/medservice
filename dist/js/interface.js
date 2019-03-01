@@ -76,9 +76,11 @@ $(document).ready(function() {
             },
             open: function(){
                 $('body').addClass('noscroll');
+                $('html').addClass('hidden');
             },
             close: function() {
                  $('body').removeClass('noscroll');
+                 $('html').removeClass('hidden');
             }
         },
     });
@@ -148,9 +150,13 @@ $(document).ready(function() {
 			},
             open: function(){
                 $('body').addClass('noscroll');
+                $('html').addClass('hidden');
+                $('.page-header').addClass('hidden');
             },
             close: function() {
                  $('body').removeClass('noscroll');
+                 $('html').removeClass('hidden');
+                 $('.page-header').removeClass('hidden');
             }
 		},
 
@@ -201,7 +207,7 @@ $(document).ready(function() {
 			dots:false,
 			useTransform:true,
 			accessibility: false,
-			infinite: false,
+			infinite: true,
 			slidesToShow: 3,
   			slidesToScroll: 1,
   			responsive: [
@@ -229,7 +235,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [
@@ -284,7 +290,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             fade: true,
@@ -305,7 +311,7 @@ $(document).ready(function() {
         e.preventDefault();
         $('.aside-filter__item').removeClass('active');
         $(this).addClass('active');
-        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - 80}, 500);
     });
 
 
@@ -344,7 +350,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
             responsive: [
@@ -379,7 +385,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             fade: true,
             asNavFor: '.index-reviews-slider-nav',
         });
@@ -391,7 +397,7 @@ $(document).ready(function() {
             slidesToScroll: 1,
             arrows: true,
             dots: false,
-            infinite: false,
+            infinite: true,
             focusOnSelect: true,
             vertical: true,
             verticalSwiping: false,
@@ -436,7 +442,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             fade: true,
             asNavFor: '.main-benefits-slider-nav',
         });
@@ -448,7 +454,7 @@ $(document).ready(function() {
             slidesToScroll: 1,
             arrows: true,
             dots: false,
-            infinite: false,
+            infinite: true,
             focusOnSelect: true,
             vertical: true,
             verticalSwiping: false,
@@ -567,7 +573,7 @@ $(document).ready(function() {
               if(percentTime >= 100)
                 {
                   $gallery.slick('slickNext');
-                  startProgressbar();
+                  //startProgressbar();
                 }
             }
         }
@@ -580,7 +586,7 @@ $(document).ready(function() {
             clearTimeout(tick);
         }
           
-        startProgressbar();
+        //startProgressbar();
     };
 
     if ($('.js-sticky-el').length>0) {
