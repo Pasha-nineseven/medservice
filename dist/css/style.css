@@ -9236,22 +9236,7 @@ ymaps[class*="-balloon__layout"] {
     right: 200px;
     top: 50px; }
   .index-reviews-slider-nav {
-    top: -100px; } }
-
-@media screen and (max-width: 1450px) {
-  .slider-doctor .slick-prev,
-  .slider-doctor-index .slick-prev,
-  .slider-another .slick-prev {
-    left: 4px; }
-  .slider-doctor .slick-next,
-  .slider-doctor-index .slick-next,
-  .slider-another .slick-next {
-    right: 4px; }
-  .slider-doctor-wrap,
-  .slider-another-wrap {
-    margin: 0; } }
-
-@media screen and (max-width: 1400px) {
+    top: -100px; }
   .help .container-fluid {
     padding-left: 0;
     padding-right: 0; }
@@ -9346,6 +9331,19 @@ ymaps[class*="-balloon__layout"] {
   .page-top-additional-icons {
     position: static;
     padding-top: 25px; } }
+
+@media screen and (max-width: 1450px) {
+  .slider-doctor .slick-prev,
+  .slider-doctor-index .slick-prev,
+  .slider-another .slick-prev {
+    left: 4px; }
+  .slider-doctor .slick-next,
+  .slider-doctor-index .slick-next,
+  .slider-another .slick-next {
+    right: 4px; }
+  .slider-doctor-wrap,
+  .slider-another-wrap {
+    margin: 0; } }
 
 @media screen and (max-width: 1380px) {
   .sanatorium-map {
