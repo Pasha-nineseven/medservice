@@ -37,6 +37,7 @@
 		text-align: left;
 		.page-footer-top__title{
 			color: #6BF9E5;
+
 		}
 		&:before{
 			content: "";
@@ -60,11 +61,13 @@
 		background: rgba(0,0,0,0.1);
 		.page-footer-top__title{
 			color: #4BD6F2;
+			text-indent: -20px;
 		}
 	}
 	&:nth-child(3){
 		.page-footer-top__title{
 			color: #5AC8FF;
+			text-indent: -20px;
 		}
 		&:before{
 			content: "";
@@ -232,6 +235,24 @@
 }
 
 .page-footer-top__add--mail{
+	position: relative;
+	padding-right: 20px;
+	&:after{
+		content: "";
+	    width: 15px;
+	    height: 15px;
+	    position: absolute;
+	    right: 0;
+	    top: 50%;
+	    transform: translatey(-50%) rotate(-90deg);
+	    background: url(../img/svg/d-arrow.svg) no-repeat;
+	    background-size: 15px 15px;
+	    margin-top: 2px;
+	    opacity: 0.6;
+	}
+}
+
+.page-footer-top__add--call{
 	position: relative;
 	padding-right: 20px;
 	&:after{

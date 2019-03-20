@@ -689,6 +689,29 @@
 	.slider-another-wrap {
 	    overflow: hidden;
 	}
+	.page-top-slider-preview__img {
+	    width: 68px;
+	    min-width: 68px;
+	}
+	.about-info__bg {
+	    left: 0;
+	    background-size:contain;
+	}
+	.page-header.fixed{
+		.burger-icon{
+			background: #000;
+			&:before,
+			&:after{
+				background: #000;
+			}
+		}
+	}
+	.stat__number__txt:after {
+	    bottom: -13px;
+	}
+	.stat__number__txt {
+	    margin-bottom: 37px;
+	}
 }
 
 @media screen and (max-width: 992px){
@@ -813,8 +836,6 @@
 }
 
 @media screen and (max-width: 768px){
-	
-
 	.r-tabs .r-tabs-accordion-title {
 	    display: block;
 	    position: relative;
@@ -1243,9 +1264,6 @@
 	    margin-bottom: 0;
 	    padding-bottom: 40px;
 	}
-
-
-
 	.index-reviews-slider-nav{
 	    margin-top: 0;
 	    top: 430px;
@@ -1303,13 +1321,25 @@
 	.main-benefits-slider .slick-slide {
 	    padding-bottom: 0;
 	}
+	.layout--index .page-top,
+	.page-top-slider-wrap,
+	#counter,
+	.page-top .container-fluid,
+	.page-top-slider,
+	.page-top-slider .slick-list,
+	.page-top-slider .slick-track{
+		height: auto;
+	}
+	.breadcrumbs {
+	    font-size: 12px;
+	}
 }
 
 @media screen and (max-width: 650px){
 	.reviews__person,
 	.reviews__item.reviews__item--half .reviews__person{
 	    font-size: 20px;
-	    margin-bottom: 10px;
+	    margin-bottom: 5px;
 	}
 	.reviews__img,
 	.reviews__item.reviews__item--half .reviews__img {
@@ -1360,6 +1390,9 @@
 	}
 	.top-search__input {
 	    width: 400px;
+	}
+	.head__wrap {
+	    margin: 0 -15px;
 	}
 }
 
@@ -1480,9 +1513,6 @@
 	.input-label {
 	    font-size: 14px;
 	}
-	.breadcrumbs{
-		font-size: 14px;
-	}
 	.video-wrap__link {
 	    width: 64px;
 	    height: 64px;
@@ -1558,7 +1588,17 @@
 	    margin-bottom: 20px;
 	}
 	.cert-item {
-	    height: 90px;
+	    height: 150px;
+	    margin-bottom: 0;
+		padding-right: 5px;
+		margin-right: 0;
+	}
+	.cert{
+		margin-bottom: 10px;
+		margin-right: -5px;
+	}
+	.cert-item__img{
+		transform:none!important;
 	}
 	.slider-doctor__img,
 	.slider-another__img{
@@ -1675,8 +1715,8 @@
 	    margin-bottom: 15px;
 	}
 	.stat__number{
-		font-size: 65px;
-    	line-height: 55px;
+		// font-size: 65px;
+  //   	line-height: 55px;
 		img{
 			max-height: 100%;
 		}
@@ -1907,6 +1947,15 @@
 			&:nth-child(2){
 				display: inline-block;
 			}
+			&:nth-child(3){
+				display: inline-block;
+			}
+			&:nth-child(4){
+				display: inline-block;
+			}
+			&:nth-child(5){
+				display: inline-block;
+			}
 		}
 	}
 	.mobile-filter {
@@ -1987,6 +2036,12 @@
 	}
 	.page-header.hidden {
 	    padding-right: 0 !important;
+	}
+	.page-top-slider .slick-slide {
+	    padding-top: 40px;
+	}
+	.mobile-filter__content .btn{
+		font-size: 14px;
 	}
 }
 

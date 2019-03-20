@@ -143,20 +143,21 @@ $(document).ready(function() {
 	$('.js-popup-inline').magnificPopup({
 		type: 'inline',
 		removalDelay: 500,
-        fixedContentPos: false,
+        fixedContentPos: true,
 		callbacks: {
 			beforeOpen: function() {
 				this.st.mainClass = this.st.el.attr('data-effect');
 			},
             open: function(){
-                $('body').addClass('noscroll');
-                $('html').addClass('hidden');
-                $('.page-header').addClass('hidden');
+                // $('body').addClass('noscroll');
+                // $('html').addClass('hidden');
+                $('.page-header').css('padding-right','17px');
             },
             close: function() {
-                 $('body').removeClass('noscroll');
-                 $('html').removeClass('hidden');
-                 $('.page-header').removeClass('hidden');
+                 // $('body').removeClass('noscroll');
+                 // $('html').removeClass('hidden');
+                 // $('.page-header').removeClass('hidden');
+                $('.page-header').css('padding-right','0');
             }
 		},
 
@@ -172,6 +173,12 @@ $(document).ready(function() {
         //toolbar  : false,
         infobar: false,
         idleTime: false,
+        beforeShow: function(){
+            $('.page-header').css('padding-right','17px');
+        },
+        afterClose: function() {
+            $('.page-header').css('padding-right','0');
+        },
         buttons: [
             "close"
         ],
@@ -186,12 +193,44 @@ $(document).ready(function() {
         //toolbar  : false,
         infobar: false,
         idleTime: false,
+        // onActivate: function(){
+        //     alert(1);
+        //     $(".fancybox-caption").clone().appendTo(".fancybox-content"); 
+        // },
+        beforeShow: function(){
+            $('.page-header').css('padding-right','17px');
+            //$(".fancybox-caption").clone().appendTo(".fancybox-content"); 
+            // $('.caption-count').text(+$('.fancybox-caption__body').find("span:nth-child(1)").text());
+            // $('.caption-full').text(+$('.fancybox-caption__body').find("span:nth-child(2)").text());
+        },
+        afterClose: function() {
+            $('.page-header').css('padding-right','0');
+        },
         buttons: [
             "close"
         ],
         image : {
             protect : true,
+        },
+        caption : function( instance, item ) {
+            var caption = $(this).data('caption') || '';
+            return ( caption.length ? caption : '' ) + '<span data-fancybox-index></span> из <span data-fancybox-count></span>';
+        },
+        afterLoad : function( instance, current ) {
+            // if ( instance.group.length > 1 && current.$content ) {
+            //     current.$content.append(
+            //         '<div class="caption-inner">'+
+            //             '<div class="caption-count"></div>'+
+            //             '<span> из </span>'+
+            //             '<div class="caption-full"></div>'+
+            //         '</div>'
+            //     );
+            // }
         }
+        // beforeShow: function(current) {
+        //     //alert(1);
+        //     $('.fancybox-content').append($('.fancybox-caption'));
+        // },
     });
 
 	//slider-doctor
@@ -303,7 +342,7 @@ $(document).ready(function() {
     //SCROLL
     $("body").on("click", ".js-scroll-link", function(e){
         e.preventDefault();
-        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - 64}, 500);
     });
 
     //SCROLL-ANCHOR
@@ -619,6 +658,9 @@ $(document).ready(function() {
         $('.mobile-filter__content').slideUp();
     });
 
+
+    sliderCertificatesStart();
+
 	ymaps.ready(initializeDefaultMap);
 
 	ymaps.ready(initializeContactMap);
@@ -647,7 +689,7 @@ $(function(){
 
 
 $(window).resize(function () {
-
+    sliderCertificatesStart();
 });
 
 // $(window).load(function(){
@@ -755,6 +797,25 @@ function initializeSanatoriumMap() {
         }
     }
 }
+
+function sliderCertificatesStart() {
+    var $cert = $('.cert');
+    if($(window).width() < 600) {
+        $cert.not('.slick-initialized').slick({
+            infinite: true,
+            dots: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+        });
+    } else{
+        if($cert.hasClass('slick-initialized')) {
+            $cert.slick("unslick");
+        }
+    }
+}
+
+
 
 // links pages
 $('body').append(
