@@ -257,6 +257,13 @@ $(document).ready(function() {
 			        slidesToScroll: 1,
 			      }
 			    },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  },
+                },
 			]
 	    });
 	};
@@ -404,6 +411,13 @@ $(document).ready(function() {
                   breakpoint: 768,
                   settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                   }
                 },
@@ -804,7 +818,7 @@ function sliderCertificatesStart() {
         $cert.not('.slick-initialized').slick({
             infinite: true,
             dots: false,
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: false,
         });

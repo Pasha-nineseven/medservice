@@ -1588,7 +1588,7 @@
 	    margin-bottom: 20px;
 	}
 	.cert-item {
-	    height: 150px;
+	    height: 190px;
 	    margin-bottom: 0;
 		padding-right: 5px;
 		margin-right: 0;
@@ -1602,7 +1602,7 @@
 	}
 	.slider-doctor__img,
 	.slider-another__img{
-	    height: 150px;
+	    height: 190px;
 	}
 	.slider-doctor__title,
 	.slider-another__title{
@@ -1612,7 +1612,7 @@
 	.slider-doctor .slick-arrow,
 	.slider-doctor-index .slick-arrow,
 	.slider-another .slick-arrow{
-	    top: 75px;
+	    top: 94px;
 	    width: 30px;
 	    height: 30px;
 	}
@@ -1831,6 +1831,7 @@
 	.page-top {
 	    margin-top: 0;
 	    padding-top: 170px;
+	    margin-top: 46px;
 	}
 	.page-top-slider .slick-dots button {
 	    width: 24px;
@@ -2042,6 +2043,35 @@
 	}
 	.mobile-filter__content .btn{
 		font-size: 14px;
+	}
+	.page-top-about-wrap{
+		.container-fluid{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+	.company-video-btn {
+	    margin-bottom: 25px;
+	    order: 1;
+	}
+	.page-top-about{
+		order: 2; 
+	}
+	.page-top-about__txt {
+	    font-size: 14px;
+	}
+	.head__info,
+	.packages-tariff-item,
+	.packages-add__top,
+	.about-more{
+	    font-size: 14px;
+	}
+	.packages-top {
+	    margin-bottom: 70px;
+	}
+	.direction__info {
+	    font-size: 13px;
 	}
 }
 
