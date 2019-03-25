@@ -3785,8 +3785,8 @@ ymaps[class*="-balloon__layout"]{
 }
 
 .benefits__item{
-	max-width: 348px;
-	min-width: 348px;
+	width: 50%;
+	padding-right: 20px;
 	margin-bottom: 36px;
 }
 
@@ -3898,9 +3898,9 @@ ymaps[class*="-balloon__layout"]{
 		color: #022835;
 		.activities__icon{
 			//border:2px solid #0091EA;
-			&:before{
-				opacity: 1;
-			}
+			// &:before{
+			// 	opacity: 1;
+			// }
 		}
 	}
 	&:nth-child(8){
@@ -3952,19 +3952,6 @@ ymaps[class*="-balloon__layout"]{
 		max-width: 100%;
 		height: auto;
 		max-height: 100%;
-    }
-    &:before{
-    	content: "";
-    	display: block;
-    	width: 100%;
-    	height: 100%;
-    	border: 1px solid #0091EA;
-    	border-radius: 50%;
-    	position: absolute;
-    	left: 0;
-    	top: 0;
-    	opacity: 0;
-    	transition: all 0.3s ease;
     }
 }
 
@@ -4235,11 +4222,6 @@ ymaps[class*="-balloon__layout"]{
 			pointer-events: none;
 			opacity: 0.5;
 		}
-		// span{
-		// 	display: block;
-		// 	width: 100%;
-		// 	height: 100%;
-		// }
 	}
 	.main-prev{
 		left: 0;
@@ -4255,16 +4237,6 @@ ymaps[class*="-balloon__layout"]{
 				margin-right: 10px;
 			}
 		}
-		// &:before{
-		// 	content: "";
-		// 	height: 2px;
-		// 	width: 43px;
-		// 	border-radius: 0 0 0 5px;
-		// 	background-color: #0088CC;
-		// 	position: absolute;
-		// 	bottom: 0;
-		// 	right: 0;
-		// }
 	}
 	.main-next{
 		right: 0;
@@ -4296,7 +4268,6 @@ ymaps[class*="-balloon__layout"]{
 			content: "";
 			height: 2px;
 			width: 0%;
-    		//animation: time 4.3s infinite linear;
 			border-radius: 0 0 0 5px;
 			background-color: #0088CC;
 			position: absolute;
@@ -4304,46 +4275,29 @@ ymaps[class*="-balloon__layout"]{
 			left: 0;
 		}
 	}
+	.slick-list, .slick-slider{
+		position: static;
+	}
 }
 
 .progress{
 	content: "";
 	height: 2px;
 	width: 0%;
-	//animation: time 4.3s infinite linear;
 	border-radius: 0 0 0 5px;
 	background-color: #0088CC;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 }
-// @keyframes time {
-//     0% {
-//         width: 0%
-//     }
-//     25% {
-//         width: 25%
-//     }
-//     50% {
-//         width: 50%
-//     }
-//     75% {
-//         width: 75%
-//     }
-//     100% {
-//         width: 100%;
-//     }
-// }
 
 
 .page-top-slider{
-	//display: none;
 	opacity: 0;
 	transition: opacity 0.3s ease;
 	padding-left: 229px;
 	height: 100vh;
 	&.slick-initialized{
-		//display: block;
 		opacity: 1;
 	}
 	.slick-list,
@@ -4658,6 +4612,7 @@ ymaps[class*="-balloon__layout"]{
 .main-benefits{
 	padding-top: 54px;
 	overflow: hidden;
+	margin: 0 -20px;
 	h2{
 		line-height: 1;
 		position: relative;
@@ -4668,7 +4623,7 @@ ymaps[class*="-balloon__layout"]{
 .main-benefits-slider{
 	display: none;
 	margin-top: -140px;
-	margin-right: -133px;
+	margin-right: -100px;
 	&.slick-initialized{
 		display: block;
 	}
@@ -4729,8 +4684,8 @@ ymaps[class*="-balloon__layout"]{
 .main-benefits-slider-nav{
 	display: none;
     position: absolute;
-        right: 0px;
-    margin-top: 24px;
+        right: 28px;
+    margin-top: 30px;
         top: 50%;
     transform: translateY(-50%);
     padding-top: 91px;
