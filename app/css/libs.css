@@ -1517,36 +1517,31 @@ body .ui-tooltip {
 .ui-corner-top,
 .ui-corner-left,
 .ui-corner-tl {
-  -webkit-border-top-left-radius: 4px;
-          border-top-left-radius: 4px; }
+  border-top-left-radius: 4px; }
 
 .ui-corner-all,
 .ui-corner-top,
 .ui-corner-right,
 .ui-corner-tr {
-  -webkit-border-top-right-radius: 4px;
-          border-top-right-radius: 4px; }
+  border-top-right-radius: 4px; }
 
 .ui-corner-all,
 .ui-corner-bottom,
 .ui-corner-left,
 .ui-corner-bl {
-  -webkit-border-bottom-left-radius: 4px;
-          border-bottom-left-radius: 4px; }
+  border-bottom-left-radius: 4px; }
 
 .ui-corner-all,
 .ui-corner-bottom,
 .ui-corner-right,
 .ui-corner-br {
-  -webkit-border-bottom-right-radius: 4px;
-          border-bottom-right-radius: 4px; }
+  border-bottom-right-radius: 4px; }
 
 .daterangepicker {
   position: absolute;
   color: inherit;
   background-color: #fff;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   border: 1px solid #ddd;
   width: 278px;
   max-width: none;
@@ -1651,8 +1646,7 @@ body .ui-tooltip {
   color: #fff;
   border: solid black;
   border-width: 0 2px 2px 0;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
   display: inline-block;
   padding: 3px; }
 
@@ -1675,16 +1669,14 @@ body .ui-tooltip {
   height: 24px;
   line-height: 24px;
   font-size: 12px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   border: 1px solid transparent;
   white-space: nowrap;
   cursor: pointer; }
 
 .daterangepicker .calendar-table {
   border: 1px solid #fff;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   background-color: #fff; }
 
 .daterangepicker .calendar-table table {
@@ -1711,20 +1703,16 @@ body .ui-tooltip {
   background-color: #ebf4f8;
   border-color: transparent;
   color: #000;
-  -webkit-border-radius: 0;
-          border-radius: 0; }
+  border-radius: 0; }
 
 .daterangepicker td.start-date {
-  -webkit-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px; }
+  border-radius: 4px 0 0 4px; }
 
 .daterangepicker td.end-date {
-  -webkit-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0; }
+  border-radius: 0 4px 4px 0; }
 
 .daterangepicker td.start-date.end-date {
-  -webkit-border-radius: 4px;
-          border-radius: 4px; }
+  border-radius: 4px; }
 
 .daterangepicker td.active, .daterangepicker td.active:hover {
   background-color: #357ebd;
@@ -1843,18 +1831,14 @@ body .ui-tooltip {
     margin-right: 0; }
   .daterangepicker.ltr .drp-calendar.left .calendar-table {
     border-right: none;
-    -webkit-border-top-right-radius: 0;
-            border-top-right-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-            border-bottom-right-radius: 0; }
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
   .daterangepicker.ltr .drp-calendar.right {
     margin-left: 0; }
   .daterangepicker.ltr .drp-calendar.right .calendar-table {
     border-left: none;
-    -webkit-border-top-left-radius: 0;
-            border-top-left-radius: 0;
-    -webkit-border-bottom-left-radius: 0;
-            border-bottom-left-radius: 0; }
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
   .daterangepicker.ltr .drp-calendar.left .calendar-table {
     padding-right: 8px; }
   .daterangepicker.ltr .ranges, .daterangepicker.ltr .drp-calendar {
@@ -1867,18 +1851,14 @@ body .ui-tooltip {
     margin-left: 0; }
   .daterangepicker.rtl .drp-calendar.left .calendar-table {
     border-left: none;
-    -webkit-border-top-left-radius: 0;
-            border-top-left-radius: 0;
-    -webkit-border-bottom-left-radius: 0;
-            border-bottom-left-radius: 0; }
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
   .daterangepicker.rtl .drp-calendar.right {
     margin-right: 0; }
   .daterangepicker.rtl .drp-calendar.right .calendar-table {
     border-right: none;
-    -webkit-border-top-right-radius: 0;
-            border-top-right-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-            border-bottom-right-radius: 0; }
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
   .daterangepicker.rtl .drp-calendar.left .calendar-table {
     padding-left: 12px; }
   .daterangepicker.rtl .ranges, .daterangepicker.rtl .drp-calendar {
@@ -1990,8 +1970,7 @@ body .ui-tooltip {
   padding: 0 45px 0 10px;
   border: 1px solid #CCC;
   border-bottom-color: #B3B3B3;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   background: #F5F5F5;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E6E6E6));
   background: linear-gradient(#FFF, #E6E6E6);
@@ -2062,8 +2041,7 @@ body .ui-tooltip {
   margin: 2px 0 0;
   padding: 0;
   border: 1px solid #CCC;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   background: #FFF;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -2079,8 +2057,7 @@ body .ui-tooltip {
   margin: 0;
   padding: 5px 27px 6px 8px;
   border: 1px solid #CCC;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
   outline: none;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO1JREFUeNqU078LAXEYx/FzYfNzk5TJaFNKYjFYSQZ/hvwBsvg1UCY2xT9gM8hukQGThWRjkcFw3pdnujhfT736Xn2fPvfc3fd07V0OFDDFAnM0ENYsZRiGLSc9OpqIYIA9fMhhjCrW2h9VlMlcH/aymMGtOqEugX08PwQucUZKdTozMIqdTc9WepQD7wjY9ARx+ydwhfyXfS+S0qMcOEQJGcueB3VccFINdMgal6NzkmPjRwJXxDBB7/2RDdtAp6wb+dpphHDASG5QQ0V6u2aoSqBZD/lDrNWRJynLK2qpBn4rc6K2XB9/Nb8EGABtf1thzY6X2AAAAABJRU5ErkJggg==) no-repeat 100% 50%;
   -webkit-box-shadow: none;
@@ -2143,8 +2120,7 @@ body .ui-tooltip {
   padding: 1px;
   border: 1px solid #CCC;
   border-bottom-color: #B3B3B3;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   background: #FFF;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -2176,12 +2152,10 @@ body .ui-tooltip {
   white-space: nowrap; }
 
 .jq-select-multiple li:first-child {
-  -webkit-border-radius: 3px 3px 0 0;
-          border-radius: 3px 3px 0 0; }
+  border-radius: 3px 3px 0 0; }
 
 .jq-select-multiple li:last-child {
-  -webkit-border-radius: 0 0 3px 3px;
-          border-radius: 0 0 3px 3px; }
+  border-radius: 0 0 3px 3px; }
 
 .jq-select-multiple li.selected {
   background: #08C;
@@ -2784,8 +2758,7 @@ img.mfp-img {
 .tooltipster-sidetip .tooltipster-box {
   background: #565656;
   border: 2px solid black;
-  -webkit-border-radius: 4px;
-          border-radius: 4px; }
+  border-radius: 4px; }
 
 .tooltipster-sidetip.tooltipster-bottom .tooltipster-box {
   margin-top: 8px; }
@@ -3216,8 +3189,7 @@ body.compensate-for-scrollbar {
 .fancybox-button {
   background: rgba(30, 30, 30, 0.6);
   border: 0;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
   cursor: pointer;
@@ -3300,8 +3272,7 @@ body.compensate-for-scrollbar {
 .fancybox-close-small {
   background: transparent;
   border: 0;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
   color: #ccc;
   cursor: pointer;
   opacity: .8;
@@ -3392,8 +3363,7 @@ body.compensate-for-scrollbar {
   background: transparent;
   border: 4px solid #888;
   border-bottom-color: #fff;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   height: 50px;
   left: 50%;
   margin: -25px 0 0 -25px;
@@ -3534,8 +3504,7 @@ body.compensate-for-scrollbar {
 /* Share */
 .fancybox-share {
   background: #f4f4f4;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
   max-width: 90%;
   padding: 30px;
   text-align: center; }
@@ -3552,8 +3521,7 @@ body.compensate-for-scrollbar {
 
 .fancybox-share__button {
   border: 0;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
@@ -3610,8 +3578,7 @@ body.compensate-for-scrollbar {
   background: transparent;
   border: 0;
   border-bottom: 1px solid #d7d7d7;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
   color: #5d5b5b;
   font-size: 14px;
   margin: 10px 0 0 0;
@@ -3666,15 +3633,13 @@ body.compensate-for-scrollbar {
 
 .fancybox-thumbs-y .fancybox-thumbs__list::-webkit-scrollbar-track {
   background: #fff;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
           box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
 
 .fancybox-thumbs-y .fancybox-thumbs__list::-webkit-scrollbar-thumb {
   background: #2a2a2a;
-  -webkit-border-radius: 10px;
-          border-radius: 10px; }
+  border-radius: 10px; }
 
 .fancybox-thumbs__list a {
   -webkit-backface-visibility: hidden;

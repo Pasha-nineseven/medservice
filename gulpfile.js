@@ -42,12 +42,25 @@ gulp.task('scripts', function(){
     .pipe(gulp.dest('app/js'))
 });
 
+//SCRIPTS INTERFACE
+gulp.task('scripts-interface', function(){
+    return gulp.src([
+        'app/js/interface.js',
+    ])
+    .pipe(concat('interface.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js'))
+});
+
 gulp.task('css-libs', ['sass'], function() {
-    return gulp.src('app/css/libs.css')
-        .pipe(cssnano())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('app/css'))
-        .pipe(gulp.dest('dist/css'))
+    return gulp.src([
+        'app/css/libs.css',
+        'app/css/style.css',
+    ])
+    .pipe(cssnano())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('dist/css'))
 });
 
 gulp.task('browser-sync', function() {
@@ -59,19 +72,7 @@ gulp.task('browser-sync', function() {
     })
 });
 
-
-// gulp.task('fileinclude', function () {
-//     gulp.src('app/*.html')
-//         .pipe(fileinclude({
-//           prefix: '@@',
-//           basepath: '@file'
-//         }))
-//         .pipe(gulp.dest('app/*.html'));
-//         // dist?
-// });
-
-
-gulp.task('watch', ['browser-sync','css-libs', 'scripts',], function() {
+gulp.task('watch', ['browser-sync','css-libs', 'scripts', 'scripts-interface',], function() {
     gulp.watch('app/scss/*.scss', ['sass']); // Наблюдение за sass файлами
     // Наблюдение за другими типами файлов
     gulp.watch('app/*.html', browserSync.reload);
@@ -98,7 +99,7 @@ gulp.task('img', function(){
 });
 
 //BUILD version
-gulp.task('build', ['clean', 'img', 'sass', 'css-libs', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'sass', 'css-libs', 'scripts', 'scripts-interface'], function() {
 
     var buildCss = gulp.src([
         'app/css/style.css',

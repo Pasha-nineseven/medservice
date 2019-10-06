@@ -4237,6 +4237,10 @@ ymaps[class*="-balloon__layout"]{
 				margin-right: 10px;
 			}
 		}
+		.page-top-slider-preview__img{
+			border-top-right-radius: 0; 
+			border-bottom-right-radius: 0; 
+		}
 	}
 	.main-next{
 		right: 0;
